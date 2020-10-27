@@ -5,9 +5,9 @@
 class ObiektMobilny
 {
     private:
-        const char * name;
+        std::string name;
     public:
-        const char * getName()
+        std::string getName()
         {
             return name;
         }

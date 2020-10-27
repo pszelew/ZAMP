@@ -109,8 +109,8 @@ int main(int argc, char** argv)
   }
 
   //pCmd->ReadParams(stream);
-  std::string line;
-  std::getline(stream, line);
-  cout << line  <<endl << endl;
+  //std::string line;
+  //std::getline(stream, line);
+  cout << stream.str()  <<endl << endl;
   
 }
