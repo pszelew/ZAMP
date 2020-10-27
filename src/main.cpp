@@ -1,13 +1,38 @@
 #include <iostream>
 #include <dlfcn.h>
 #include <cassert>
+#include <cstdio>
+#include <sstream>
+#include <string>
 #include "Interp4Command.hh"
 
-using std::cout;
-using std::cerr;
-using std::endl;
+#define LINESIZE 300
+
+using namespace std;
+// using std::cout;
+// using std::cerr;
+// using std::endl;
+// using std::istringstream;
+// using std::ostringstream;
+// using std::string;
 
 
+bool ExecPreprocesor(const char * NazwaPliku, istringstream & IStrm4Cmds )
+{
+  string Cmd4Preproc = "cpp -P ";
+  char Line[LINESIZE];
+  ostringstream OTmpStrm;
+  Cmd4Preproc += NazwaPliku;
+  FILE * pProc = popen(Cmd4Preproc.c_str(),"r");
+  if(!pProc)
+    return false;
+  while(fgets(Line,LINESIZE,pProc))
+  {
+    OTmpStrm<<Line;
+  }
+  IStrm4Cmds.str(OTmpStrm.str());
+  return pclose(pProc) == 0;
+}
 
 
 int main()
@@ -66,4 +91,12 @@ int main()
   delete pCmd;
 
   dlclose(pLibHnd_Rotate);
+
+  istringstream stream;
+
+  ExecPreprocesor("plik.txt", stream);
+
+
+  cout << stream.str();
+
 }
