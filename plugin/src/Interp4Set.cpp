@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Interp4Set::Interp4Set():  pos_x(0), pos_y(0), vel(0)
+Interp4Set::Interp4Set():  obj_name(""), pos_x(0), pos_y(0), kat_OZ(0)
 {
 }
 
@@ -21,14 +21,14 @@ Interp4Command* Interp4Set::CreateCmd()
 
 void Interp4Set::PrintCmd() const
 {
-   cout << this->GetCmdName() << " " << pos_x  << " " << pos_y << "" << vel << endl;
+   cout << this->GetCmdName() << " " << obj_name << " " << pos_x  << " " << pos_y << "" << kat_OZ << endl;
 }
 
 
 void Interp4Set::PrintSyntax() const
 {
     /*Wyswietl skladnie polecenia*/
-    cout << "   Set pos_x[m]  pos_y[m] vel[m/s]" << endl;
+    cout << "   Set obj_name pos_x[m]  pos_y[m] kat_OZ[deg]" << endl;
 }
 
 

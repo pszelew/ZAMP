@@ -11,8 +11,9 @@
 class Interp4Move: public Interp4Command
 {
 private:
-  int vel_x;
-  int vel_y;
+  std::string obj_name;
+  int vel;
+  int dist;
 public:
     Interp4Move();
     ~Interp4Move();

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Interp4Move::Interp4Move():  vel_x(0), vel_y(0)
+Interp4Move::Interp4Move():  obj_name(0), vel(0), dist(0)
 {
 }
 
@@ -14,21 +14,21 @@ Interp4Move::~Interp4Move()
 
 Interp4Command* Interp4Move::CreateCmd()
 {
-  return new Interp4Move();
+    return new Interp4Move();
 }
 
 
 
 void Interp4Move::PrintCmd() const
 {
-   cout << this->GetCmdName() << " " << vel_x << " " << vel_y << endl;
+   cout << this->GetCmdName() << " " << obj_name << " " << vel << " " << dist << endl;
 }
 
 
 void Interp4Move::PrintSyntax() const
 {
     /*Wyswietl skladnie polecenia*/
-    cout << "   Move vel_x[m/s] vel_y[m/s]" << endl;
+    cout << "   Move nazwa_obiektu vel[m/s] dist[m/s]" << endl;
 }
 
 
@@ -46,6 +46,8 @@ bool Interp4Move::ExecCmd(ObiektMobilny *wObMob, int GniazdoDoSerwera) const
 
 bool Interp4Move::ReadParams(std::istream& Strm_CmdsList)
 {
+    //Strm_CmdsList >> vel;
+    //Strm_CmdsList >> dist;
     /*Czyta parametry*/
     return true;
 }

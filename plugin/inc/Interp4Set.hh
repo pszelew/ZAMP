@@ -11,9 +11,10 @@
 class Interp4Set: public Interp4Command
 {
 private:
+  std::string obj_name;
   int pos_x;
   int pos_y;
-  int vel;
+  int kat_OZ;
 public:
     Interp4Set();
     ~Interp4Set();

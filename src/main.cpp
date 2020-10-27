@@ -35,8 +35,17 @@ bool ExecPreprocesor(const char * NazwaPliku, istringstream & IStrm4Cmds )
 }
 
 
-int main()
+int main(int argc, char** argv)
 {
+
+  std::string file_path = " ";
+  istringstream stream;
+  if(argc  < 1)
+  {
+    cout<< "Nie podano nazwy pliku cmd!!!";
+    return 1;
+  }
+
 
   void *pLibHnd_Rotate = dlopen("Interp4Rotate.so",RTLD_LAZY);
   void *pLibHnd_Set = dlopen("Interp4Set.so",RTLD_LAZY);
@@ -92,11 +101,16 @@ int main()
 
   dlclose(pLibHnd_Rotate);
 
-  istringstream stream;
+  
+  if(!ExecPreprocesor(argv[1], stream))
+  {
+    cout << "Mamy problem!";
+    return 1;
+  }
 
-  ExecPreprocesor("plik.txt", stream);
-
-
-  cout << stream.str();
-
+  //pCmd->ReadParams(stream);
+  std::string line;
+  std::getline(stream, line);
+  cout << line  <<endl << endl;
+  
 }

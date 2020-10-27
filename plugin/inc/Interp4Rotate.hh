@@ -11,6 +11,7 @@
 class Interp4Rotate: public Interp4Command
 {
 private:
+  std::string obj_name; 
   int rotateSpeed;
   int rotateDegrees;
 public:

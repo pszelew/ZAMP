@@ -1,5 +1,5 @@
 __start__: obj interp __plugin__
-	export LD_LIBRARY_PATH="./libs"; ./interp
+	export LD_LIBRARY_PATH="./libs"; ./interp plik.txt
 
 obj:
 	mkdir obj
