@@ -5,90 +5,53 @@
 #include <sstream>
 #include <string>
 #include "Interp4Command.hh"
+#include "Parser.hh"
+#include "LibraryInterface.hh"
+
 
 #define LINESIZE 300
 
 using namespace std;
-// using std::cout;
-// using std::cerr;
-// using std::endl;
-// using std::istringstream;
-// using std::ostringstream;
-// using std::string;
 
 
-bool ExecPreprocesor(const char * NazwaPliku, istringstream & IStrm4Cmds )
+bool ExecProgram(istream  &rIStrm)
 {
-  string Cmd4Preproc = "cpp -P ";
-  char Line[LINESIZE];
-  ostringstream OTmpStrm;
-  Cmd4Preproc += NazwaPliku;
-  FILE * pProc = popen(Cmd4Preproc.c_str(),"r");
-  if(!pProc)
-    return false;
-  while(fgets(Line,LINESIZE,pProc))
+  string KeyWord;
+  //0) Wtyczki mam juz wczytane. Przechowuje je w jakiejsc strukturze
+  //1) wczytujemy slowo ze stromienia preprocesora (nazwa polecenia MOVE, ROTATE, ..,)  -- to jakies polecenie
+  //2) Znajdz wtyczke obslugujaca dane polecenie w jakiejsc wczytanej strukturze
+  //3) CZy operacja znalezienia wtyczki udala sie? Jesli nie to koncz program i elo! 
+  rIStrm >> KeyWord;
+  //4) Utworz instancje interpretera polecenia. Czy się udało>
+  //5) Strumien przekazujemy do polecenia read params dla utworzonej instancji
+  //6) Czy udalo sie wczytac parametry danego polecenia. Wszystko poszlo dobrze?
+  //7) Wykonaj polecenie
+  //8) Zniszcz interpreter polecenia
+  while(true)
   {
-    OTmpStrm<<Line;
+    return true;
   }
-  IStrm4Cmds.str(OTmpStrm.str());
-  return pclose(pProc) == 0;
+
+  return true;
 }
 
 
 int main(int argc, char** argv)
 {
+  LibraryInterface lib;
+  Parser par(argv[1], "");
+  lib.init("Interp4Rotate.so");
 
-  std::string file_path = " ";
   istringstream stream;
-  if(argc  < 1)
+  
+  if(argc < 2)
   {
     cout<< "Nie podano nazwy pliku cmd!!!";
     return 1;
   }
 
-
-  void *pLibHnd_Rotate = dlopen("Interp4Rotate.so",RTLD_LAZY);
-  void *pLibHnd_Set = dlopen("Interp4Set.so",RTLD_LAZY);
-  void *pLibHnd_Pause = dlopen("Interp4Pause.so",RTLD_LAZY);
-  void *pLibHnd_Move = dlopen("Interp4Pause.so",RTLD_LAZY);
-  
-  Interp4Command *(*pCreateCmd_Rotate)(void);
-  Interp4Command *(*pCreateCmd_Set)(void);
-  Interp4Command *(*pCreateCmd_Pause)(void);
-  Interp4Command *(*pCreateCmd_Move)(void);
-  
-  void *pFun;
-
-  if (!pLibHnd_Rotate) {
-    cerr << "!!! Brak biblioteki: Rotate.so" << endl;
-    return 1;
-  }
-  
-  if (!pLibHnd_Set) {
-    cerr << "!!! Brak biblioteki: Set.so" << endl;
-    return 1;
-  }
-
-  if (!pLibHnd_Pause) {
-    cerr << "!!! Brak biblioteki: Pause.so" << endl;
-    return 1;
-  }
-
-  if (!pLibHnd_Move) {
-    cerr << "!!! Brak biblioteki: Move.so" << endl;
-    return 1;
-  }
-
-
-  pFun = dlsym(pLibHnd_Rotate,"CreateCmd");
-  if (!pFun) {
-    cerr << "!!! Nie znaleziono funkcji CreateCmd dla Rotate.so" << endl;
-    return 1;
-  }
-  pCreateCmd_Rotate = *reinterpret_cast<Interp4Command* (**)(void)>(&pFun);
-
-  Interp4Command *pCmd = pCreateCmd_Rotate();
-
+  //Interp4Command *pCmd = pCreateCmd_Rotate();
+  Interp4Command *pCmd = lib.CreateCmd();
   cout << endl;
   cout << pCmd->GetCmdName() << endl;
   cout << endl;
@@ -99,12 +62,9 @@ int main(int argc, char** argv)
   
   delete pCmd;
 
-  dlclose(pLibHnd_Rotate);
-
-  
-  if(!ExecPreprocesor(argv[1], stream))
+  if(!par.parseCmd(stream))
   {
-    cout << "Mamy problem!";
+    cout << "Mamy problem z wczytaniem pliku. Na pewno podales dobra sciezke?!";
     return 1;
   }
 

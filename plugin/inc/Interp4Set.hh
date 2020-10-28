@@ -25,7 +25,7 @@ public:
     /*!* \brief Wyświetla nazwę polecenia*/
     const char* GetCmdName() const;
     /*!* \brief Wykonuje polecenie oraz wizualizuje jego realizację*/
-    bool ExecCmd(ObiektMobilny *wObMob, int GniazdoDoSerwera) const;
+    bool ExecCmd(MobileObject *wObMob, int GniazdoDoSerwera) const;
     /*!* \brief Czyta wartości parametrów danego polecenia*/
     bool ReadParams(std::istream& Strm_CmdsList);
     /*!* \brief Tworzy obiekt polecenia*/

@@ -38,7 +38,7 @@ const char* Interp4Set::GetCmdName() const
     return "Set";
 }
 
-bool Interp4Set::ExecCmd(ObiektMobilny *wObMob, int GniazdoDoSerwera) const
+bool Interp4Set::ExecCmd(MobileObject *wObMob, int GniazdoDoSerwera) const
 {
    /* Wykonuje polecenie oraz wizualizuje jego realizacje */
    return true;

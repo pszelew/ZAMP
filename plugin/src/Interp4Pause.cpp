@@ -38,7 +38,7 @@ const char* Interp4Pause::GetCmdName() const
     return "Pause";
 }
 
-bool Interp4Pause::ExecCmd(ObiektMobilny *wObMob, int GniazdoDoSerwera) const
+bool Interp4Pause::ExecCmd(MobileObject *wObMob, int GniazdoDoSerwera) const
 {
    /* Wykonuje polecenie oraz wizualizuje jego realizacje */
    return true;

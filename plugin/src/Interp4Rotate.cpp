@@ -38,7 +38,7 @@ const char* Interp4Rotate::GetCmdName() const
     return "Rotate";
 }
 
-bool Interp4Rotate::ExecCmd(ObiektMobilny *wObMob, int GniazdoDoSerwera) const
+bool Interp4Rotate::ExecCmd(MobileObject *wObMob, int GniazdoDoSerwera) const
 {
    /* Wykonuje polecenie oraz wizualizuje jego realizacje */
    return true;

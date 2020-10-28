@@ -38,7 +38,7 @@ const char* Interp4Move::GetCmdName() const
     return "Move";
 }
 
-bool Interp4Move::ExecCmd(ObiektMobilny *wObMob, int GniazdoDoSerwera) const
+bool Interp4Move::ExecCmd(MobileObject *wObMob, int GniazdoDoSerwera) const
 {
    /* Wykonuje polecenie oraz wizualizuje jego realizacje */
    return true;

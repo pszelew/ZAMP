@@ -2,9 +2,7 @@
 #define  INTERP4COMMAND_HH
 
 #include <iostream>
-#include "DronPose.hh"
-#include "Visualization.hh"
-#include "ObiektMobilny.hh"
+#include "MobileObject.hh"
 /*!
  * \file
  * \brief Definicja klasy Interp4Command
@@ -40,7 +38,7 @@
    /*!
     * \brief
     */
-   virtual bool ExecCmd(  ObiektMobilny  *wObMob,  int GniazdoDoSerwera  ) const = 0;
+   virtual bool ExecCmd(  MobileObject  *wObMob,  int GniazdoDoSerwera  ) const = 0;
    /*!
     * \brief
     */
