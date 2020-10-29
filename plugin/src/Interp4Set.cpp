@@ -21,7 +21,7 @@ Interp4Command* Interp4Set::CreateCmd()
 
 void Interp4Set::PrintCmd() const
 {
-   cout << this->GetCmdName() << " " << obj_name << " " << pos_x  << " " << pos_y << "" << kat_OZ << endl;
+   cout << this->GetCmdName() << " " << obj_name << " " << pos_x  << " " << pos_y << " " << kat_OZ << endl;
 }
 
 
@@ -38,15 +38,40 @@ const char* Interp4Set::GetCmdName() const
     return "Set";
 }
 
-bool Interp4Set::ExecCmd(MobileObject *wObMob, int GniazdoDoSerwera) const
+bool Interp4Set::ExecCmd(std::shared_ptr<MobileObject>  wObMob,  int serverSocket) const
 {
    /* Wykonuje polecenie oraz wizualizuje jego realizacje */
+   std::cout<< "Polecenie Set wykonuje sie!!!"<< endl;
    return true;
 }
 
 bool Interp4Set::ReadParams(std::istream& Strm_CmdsList)
 {
-    /*Czyta parametry*/
+    if(!(Strm_CmdsList >> obj_name))
+    {
+        std::cout << "Nie wczytano poprawnie nazwy obiektu ktory ma sie ustawic"<< endl;
+        return 1;
+    }
+
+    if(!(Strm_CmdsList >> pos_x))
+    {
+        std::cout << "Nie wczytano poprawnie pozycji x"<< endl;
+        return 1;
+    }
+
+    if(!(Strm_CmdsList >> pos_y))
+    {
+        std::cout << "Nie wczytano poprawnie pozycji y"<< endl;
+        return 1;
+    }
+
+    if(!(Strm_CmdsList >> kat_OZ))
+    {
+        std::cout << "Nie wczytano poprawnie kata obrotu"<< endl;
+        return 1;
+    }
+    
+
     return true;
 }
 

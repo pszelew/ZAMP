@@ -38,15 +38,34 @@ const char* Interp4Rotate::GetCmdName() const
     return "Rotate";
 }
 
-bool Interp4Rotate::ExecCmd(MobileObject *wObMob, int GniazdoDoSerwera) const
+bool Interp4Rotate::ExecCmd(std::shared_ptr<MobileObject>  wObMob,  int serverSocket) const
 {
    /* Wykonuje polecenie oraz wizualizuje jego realizacje */
+   std::cout<< "Polecenie Rotate wykonuje sie!!!"<< endl;
    return true;
 }
 
 bool Interp4Rotate::ReadParams(std::istream& Strm_CmdsList)
 {
-    /*Czyta parametry*/
+    if(!(Strm_CmdsList >> obj_name))
+    {
+        std::cout << "Nie wczytano poprawnie nazwy obiektu ktory ma sie obrocic"<< endl;
+        return 1;
+    }
+
+    if(!(Strm_CmdsList >> rotateSpeed))
+    {
+        std::cout << "Nie wczytano poprawnie predkosci obrotowej"<< endl;
+        return 1;
+    }
+
+    if(!(Strm_CmdsList >> rotateDegrees))
+    {
+        std::cout << "Nie wczytano poprawnie kata obrotu"<< endl;
+        return 1;
+    }
+    
+
     return true;
 }
 

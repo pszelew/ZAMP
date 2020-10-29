@@ -65,6 +65,9 @@ class LibraryInterface
         */
         bool init(std::string fileName);
 
+
+        std::string GetName(){return cmdName;}
+        
         Interp4Command* CreateCmd(){ return createCmd(); }
 };
 

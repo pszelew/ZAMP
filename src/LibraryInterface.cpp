@@ -29,7 +29,7 @@ bool LibraryInterface::init(std::string fileName)
   if (!fun) 
   {
     std::cerr << "!!! Nie znaleziono funkcji CreateCmd dla "<< fileName << std::endl;
-    return 1;
+    return false;
   }
 
   createCmd = reinterpret_cast<Interp4Command* (*)(void)>(fun);
@@ -39,13 +39,14 @@ bool LibraryInterface::init(std::string fileName)
   if (!fun) 
   {
     std::cerr << "!!! Nie znaleziono funkcji GetCmdName dla "<< fileName << std::endl;
-    return 1;
+    return false;
   }
   
   cmdNameFcn = reinterpret_cast<const char* (*)(void)>(fun);
 
   cmdName = cmdNameFcn();
   
+  return true;
 }
  
 

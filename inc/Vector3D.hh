@@ -1,5 +1,5 @@
-#ifndef WEKTOR3D_HH
-#define WEKTOR3D_HH
+#ifndef VECTOR3D_HH
+#define VECTOR3D_HH
 
 
 #include <cassert>
@@ -17,15 +17,15 @@
 /*!
  * \brief Wektor z przestrzeni 3D
  */
-class Wektor3D {
+class Vector3D {
    double _Wsp[WYMIAR3D];
 
  public:  
   /*!
    * \brief Inicjalizuje współrzędne wektora wartościami 0.
    */
-  Wektor3D() { for (double &Wsp : _Wsp)  Wsp = 0; }
-
+   Vector3D() { for (double &Wsp : _Wsp)  Wsp = 0; }
+   Vector3D(double x, double y, double z){_Wsp[0]=x; _Wsp[0]=y; _Wsp[0]=z;}
   /*!
    * \brief Udostępnia do odczytu współrzędną o podanym indeksie.
    * 

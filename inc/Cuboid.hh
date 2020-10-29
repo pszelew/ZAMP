@@ -2,21 +2,17 @@
 #define CUBOID_HH
 #include "MobileObject.hh"
 
-class Cuboid: MobileObject
-{
-    private:
-        std::string name;
-        double rot_z;
-        Wektor3D pos;
-        
+class Cuboid: public MobileObject
+{        
     public:
-        Cuboid(std:: string in_name, double in_rot_z, Wektor3D in_pos): name(in_name), rot_z(in_rot_z),pos(in_pos)  {};
-        std::string Name() { return name; }
+        Cuboid(std::string in_name, double in_rot_z, Vector3D in_pos): MobileObject(in_name, in_rot_z, in_pos) {};
+        Cuboid(){};
+        std::string Name() const { return name; }
         std::string& Name() { return name; }
-        double rot_z() { return Rot_z; }
-        double& rot_z() { return Rot_z; }
-        Wektor3D Pos() { return Pos; }
-        Wektor3D& Pos() { return Pos; }
+        double Rot_z() const{ return rot_z; }
+        double& Rot_z() { return rot_z; }
+        Vector3D Pos() const { return pos; }
+        Vector3D& Pos() { return pos; }
 
 };
 

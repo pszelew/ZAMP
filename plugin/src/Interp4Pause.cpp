@@ -38,15 +38,21 @@ const char* Interp4Pause::GetCmdName() const
     return "Pause";
 }
 
-bool Interp4Pause::ExecCmd(MobileObject *wObMob, int GniazdoDoSerwera) const
+bool Interp4Pause::ExecCmd(std::shared_ptr<MobileObject>  wObMob,  int serverSocket) const
 {
    /* Wykonuje polecenie oraz wizualizuje jego realizacje */
+   std::cout<< "Polecenie Pause wykonuje sie!!!"<< endl;
    return true;
 }
 
 bool Interp4Pause::ReadParams(std::istream& Strm_CmdsList)
 {
-    /*Czyta parametry*/
+    if(!(Strm_CmdsList >> time))
+    {
+        std::cout << "Nie wczytano poprawnie czasu"<< endl;
+        return 1;
+    }
+
     return true;
 }
 

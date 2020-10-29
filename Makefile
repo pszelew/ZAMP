@@ -1,5 +1,5 @@
 __start__: obj interp __plugin__
-	export LD_LIBRARY_PATH="./libs"; ./interp plik.txt
+	export LD_LIBRARY_PATH="./libs"; echo;./interp plik.txt plik2.txt
 
 obj:
 	mkdir obj
@@ -7,13 +7,13 @@ obj:
 __plugin__:
 	cd plugin; make
 
-CPPFLAGS=-Wall -pedantic -std=c++11 -Iinc
+CPPFLAGS=-Wall -g -pedantic -std=c++11 -Iinc 
 LDFLAGS=-Wall
 
-interp: obj/main.o obj/LibraryInterface.o obj/Parser.o
-	g++ ${LDFLAGS} -o interp  obj/main.o obj/LibraryInterface.o obj/Parser.o -ldl
+interp: obj/main.o 						 obj/Parser.o obj/Cuboid.o obj/LibraryInterface.o  obj/PluginManager.o  obj/Scene.o obj/Simulation.o  
+	g++ ${LDFLAGS} -o interp  obj/main.o obj/Parser.o obj/Cuboid.o obj/LibraryInterface.o  obj/PluginManager.o  obj/Scene.o obj/Simulation.o -ldl
 
-obj/main.o: src/main.cpp inc/Interp4Command.hh inc/LibraryInterface.hh
+obj/main.o: src/main.cpp inc/Simulation.hh inc/Cuboid.hh
 	g++ -c ${CPPFLAGS} -o obj/main.o src/main.cpp
 
 obj/Parser.o: src/Parser.cpp inc/Parser.hh
@@ -25,6 +25,14 @@ obj/Cuboid.o: src/Cuboid.cpp inc/Cuboid.hh inc/MobileObject.hh inc/Vector3D.hh i
 obj/LibraryInterface.o: src/LibraryInterface.cpp inc/LibraryInterface.hh inc/Interp4Command.hh
 	g++ -c ${CPPFLAGS} -o obj/LibraryInterface.o src/LibraryInterface.cpp
 
+obj/Scene.o: src/Scene.cpp inc/Scene.hh inc/Scene.hh
+	g++ -c ${CPPFLAGS} -o obj/Scene.o src/Scene.cpp
+
+obj/PluginManager.o: src/PluginManager.cpp inc/PluginManager.hh inc/LibraryInterface.hh inc/Scene.hh
+	g++ -c ${CPPFLAGS} -o obj/PluginManager.o src/PluginManager.cpp
+
+obj/Simulation.o: src/Simulation.cpp inc/Simulation.hh inc/Parser.hh inc/PluginManager.hh inc/Scene.hh
+	g++ -c ${CPPFLAGS} -o obj/Simulation.o src/Simulation.cpp
 
 clean:
 	rm -f obj/* interp core*

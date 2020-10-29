@@ -1,5 +1,5 @@
-#ifndef WEKTOR2D_HH
-#define WEKTOR2D_HH
+#ifndef VECTOR2D_HH
+#define VECTOR2D_HH
 
 
 #include <cassert>
@@ -25,6 +25,7 @@ class Vector2D {
    * \brief Inicjalizuje współrzędne wektora wartościami 0.
    */
   Vector2D() { for (double &Wsp : _Wsp)  Wsp = 0; }
+  Vector2D(double x, double y){_Wsp[0]=x; _Wsp[0]=y;}
 
   /*!
    * \brief Udostępnia do odczytu współrzędną o podanym indeksie.

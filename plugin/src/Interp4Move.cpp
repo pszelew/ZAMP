@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Interp4Move::Interp4Move():  obj_name(0), vel(0), dist(0)
+Interp4Move::Interp4Move():  obj_name(""), vel(0), dist(0)
 {
 }
 
@@ -38,17 +38,34 @@ const char* Interp4Move::GetCmdName() const
     return "Move";
 }
 
-bool Interp4Move::ExecCmd(MobileObject *wObMob, int GniazdoDoSerwera) const
+bool Interp4Move::ExecCmd(std::shared_ptr<MobileObject>  wObMob,  int serverSocket) const
 {
    /* Wykonuje polecenie oraz wizualizuje jego realizacje */
+   std::cout<< "Polecenie Move wykonuje sie!!!"<< endl;
    return true;
 }
 
 bool Interp4Move::ReadParams(std::istream& Strm_CmdsList)
 {
-    //Strm_CmdsList >> vel;
-    //Strm_CmdsList >> dist;
-    /*Czyta parametry*/
+    if(!(Strm_CmdsList >> obj_name))
+    {
+        std::cout << "Nie wczytano poprawnie nazwy obiektu ktory ma sie poruszyc"<< endl;
+        return 1;
+    }
+
+    if(!(Strm_CmdsList >> vel))
+    {
+        std::cout << "Nie wczytano poprawnie predkosci"<< endl;
+        return 1;
+    }
+
+    if(!(Strm_CmdsList >> dist))
+    {
+        std::cout << "Nie wczytano poprawnie dystansu"<< endl;
+        return 1;
+    }
+    
+
     return true;
 }
 

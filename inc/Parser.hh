@@ -5,6 +5,7 @@
 #include <sstream>
 #include <cassert>
 #include <cstdio>
+#include <iostream>
 #define LINESIZE 500
 
 class Parser
@@ -14,8 +15,8 @@ class Parser
         std::string xmlFile;
     public:
         Parser(std::string cmd, std::string xml): cmdFile(cmd), xmlFile(xml) {} 
-        bool parseCmd(std::istringstream & IStrm4Cmds);
-        bool parseXML(std::istringstream & IStrm4Cmds);
+        bool ParseCmd(std::istringstream & IStrm4Cmds);
+        bool ParseXML(std::istringstream & IStrm4Cmds);
 
 };
 

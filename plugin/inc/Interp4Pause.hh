@@ -22,11 +22,13 @@ public:
     /*!* \brief Wyświetla nazwę polecenia*/
     const char* GetCmdName() const;
     /*!* \brief Wykonuje polecenie oraz wizualizuje jego realizację*/
-    bool ExecCmd(MobileObject *wObMob, int GniazdoDoSerwera) const;
+    bool ExecCmd(std::shared_ptr<MobileObject>  wObMob,  int serverSocket) const;
     /*!* \brief Czyta wartości parametrów danego polecenia*/
     bool ReadParams(std::istream& Strm_CmdsList);
     /*!* \brief Tworzy obiekt polecenia*/
     static Interp4Command* CreateCmd();
+    /*!* \brief Zwraca nazwe obiektu*/
+    std::string GetObjName(){return "";}
 };
 
 #endif
