@@ -32,7 +32,7 @@ bool LibraryInterface::init(std::string fileName)
     return false;
   }
 
-  createCmd = reinterpret_cast<Interp4Command* (*)(void)>(fun);
+  this->createCmd = reinterpret_cast<Interp4Command* (*)(void)>(fun);
 
   fun = dlsym(libHandler,"GetCmdName");
   

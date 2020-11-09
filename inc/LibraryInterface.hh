@@ -11,10 +11,6 @@
 #include "Interp4Command.hh"
 
 
-
-
-
-
 /*!
  * \file
  * \brief Definicja klasy LibraryInterface

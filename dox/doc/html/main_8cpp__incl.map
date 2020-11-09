@@ -1,0 +1,12 @@
+<map id="main.cpp" name="main.cpp">
+<area shape="rect" id="node2" href="$_simulation_8hh.html" title="Plik zawiera definicje klasy Simulation. " alt="" coords="659,80,759,107"/>
+<area shape="rect" id="node21" href="$_cuboid_8hh.html" title="Cuboid.hh" alt="" coords="959,155,1037,181"/>
+<area shape="rect" id="node3" href="$_parser_8hh.html" title="Parser.hh" alt="" coords="5,229,81,256"/>
+<area shape="rect" id="node9" href="$_plugin_manager_8hh.html" title="Plik zawiera definicje klasy PluginManager. " alt="" coords="646,155,771,181"/>
+<area shape="rect" id="node19" href="$_scene_8hh.html" title="Scene.hh" alt="" coords="857,304,933,331"/>
+<area shape="rect" id="node14" href="$_library_interface_8hh.html" title="Definicja klasy LibraryInterface. " alt="" coords="258,229,386,256"/>
+<area shape="rect" id="node15" href="$_interp4_command_8hh.html" title="Definicja klasy Interp4Command. " alt="" coords="507,304,646,331"/>
+<area shape="rect" id="node16" href="$_mobile_object_8hh.html" title="MobileObject.hh" alt="" coords="854,379,969,405"/>
+<area shape="rect" id="node17" href="$_vector3_d_8hh.html" title="Vector3D.hh" alt="" coords="865,453,957,480"/>
+<area shape="rect" id="node18" href="$_vector2_d_8hh.html" title="Vector2D.hh" alt="" coords="749,453,841,480"/>
+</map>

@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Interpreter: Dokumentacja klasy Interp4Command</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Interpreter
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_interp4_command.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_interp4_command-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Interp4Command<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Modeluje abstrakcyjne polecenie dla robota mobilnego.  
+ <a href="class_interp4_command.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_interp4_command_8hh_source.html">Interp4Command.hh</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla Interp4Command</div>
+<div class="dyncontent">
+<div class="center"><img src="class_interp4_command__inherit__graph.png" border="0" usemap="#_interp4_command_inherit__map" alt="Inheritance graph"/></div>
+<map name="_interp4_command_inherit__map" id="_interp4_command_inherit__map">
+<area shape="rect" id="node2" href="class_interp4_move.html" title="Interp4Move" alt="" coords="5,80,99,107"/>
+<area shape="rect" id="node3" href="class_interp4_pause.html" title="Interp4Pause" alt="" coords="123,80,221,107"/>
+<area shape="rect" id="node4" href="class_interp4_rotate.html" title="Interp4Rotate" alt="" coords="246,80,346,107"/>
+<area shape="rect" id="node5" href="class_interp4_set.html" title="Interp4Set" alt="" coords="369,80,452,107"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a620ba28206850d0bce8dbb2364c73366"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366">~Interp4Command</a> ()</td></tr>
+<tr class="memdesc:a620ba28206850d0bce8dbb2364c73366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor wirtualny ze wzgledu na klasy pochodne.  <a href="#a620ba28206850d0bce8dbb2364c73366">Więcej...</a><br /></td></tr>
+<tr class="separator:a620ba28206850d0bce8dbb2364c73366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08fbbf2a70cdac46930b0eba6f5f361c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_command.html#a08fbbf2a70cdac46930b0eba6f5f361c">PrintCmd</a> () const =0</td></tr>
+<tr class="separator:a08fbbf2a70cdac46930b0eba6f5f361c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693ca79d24ba27d11a19ed6fc90c37b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_command.html#a693ca79d24ba27d11a19ed6fc90c37b9">PrintSyntax</a> () const =0</td></tr>
+<tr class="separator:a693ca79d24ba27d11a19ed6fc90c37b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b1bff7ff363991b35965ae9dfeac648"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_command.html#a9b1bff7ff363991b35965ae9dfeac648">GetCmdName</a> () const =0</td></tr>
+<tr class="separator:a9b1bff7ff363991b35965ae9dfeac648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74bb8a659c5efeb7f207d5d58a50c5fe"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_command.html#a74bb8a659c5efeb7f207d5d58a50c5fe">ExecCmd</a> (std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt; wObMob, int serverSocket) const =0</td></tr>
+<tr class="separator:a74bb8a659c5efeb7f207d5d58a50c5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e15ef01af10fa8961926fd9b0274ab8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_command.html#a3e15ef01af10fa8961926fd9b0274ab8">ReadParams</a> (std::istream &amp;Strm_CmdsList)=0</td></tr>
+<tr class="separator:a3e15ef01af10fa8961926fd9b0274ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953ac1b6590585a7161dcc2618f615a6"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_command.html#a953ac1b6590585a7161dcc2618f615a6">GetObjName</a> ()=0</td></tr>
+<tr class="separator:a953ac1b6590585a7161dcc2618f615a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa modeluje ... </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_interp4_command_8hh_source.html#l00019">19</a> pliku <a class="el" href="_interp4_command_8hh_source.html">Interp4Command.hh</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a620ba28206850d0bce8dbb2364c73366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a620ba28206850d0bce8dbb2364c73366">&#9670;&nbsp;</a></span>~Interp4Command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Interp4Command::~Interp4Command </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_interp4_command_8hh_source.html#l00026">26</a> pliku <a class="el" href="_interp4_command_8hh_source.html">Interp4Command.hh</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_interp4_command_a620ba28206850d0bce8dbb2364c73366_cgraph.png" border="0" usemap="#class_interp4_command_a620ba28206850d0bce8dbb2364c73366_cgraph" alt=""/></div>
+<map name="class_interp4_command_a620ba28206850d0bce8dbb2364c73366_cgraph" id="class_interp4_command_a620ba28206850d0bce8dbb2364c73366_cgraph">
+<area shape="rect" id="node2" href="class_interp4_command.html#a08fbbf2a70cdac46930b0eba6f5f361c" title="Interp4Command::PrintCmd" alt="" coords="242,5,423,32"/>
+<area shape="rect" id="node3" href="class_interp4_command.html#a693ca79d24ba27d11a19ed6fc90c37b9" title="Interp4Command::PrintSyntax" alt="" coords="236,56,429,83"/>
+<area shape="rect" id="node4" href="class_interp4_command.html#a9b1bff7ff363991b35965ae9dfeac648" title="Interp4Command::GetCmdName" alt="" coords="228,107,437,133"/>
+<area shape="rect" id="node5" href="class_interp4_command.html#a74bb8a659c5efeb7f207d5d58a50c5fe" title="Interp4Command::ExecCmd" alt="" coords="241,157,424,184"/>
+<area shape="rect" id="node6" href="class_interp4_command.html#a3e15ef01af10fa8961926fd9b0274ab8" title="Interp4Command::ReadParams" alt="" coords="232,208,433,235"/>
+<area shape="rect" id="node7" href="class_interp4_command.html#a953ac1b6590585a7161dcc2618f615a6" title="Interp4Command::GetObjName" alt="" coords="231,259,434,285"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a74bb8a659c5efeb7f207d5d58a50c5fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74bb8a659c5efeb7f207d5d58a50c5fe">&#9670;&nbsp;</a></span>ExecCmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Interp4Command::ExecCmd </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt;&#160;</td>
+          <td class="paramname"><em>wObMob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>serverSocket</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementowany w <a class="el" href="class_interp4_set.html#a747bbd6f0890900d20d6cc5e1192cf30">Interp4Set</a>, <a class="el" href="class_interp4_move.html#a7994119801db2ebe67351e8584c5d57d">Interp4Move</a>, <a class="el" href="class_interp4_rotate.html#a9126424e17eddb40371ae31a3a16c111">Interp4Rotate</a> i <a class="el" href="class_interp4_pause.html#aac4947988b29e37eefe46c7aed699803">Interp4Pause</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_interp4_command_a74bb8a659c5efeb7f207d5d58a50c5fe_icgraph.png" border="0" usemap="#class_interp4_command_a74bb8a659c5efeb7f207d5d58a50c5fe_icgraph" alt=""/></div>
+<map name="class_interp4_command_a74bb8a659c5efeb7f207d5d58a50c5fe_icgraph" id="class_interp4_command_a74bb8a659c5efeb7f207d5d58a50c5fe_icgraph">
+<area shape="rect" id="node2" href="class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Destruktor wirtualny ze wzgledu na klasy pochodne. " alt="" coords="236,5,411,47"/>
+<area shape="rect" id="node3" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Metoda inicjuje instancje polecenia ze strumienia oraz wykonuje ja. " alt="" coords="253,71,394,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9b1bff7ff363991b35965ae9dfeac648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b1bff7ff363991b35965ae9dfeac648">&#9670;&nbsp;</a></span>GetCmdName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char* Interp4Command::GetCmdName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementowany w <a class="el" href="class_interp4_set.html#a7e61011caf16bc5bcdae597dc58db324">Interp4Set</a>, <a class="el" href="class_interp4_move.html#aae1e3bf7fc34076f19d857a8cd30082e">Interp4Move</a>, <a class="el" href="class_interp4_rotate.html#a72ca6a7b4049030cd17af9cce98b2b5f">Interp4Rotate</a> i <a class="el" href="class_interp4_pause.html#a2c2cff88acbf4b30147d60f47f181494">Interp4Pause</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_interp4_command_a9b1bff7ff363991b35965ae9dfeac648_icgraph.png" border="0" usemap="#class_interp4_command_a9b1bff7ff363991b35965ae9dfeac648_icgraph" alt=""/></div>
+<map name="class_interp4_command_a9b1bff7ff363991b35965ae9dfeac648_icgraph" id="class_interp4_command_a9b1bff7ff363991b35965ae9dfeac648_icgraph">
+<area shape="rect" id="node2" href="class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Destruktor wirtualny ze wzgledu na klasy pochodne. " alt="" coords="263,5,437,47"/>
+<area shape="rect" id="node3" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Metoda inicjuje instancje polecenia ze strumienia oraz wykonuje ja. " alt="" coords="279,71,421,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a953ac1b6590585a7161dcc2618f615a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a953ac1b6590585a7161dcc2618f615a6">&#9670;&nbsp;</a></span>GetObjName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Interp4Command::GetObjName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementowany w <a class="el" href="class_interp4_set.html#aacd8061fcd036cb8e0c99f34975dbe02">Interp4Set</a>, <a class="el" href="class_interp4_move.html#a540e8c5aba9e8ae7efa6976a066698dd">Interp4Move</a>, <a class="el" href="class_interp4_rotate.html#a29d4e4ac42ce8184e69c97c75dd83fe0">Interp4Rotate</a> i <a class="el" href="class_interp4_pause.html#aee0ad38940d2d88ed9b913be053ec1e0">Interp4Pause</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_interp4_command_a953ac1b6590585a7161dcc2618f615a6_icgraph.png" border="0" usemap="#class_interp4_command_a953ac1b6590585a7161dcc2618f615a6_icgraph" alt=""/></div>
+<map name="class_interp4_command_a953ac1b6590585a7161dcc2618f615a6_icgraph" id="class_interp4_command_a953ac1b6590585a7161dcc2618f615a6_icgraph">
+<area shape="rect" id="node2" href="class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Destruktor wirtualny ze wzgledu na klasy pochodne. " alt="" coords="256,5,431,47"/>
+<area shape="rect" id="node3" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Metoda inicjuje instancje polecenia ze strumienia oraz wykonuje ja. " alt="" coords="273,71,414,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a08fbbf2a70cdac46930b0eba6f5f361c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08fbbf2a70cdac46930b0eba6f5f361c">&#9670;&nbsp;</a></span>PrintCmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Interp4Command::PrintCmd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementowany w <a class="el" href="class_interp4_set.html#a71cdc0ef89ff18a6f2044536a8d7fead">Interp4Set</a>, <a class="el" href="class_interp4_move.html#a83a48fe1db612f65539ed888c434c2b5">Interp4Move</a>, <a class="el" href="class_interp4_rotate.html#afe8f0132a28f367334eb9460e3abdd11">Interp4Rotate</a> i <a class="el" href="class_interp4_pause.html#a53181eb25fc5a9c0104400f561c8ce62">Interp4Pause</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_interp4_command_a08fbbf2a70cdac46930b0eba6f5f361c_icgraph.png" border="0" usemap="#class_interp4_command_a08fbbf2a70cdac46930b0eba6f5f361c_icgraph" alt=""/></div>
+<map name="class_interp4_command_a08fbbf2a70cdac46930b0eba6f5f361c_icgraph" id="class_interp4_command_a08fbbf2a70cdac46930b0eba6f5f361c_icgraph">
+<area shape="rect" id="node2" href="class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Destruktor wirtualny ze wzgledu na klasy pochodne. " alt="" coords="235,5,409,47"/>
+<area shape="rect" id="node3" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Metoda inicjuje instancje polecenia ze strumienia oraz wykonuje ja. " alt="" coords="251,71,393,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a693ca79d24ba27d11a19ed6fc90c37b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693ca79d24ba27d11a19ed6fc90c37b9">&#9670;&nbsp;</a></span>PrintSyntax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Interp4Command::PrintSyntax </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementowany w <a class="el" href="class_interp4_set.html#ad321f7b601c444c92a8db50785c6faf2">Interp4Set</a>, <a class="el" href="class_interp4_move.html#ac38ea9af99407e747b04fecfe4d2e873">Interp4Move</a>, <a class="el" href="class_interp4_rotate.html#a165224757702b655369c7a67df83de89">Interp4Rotate</a> i <a class="el" href="class_interp4_pause.html#a94bc90f0a998452d06344aabe3a46b72">Interp4Pause</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_interp4_command_a693ca79d24ba27d11a19ed6fc90c37b9_icgraph.png" border="0" usemap="#class_interp4_command_a693ca79d24ba27d11a19ed6fc90c37b9_icgraph" alt=""/></div>
+<map name="class_interp4_command_a693ca79d24ba27d11a19ed6fc90c37b9_icgraph" id="class_interp4_command_a693ca79d24ba27d11a19ed6fc90c37b9_icgraph">
+<area shape="rect" id="node2" href="class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Destruktor wirtualny ze wzgledu na klasy pochodne. " alt="" coords="247,5,421,47"/>
+<area shape="rect" id="node3" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Metoda inicjuje instancje polecenia ze strumienia oraz wykonuje ja. " alt="" coords="263,71,405,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3e15ef01af10fa8961926fd9b0274ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e15ef01af10fa8961926fd9b0274ab8">&#9670;&nbsp;</a></span>ReadParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Interp4Command::ReadParams </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>Strm_CmdsList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementowany w <a class="el" href="class_interp4_set.html#a0b6e2f4780dbc9ba081ced14f173e162">Interp4Set</a>, <a class="el" href="class_interp4_move.html#acf8c4ccafb9e257b3e75d8ef22407ef5">Interp4Move</a>, <a class="el" href="class_interp4_rotate.html#a7c3a8aa671e83ff1776ba868d8043009">Interp4Rotate</a> i <a class="el" href="class_interp4_pause.html#a7a515c0bfdeabd9e8fe80d777837ea35">Interp4Pause</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_interp4_command_a3e15ef01af10fa8961926fd9b0274ab8_icgraph.png" border="0" usemap="#class_interp4_command_a3e15ef01af10fa8961926fd9b0274ab8_icgraph" alt=""/></div>
+<map name="class_interp4_command_a3e15ef01af10fa8961926fd9b0274ab8_icgraph" id="class_interp4_command_a3e15ef01af10fa8961926fd9b0274ab8_icgraph">
+<area shape="rect" id="node2" href="class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Destruktor wirtualny ze wzgledu na klasy pochodne. " alt="" coords="255,5,429,47"/>
+<area shape="rect" id="node3" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Metoda inicjuje instancje polecenia ze strumienia oraz wykonuje ja. " alt="" coords="271,71,413,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li><a class="el" href="_interp4_command_8hh_source.html">Interp4Command.hh</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_interp4_command.html">Interp4Command</a></li>
+    <li class="footer">Wygenerowano Cz, 29 paź 2020 01:29:52 dla Interpreter programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

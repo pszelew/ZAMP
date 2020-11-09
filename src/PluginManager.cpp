@@ -24,7 +24,7 @@ bool PluginManager::exec(std::istream & commandsStream, std::shared_ptr<Scene> s
     std::string robotName;
     std::shared_ptr<LibraryInterface> libraryHandler;
     std::shared_ptr<MobileObject> tempMobileObject;
-
+    
     while(commandsStream >> keyWord)
     {
         std::map<std::string, std::shared_ptr<LibraryInterface>>::iterator it = mapLibraries.find(keyWord);

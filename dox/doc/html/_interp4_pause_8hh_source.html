@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Interpreter: Plik źródłowy Interp4Pause.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Interpreter
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_interp4_pause_8hh_source.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Interp4Pause.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_interp4_pause_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef  COMMAND4PAUSE_HH</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define  COMMAND4PAUSE_HH</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef __GNUG__</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"># pragma interface</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"># pragma implementation</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_interp4_command_8hh.html">Interp4Command.hh</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_interp4_pause.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_interp4_pause.html">Interp4Pause</a>: <span class="keyword">public</span> <a class="code" href="class_interp4_command.html">Interp4Command</a></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_interp4_pause.html#a8beba656caab8789ef3d5e560ccd7f80">   14</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="class_interp4_pause.html#a8beba656caab8789ef3d5e560ccd7f80">time</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_interp4_pause.html#a8ed3abb0ba307e144e4c07f586f48eb9">Interp4Pause</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_interp4_pause.html#a39c3f77e75cc76c357674adc8164e8d2">~Interp4Pause</a>();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">/*!* \brief Wyświetla postać bieżącego polecenia (nazwę oraz wartości parametrów)*/</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_interp4_pause.html#a53181eb25fc5a9c0104400f561c8ce62">PrintCmd</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">/*!* \brief Wyświetla składnię polecenia*/</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_interp4_pause.html#a94bc90f0a998452d06344aabe3a46b72">PrintSyntax</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">/*!* \brief Wyświetla nazwę polecenia*/</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_interp4_pause.html#a2c2cff88acbf4b30147d60f47f181494">GetCmdName</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">/*!* \brief Wykonuje polecenie oraz wizualizuje jego realizację*/</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_interp4_pause.html#aac4947988b29e37eefe46c7aed699803">ExecCmd</a>(std::shared_ptr&lt;MobileObject&gt;  wObMob,  <span class="keywordtype">int</span> serverSocket) <span class="keyword">const</span>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">/*!* \brief Czyta wartości parametrów danego polecenia*/</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_interp4_pause.html#a7a515c0bfdeabd9e8fe80d777837ea35">ReadParams</a>(std::istream&amp; Strm_CmdsList);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">/*!* \brief Tworzy obiekt polecenia*/</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_interp4_command.html">Interp4Command</a>* <a class="code" href="class_interp4_pause.html#a83787a2f3cc02c0164597ff506fed3de">CreateCmd</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">/*!* \brief Zwraca nazwe obiektu*/</span></div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_interp4_pause.html#aee0ad38940d2d88ed9b913be053ec1e0">   31</a></span>&#160;    std::string <a class="code" href="class_interp4_pause.html#aee0ad38940d2d88ed9b913be053ec1e0">GetObjName</a>(){<span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;}</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_interp4_pause_html_a8beba656caab8789ef3d5e560ccd7f80"><div class="ttname"><a href="class_interp4_pause.html#a8beba656caab8789ef3d5e560ccd7f80">Interp4Pause::time</a></div><div class="ttdeci">int time</div><div class="ttdef"><b>Definition:</b> <a href="_interp4_pause_8hh_source.html#l00014">Interp4Pause.hh:14</a></div></div>
+<div class="ttc" id="class_interp4_pause_html_a8ed3abb0ba307e144e4c07f586f48eb9"><div class="ttname"><a href="class_interp4_pause.html#a8ed3abb0ba307e144e4c07f586f48eb9">Interp4Pause::Interp4Pause</a></div><div class="ttdeci">Interp4Pause()</div><div class="ttdef"><b>Definition:</b> <a href="_interp4_pause_8cpp_source.html#l00006">Interp4Pause.cpp:6</a></div></div>
+<div class="ttc" id="class_interp4_command_html"><div class="ttname"><a href="class_interp4_command.html">Interp4Command</a></div><div class="ttdoc">Modeluje abstrakcyjne polecenie dla robota mobilnego. </div><div class="ttdef"><b>Definition:</b> <a href="_interp4_command_8hh_source.html#l00019">Interp4Command.hh:19</a></div></div>
+<div class="ttc" id="class_interp4_pause_html_a39c3f77e75cc76c357674adc8164e8d2"><div class="ttname"><a href="class_interp4_pause.html#a39c3f77e75cc76c357674adc8164e8d2">Interp4Pause::~Interp4Pause</a></div><div class="ttdeci">~Interp4Pause()</div><div class="ttdef"><b>Definition:</b> <a href="_interp4_pause_8cpp_source.html#l00010">Interp4Pause.cpp:10</a></div></div>
+<div class="ttc" id="class_interp4_pause_html_a2c2cff88acbf4b30147d60f47f181494"><div class="ttname"><a href="class_interp4_pause.html#a2c2cff88acbf4b30147d60f47f181494">Interp4Pause::GetCmdName</a></div><div class="ttdeci">const char * GetCmdName() const</div><div class="ttdoc">Wyświetla nazwę polecenia. </div><div class="ttdef"><b>Definition:</b> <a href="_interp4_pause_8cpp_source.html#l00035">Interp4Pause.cpp:35</a></div></div>
+<div class="ttc" id="class_interp4_pause_html_a7a515c0bfdeabd9e8fe80d777837ea35"><div class="ttname"><a href="class_interp4_pause.html#a7a515c0bfdeabd9e8fe80d777837ea35">Interp4Pause::ReadParams</a></div><div class="ttdeci">bool ReadParams(std::istream &amp;Strm_CmdsList)</div><div class="ttdoc">Czyta wartości parametrów danego polecenia. </div><div class="ttdef"><b>Definition:</b> <a href="_interp4_pause_8cpp_source.html#l00048">Interp4Pause.cpp:48</a></div></div>
+<div class="ttc" id="_interp4_command_8hh_html"><div class="ttname"><a href="_interp4_command_8hh.html">Interp4Command.hh</a></div><div class="ttdoc">Definicja klasy Interp4Command. </div></div>
+<div class="ttc" id="class_interp4_pause_html_aac4947988b29e37eefe46c7aed699803"><div class="ttname"><a href="class_interp4_pause.html#aac4947988b29e37eefe46c7aed699803">Interp4Pause::ExecCmd</a></div><div class="ttdeci">bool ExecCmd(std::shared_ptr&lt; MobileObject &gt; wObMob, int serverSocket) const</div><div class="ttdoc">Wykonuje polecenie oraz wizualizuje jego realizację </div><div class="ttdef"><b>Definition:</b> <a href="_interp4_pause_8cpp_source.html#l00041">Interp4Pause.cpp:41</a></div></div>
+<div class="ttc" id="class_interp4_pause_html_a53181eb25fc5a9c0104400f561c8ce62"><div class="ttname"><a href="class_interp4_pause.html#a53181eb25fc5a9c0104400f561c8ce62">Interp4Pause::PrintCmd</a></div><div class="ttdeci">void PrintCmd() const</div><div class="ttdoc">Wyświetla postać bieżącego polecenia (nazwę oraz wartości parametrów) </div><div class="ttdef"><b>Definition:</b> <a href="_interp4_pause_8cpp_source.html#l00022">Interp4Pause.cpp:22</a></div></div>
+<div class="ttc" id="class_interp4_pause_html"><div class="ttname"><a href="class_interp4_pause.html">Interp4Pause</a></div><div class="ttdef"><b>Definition:</b> <a href="_interp4_pause_8hh_source.html#l00011">Interp4Pause.hh:11</a></div></div>
+<div class="ttc" id="class_interp4_pause_html_a83787a2f3cc02c0164597ff506fed3de"><div class="ttname"><a href="class_interp4_pause.html#a83787a2f3cc02c0164597ff506fed3de">Interp4Pause::CreateCmd</a></div><div class="ttdeci">static Interp4Command * CreateCmd()</div><div class="ttdoc">Tworzy obiekt polecenia. </div><div class="ttdef"><b>Definition:</b> <a href="_interp4_pause_8cpp_source.html#l00015">Interp4Pause.cpp:15</a></div></div>
+<div class="ttc" id="class_interp4_pause_html_a94bc90f0a998452d06344aabe3a46b72"><div class="ttname"><a href="class_interp4_pause.html#a94bc90f0a998452d06344aabe3a46b72">Interp4Pause::PrintSyntax</a></div><div class="ttdeci">void PrintSyntax() const</div><div class="ttdoc">Wyświetla składnię polecenia. </div><div class="ttdef"><b>Definition:</b> <a href="_interp4_pause_8cpp_source.html#l00028">Interp4Pause.cpp:28</a></div></div>
+<div class="ttc" id="class_interp4_pause_html_aee0ad38940d2d88ed9b913be053ec1e0"><div class="ttname"><a href="class_interp4_pause.html#aee0ad38940d2d88ed9b913be053ec1e0">Interp4Pause::GetObjName</a></div><div class="ttdeci">std::string GetObjName()</div><div class="ttdoc">Zwraca nazwe obiektu. </div><div class="ttdef"><b>Definition:</b> <a href="_interp4_pause_8hh_source.html#l00031">Interp4Pause.hh:31</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b4c3aec6cd8f28418150dce663061cfa.html">plugin</a></li><li class="navelem"><a class="el" href="dir_b58d0ee721b2087e51cb0bcc78a10465.html">inc</a></li><li class="navelem"><a class="el" href="_interp4_pause_8hh.html">Interp4Pause.hh</a></li>
+    <li class="footer">Wygenerowano Cz, 29 paź 2020 01:29:52 dla Interpreter programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -18,20 +18,22 @@ int main(int argc, char** argv)
     cout<< "Nie podano nazwy pliku xml!!!";
     return 1;
   }
-
+  ///////////////////////////////////////
+  ///////////////////////////////////////
   if(!sim.init(argv[1], argv[2]))
+  // Inicjalizacja symulacji
   {
     cout << "Nie udalo sie zainicjowac Symulacji!!!"<<endl;
     return 1;
   }
   
-  if(!(sim.addMobileObject<Cuboid>("Ob_A", 0, Vector3D(0,0,0))))
+  if(!(sim.addMobileObject<Cuboid>("Ob_A", Vector3D(0,0,0), Vector3D(0,0,0))))
   {
     cout << "Nie udalo sie dodac obiektu!!!"<<endl;
     return 1;
   }
 
-  if(!(sim.addMobileObject<Cuboid>("Ob_B", 0, Vector3D(0,0,0))))
+  if(!(sim.addMobileObject<Cuboid>("Ob_B", Vector3D(0,0,0), Vector3D(0,0,0))))
   {
     cout << "Nie udalo sie dodac obiektu!!!"<<endl;
     return 1;

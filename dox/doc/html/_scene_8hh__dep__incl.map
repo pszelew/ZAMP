@@ -1,0 +1,8 @@
+<map id="Scene.hh" name="Scene.hh">
+<area shape="rect" id="node2" href="$_plugin_manager_8hh.html" title="Plik zawiera definicje klasy PluginManager. " alt="" coords="137,80,263,107"/>
+<area shape="rect" id="node3" href="$_simulation_8hh.html" title="Plik zawiera definicje klasy Simulation. " alt="" coords="50,155,150,181"/>
+<area shape="rect" id="node7" href="$_scene_8cpp.html" title="Scene.cpp" alt="" coords="287,80,369,107"/>
+<area shape="rect" id="node6" href="$_plugin_manager_8cpp.html" title="PluginManager.cpp" alt="" coords="174,155,306,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="main.cpp" alt="" coords="5,229,80,256"/>
+<area shape="rect" id="node5" href="$_simulation_8cpp.html" title="Simulation.cpp" alt="" coords="104,229,211,256"/>
+</map>

@@ -28,7 +28,7 @@ class Simulation
         /*!
         * \brief Parser plikow cmd raz xml
         *
-        *  Obiekt ten parcuje pliki cmd oraz xml
+        *  Obiekt ten parsuje pliki cmd oraz xml
         */
         std::shared_ptr<Parser> parser;
         /*!
@@ -64,6 +64,8 @@ class Simulation
         *  Inicjuje symulacje
         */
         bool init(std::string cmdPath, std::string xmlPath);
+
+
          /*!
         * \brief Metoda wykonuje zadania w symulacji
         * 
@@ -71,7 +73,7 @@ class Simulation
         */
         bool exec(); 
         template <typename T>
-        bool addMobileObject(std::string in_name, double in_rot_z, Vector3D in_pos)
+        bool addMobileObject(std::string in_name, Vector3D in_rot, Vector3D in_pos)
         {
             T mobileObjectTest;
             MobileObject* mobileTest;
@@ -80,10 +82,9 @@ class Simulation
                 std:: cout << "Podany typ " << typeid(mobileObjectTest).name() << "nie jest ObiektemMobilnym!!!"<< std::endl;
                 return false;
             }
-            std::shared_ptr<T> objectToAdd = std::make_shared<T>(in_name, in_rot_z, in_pos);
+            std::shared_ptr<T> objectToAdd = std::make_shared<T>(in_name, in_rot, in_pos);
             scene->addMobileObject(objectToAdd);
 
-            
 
             return true;
         }

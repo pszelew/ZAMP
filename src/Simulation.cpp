@@ -31,8 +31,8 @@ bool Simulation::exec()
 {
     std::istringstream stream;
     std::string robotName;
+
     parser->ParseCmd(stream);
-    
     
     if(!(plugManager->exec(stream, scene, serverSocket)))
     {

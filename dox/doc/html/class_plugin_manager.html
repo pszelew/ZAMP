@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Interpreter: Dokumentacja klasy PluginManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Interpreter
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_plugin_manager.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_plugin_manager-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy PluginManager</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Modeluje pojecia managera wtyczek.  
+ <a href="class_plugin_manager.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_plugin_manager_8hh_source.html">PluginManager.hh</a>&gt;</code></p>
+<div class="dynheader">
+Diagram współpracy dla PluginManager:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_plugin_manager__coll__graph.png" border="0" usemap="#_plugin_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="_plugin_manager_coll__map" id="_plugin_manager_coll__map">
+<area shape="rect" id="node2" href="class_interp4_command.html" title="Modeluje abstrakcyjne polecenie dla robota mobilnego. " alt="" coords="5,5,127,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:af3ea312e4db364882ba963ac73b64ba5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugin_manager.html#af3ea312e4db364882ba963ac73b64ba5">init</a> (std::vector&lt; std::string &gt; pluginPaths)</td></tr>
+<tr class="memdesc:af3ea312e4db364882ba963ac73b64ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjuje interfejs biblioteki.  <a href="#af3ea312e4db364882ba963ac73b64ba5">Więcej...</a><br /></td></tr>
+<tr class="separator:af3ea312e4db364882ba963ac73b64ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030742f9a2e79f83886b4c63de322f46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46">exec</a> (std::istream &amp;commandsStream, std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; scene, int serverSocket)</td></tr>
+<tr class="memdesc:a030742f9a2e79f83886b4c63de322f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda inicjuje instancje polecenia ze strumienia oraz wykonuje ja.  <a href="#a030742f9a2e79f83886b4c63de322f46">Więcej...</a><br /></td></tr>
+<tr class="separator:a030742f9a2e79f83886b4c63de322f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:af5cea57f197d862491a3e8f66471a3d3"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="class_library_interface.html">LibraryInterface</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugin_manager.html#af5cea57f197d862491a3e8f66471a3d3">mapLibraries</a></td></tr>
+<tr class="memdesc:af5cea57f197d862491a3e8f66471a3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapa wczytanych pluginow.  <a href="#af5cea57f197d862491a3e8f66471a3d3">Więcej...</a><br /></td></tr>
+<tr class="separator:af5cea57f197d862491a3e8f66471a3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c12c33d62699bb59ffa9a781df4981"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_interp4_command.html">Interp4Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugin_manager.html#a86c12c33d62699bb59ffa9a781df4981">cmdInstance</a></td></tr>
+<tr class="memdesc:a86c12c33d62699bb59ffa9a781df4981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaznik przechowujacy aktualna instancje komendy.  <a href="#a86c12c33d62699bb59ffa9a781df4981">Więcej...</a><br /></td></tr>
+<tr class="separator:a86c12c33d62699bb59ffa9a781df4981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa udostepnia intefejs dla zarzadzania zaladowanymi wtyczkami. Przechowuje mape wczsytkich wczytanych bibliotek. Klasa umozliwia </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_plugin_manager_8hh_source.html#l00038">38</a> pliku <a class="el" href="_plugin_manager_8hh_source.html">PluginManager.hh</a>.</p>
+</div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a030742f9a2e79f83886b4c63de322f46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030742f9a2e79f83886b4c63de322f46">&#9670;&nbsp;</a></span>exec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PluginManager::exec </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>commandsStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt;&#160;</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>serverSocket</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_plugin_manager_8cpp_source.html#l00021">21</a> pliku <a class="el" href="_plugin_manager_8cpp_source.html">PluginManager.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_plugin_manager_a030742f9a2e79f83886b4c63de322f46_cgraph.png" border="0" usemap="#class_plugin_manager_a030742f9a2e79f83886b4c63de322f46_cgraph" alt=""/></div>
+<map name="class_plugin_manager_a030742f9a2e79f83886b4c63de322f46_cgraph" id="class_plugin_manager_a030742f9a2e79f83886b4c63de322f46_cgraph">
+<area shape="rect" id="node2" href="class_interp4_command.html#a3e15ef01af10fa8961926fd9b0274ab8" title="Interp4Command::ReadParams" alt="" coords="199,5,400,32"/>
+<area shape="rect" id="node3" href="class_interp4_command.html#a9b1bff7ff363991b35965ae9dfeac648" title="Interp4Command::GetCmdName" alt="" coords="195,56,404,83"/>
+<area shape="rect" id="node4" href="class_interp4_command.html#a693ca79d24ba27d11a19ed6fc90c37b9" title="Interp4Command::PrintSyntax" alt="" coords="203,107,396,133"/>
+<area shape="rect" id="node5" href="class_interp4_command.html#a953ac1b6590585a7161dcc2618f615a6" title="Interp4Command::GetObjName" alt="" coords="198,157,401,184"/>
+<area shape="rect" id="node6" href="class_interp4_command.html#a74bb8a659c5efeb7f207d5d58a50c5fe" title="Interp4Command::ExecCmd" alt="" coords="208,208,391,235"/>
+<area shape="rect" id="node7" href="class_interp4_command.html#a08fbbf2a70cdac46930b0eba6f5f361c" title="Interp4Command::PrintCmd" alt="" coords="209,259,390,285"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af3ea312e4db364882ba963ac73b64ba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ea312e4db364882ba963ac73b64ba5">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PluginManager::init </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>pluginPaths</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicjuje interfejs biblioteki... </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_plugin_manager_8cpp_source.html#l00002">2</a> pliku <a class="el" href="_plugin_manager_8cpp_source.html">PluginManager.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a86c12c33d62699bb59ffa9a781df4981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c12c33d62699bb59ffa9a781df4981">&#9670;&nbsp;</a></span>cmdInstance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_interp4_command.html">Interp4Command</a>* PluginManager::cmdInstance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Wskaznik na funkcje tworzaca instancje komendy </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_plugin_manager_8hh_source.html#l00052">52</a> pliku <a class="el" href="_plugin_manager_8hh_source.html">PluginManager.hh</a>.</p>
+
+</div>
+</div>
+<a id="af5cea57f197d862491a3e8f66471a3d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5cea57f197d862491a3e8f66471a3d3">&#9670;&nbsp;</a></span>mapLibraries</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, std::shared_ptr&lt;<a class="el" href="class_library_interface.html">LibraryInterface</a>&gt; &gt; PluginManager::mapLibraries</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Mapa wszystkich wczytanych pluginow </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_plugin_manager_8hh_source.html#l00046">46</a> pliku <a class="el" href="_plugin_manager_8hh_source.html">PluginManager.hh</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="_plugin_manager_8hh_source.html">PluginManager.hh</a></li>
+<li><a class="el" href="_plugin_manager_8cpp_source.html">PluginManager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_plugin_manager.html">PluginManager</a></li>
+    <li class="footer">Wygenerowano Cz, 29 paź 2020 01:29:52 dla Interpreter programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

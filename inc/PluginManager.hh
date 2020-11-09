@@ -16,9 +16,6 @@
 
 
 
-
-
-
 /*!
  * \file
  * \brief Plik zawiera definicje klasy PluginManager
@@ -43,11 +40,12 @@ class PluginManager
         *
         *  Mapa wszystkich wczytanych pluginow
         */
+
         std::map<std::string, std::shared_ptr<LibraryInterface>> mapLibraries;
         /*!
         * \brief Wskaznik przechowujacy aktualna instancje komendy
         *
-        *  Wskaznik na funkcje tworzaca instancje komendy
+        *  Wskaznik przechowujacy aktualna instancje komendy
         */
         Interp4Command* cmdInstance;
     public:
