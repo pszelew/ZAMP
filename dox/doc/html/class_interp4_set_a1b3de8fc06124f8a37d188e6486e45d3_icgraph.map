@@ -1,5 +1,5 @@
 <map id="Interp4Set::Interp4Set" name="Interp4Set::Interp4Set">
-<area shape="rect" id="node2" href="$class_interp4_set.html#a05535040832e686d3519cd6399f80933" title="Tworzy obiekt polecenia. " alt="" coords="201,31,355,57"/>
-<area shape="rect" id="node3" href="$class_interp4_set.html#a0b6e2f4780dbc9ba081ced14f173e162" title="Czyta wartości parametrów danego polecenia. " alt="" coords="403,5,565,32"/>
-<area shape="rect" id="node4" href="$_interp4_set_8cpp.html#a0ab483787498a2b002838d9426437be6" title="CreateCmd" alt="" coords="441,56,527,83"/>
+<area shape="rect" id="node2" href="$class_interp4_set.html#a05535040832e686d3519cd6399f80933" title="Static funtion creating instance of command,. " alt="" coords="201,31,355,57"/>
+<area shape="rect" id="node3" href="$class_interp4_set.html#a0b6e2f4780dbc9ba081ced14f173e162" title="Read parameters of command. " alt="" coords="403,5,565,32"/>
+<area shape="rect" id="node4" href="$_interp4_set_8cpp.html#a0ab483787498a2b002838d9426437be6" title="Returns pointer to instance of command. " alt="" coords="441,56,527,83"/>
 </map>

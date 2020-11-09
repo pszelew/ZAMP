@@ -1,5 +1,5 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$class_simulation.html#a2403cb6adccb69afb2471a03a130ab00" title="Inicjuje symulacje. " alt="" coords="144,5,251,32"/>
-<area shape="rect" id="node3" href="$class_simulation.html#ae387175edd202cf9dc4868c23268f073" title="Simulation::addMobileObject" alt="" coords="104,56,291,83"/>
-<area shape="rect" id="node4" href="$class_simulation.html#afbc304f6f56a751c78277fbb4efea74e" title="Metoda wykonuje zadania w symulacji. " alt="" coords="139,107,255,133"/>
+<area shape="rect" id="node2" href="$class_simulation.html#a2403cb6adccb69afb2471a03a130ab00" title="Initialize Simulation instance. " alt="" coords="145,5,251,32"/>
+<area shape="rect" id="node3" href="$class_simulation.html#a5f1f938e15b0f06cd06e59aeff790e5d" title="Simulation::AddMobileObject" alt="" coords="104,56,292,83"/>
+<area shape="rect" id="node4" href="$class_simulation.html#afbc304f6f56a751c78277fbb4efea74e" title="Method template adding mobile object to scene. " alt="" coords="140,107,256,133"/>
 </map>

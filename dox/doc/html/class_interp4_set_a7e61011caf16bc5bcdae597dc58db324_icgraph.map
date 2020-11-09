@@ -1,4 +1,4 @@
 <map id="Interp4Set::GetCmdName" name="Interp4Set::GetCmdName">
-<area shape="rect" id="node2" href="$class_interp4_set.html#a71cdc0ef89ff18a6f2044536a8d7fead" title="Wyświetla postać bieżącego polecenia (nazwę oraz wartości parametrów) " alt="" coords="234,5,377,32"/>
-<area shape="rect" id="node3" href="$class_interp4_set.html#a0b6e2f4780dbc9ba081ced14f173e162" title="Czyta wartości parametrów danego polecenia. " alt="" coords="224,56,387,83"/>
+<area shape="rect" id="node2" href="$class_interp4_set.html#a71cdc0ef89ff18a6f2044536a8d7fead" title="Display name and parameters of command. " alt="" coords="234,5,377,32"/>
+<area shape="rect" id="node3" href="$class_interp4_set.html#a0b6e2f4780dbc9ba081ced14f173e162" title="Read parameters of command. " alt="" coords="224,56,387,83"/>
 </map>

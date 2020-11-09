@@ -8,89 +8,89 @@
 
 /*!
  * \file
- * \brief Plik zawiera definicje klasy Simulation
+ * \brief Definition of Simulation
  *
- * Plik zawiera definicję klasy Simulation
+ *  File contains definition of Simulation
  */
 
 
 
+    /*!
+    * \brief Class used to represent a simulation
+    *
+    *  Class used to represent a simulation. Contains plugin manager, parser and scene
+    */
+    class Simulation
+    {
+        private:
+            /*!
+            * \brief Parser of cmd and xml files
+            *
+            *  Parser of cmd and xml files handler
+            */
+            std::shared_ptr<Parser> parser;
+            /*!
+            * \brief Plugin manager
+            *
+            *  Plugin manager handler
+            */
+            std::shared_ptr<PluginManager> plugManager;
+            /*!
+            * \brief Vector of paths to plugins
+            *
+            *  Vector of paths to plugins
+            */
+            std::vector<std::string> plugPaths;
+            /*!
+            * \brief Scene handler
+            *
+            *  Scene handler
+            */
+            std::shared_ptr<Scene> scene;
+            /*!
+            * \brief Server socket number
+            *   
+            *  Server socket number
+            */   
+            int serverSocket;
 
-/*!
- * \brief Modeluje pojecia Symulacji
- *
- *  Klasa udostepnia intefejs dla zarzadzania Symualacja
- *
- */
-class Simulation
-{
-    private:
-        /*!
-        * \brief Parser plikow cmd raz xml
-        *
-        *  Obiekt ten parsuje pliki cmd oraz xml
-        */
-        std::shared_ptr<Parser> parser;
-        /*!
-        * \brief Manager pluginow
-        *
-        *  Manager pluginow 
-        */
-        std::shared_ptr<PluginManager> plugManager;
-        /*!
-        * \brief Vector ze sciezkami do pluginow.
-        *
-        *  Narazie hardcoded
-        */
-        std::vector<std::string> plugPaths;
-         /*!
-        * \brief Scena.
-        *
-        *  
-        */
-        std::shared_ptr<Scene> scene;
-        /*!
-        * \brief Wtyczka do serwera graficznego
-        *
-        *  
-        */   
-        int serverSocket;
-
-        
-    public:
-        /*!
-        * \brief Inicjuje symulacje
-        * 
-        *  Inicjuje symulacje
-        */
-        bool init(std::string cmdPath, std::string xmlPath);
+            
+        public:
+            /*!
+            * \brief Initialize Simulation instance
+            * 
+            *  Initialize Simulation instance
+            * \param[in] cmdPath - name of cmd file
+            * \param[in] xmlPath - name of xml file
+            */
+            bool init(std::string cmdPath, std::string xmlPath);
 
 
-         /*!
-        * \brief Metoda wykonuje zadania w symulacji
-        * 
-        *   
-        */
-        bool exec(); 
-        template <typename T>
-        bool addMobileObject(std::string in_name, Vector3D in_rot, Vector3D in_pos)
-        {
-            T mobileObjectTest;
-            MobileObject* mobileTest;
-            if(!(mobileTest = dynamic_cast< MobileObject* >(&mobileObjectTest)))
+            /*!
+            * \brief Method template adding mobile object to scene
+            * \param[in] in_name - name of mobile object to be added
+            * \param[in] in_rot_deg - Vector of (roll, pitch, yaw) rotation. Values in degrees.
+            * \param[in] in_pos_m - Vector of (x, y, z) position. Values in meters.
+            */
+            bool exec(); 
+            template <typename T>
+            bool AddMobileObject(std::string in_name, Vector3D in_rot_deg, Vector3D in_pos_m)
             {
-                std:: cout << "Podany typ " << typeid(mobileObjectTest).name() << "nie jest ObiektemMobilnym!!!"<< std::endl;
-                return false;
+                T mobileObjectTest;
+                MobileObject* mobileTest;
+                if(!(mobileTest = dynamic_cast< MobileObject* >(&mobileObjectTest)))
+                {
+                    std:: cout << "Podany typ " << typeid(mobileObjectTest).name() << "nie jest ObiektemMobilnym!!!"<< std::endl;
+                    return false;
+                }
+                std::shared_ptr<T> objectToAdd = std::make_shared<T>(in_name, in_rot_deg, in_pos_m);
+                scene->AddMobileObject(objectToAdd);
+
+                return true;
             }
-            std::shared_ptr<T> objectToAdd = std::make_shared<T>(in_name, in_rot, in_pos);
-            scene->addMobileObject(objectToAdd);
 
-
-            return true;
-        }
-
-        
-};
+            
+    };
 
 
 #endif

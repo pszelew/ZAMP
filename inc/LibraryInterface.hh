@@ -13,57 +13,76 @@
 
 /*!
  * \file
- * \brief Definicja klasy LibraryInterface
+ * \brief Definition of LibraryInterface
  *
- * Plik zawiera definicję klasy LibraryInterface ...
+ *  File contains definition of LibraryInterface
  */
-
-
 
 
 /*!
- * \brief Modeluje interfejs wczytanej biblioteki dzielonej
- *
- *  Klasa modeluje interfejs wczytanej biblioteki dzielonej...
- */
+* \brief Class used to represent library interface
+*
+*   Class used to represent library interface
+*/
 class LibraryInterface
 {
     private:
         /*!
-        * \brief Uchwyt do biblioteki dzielonej
+        * \brief Handler to shared library
         *
-        *  Uchwyt do biblioteki dzielonej
+        *  Handler to shared library
         */
         void* libHandler;
         /*!
-        * \brief Wskaznik na funkcje tworzaca instancje komendy
+        * \brief Pointer to instance creating function
         *
-        *  Wskaznik na funkcje tworzaca instancje komendy
+        *  Pointer to instance creating function
         */
         Interp4Command* (*createCmd)(void);
          /*!
-        * \brief Nazwa komendy
+        * \brief Name of command as string
         *
-        *  Nazwa komendy
+        *  Name of command as string
         */
         std::string cmdName;
         
     public:
-
+        /*!
+        * \brief Library interface contructor
+        *
+        * Library interface contructor
+        */
         LibraryInterface(){}
-
+        /*!
+        * \brief Library interface destructor
+        *
+        * Library interface destructor
+        */
         ~LibraryInterface();
         
         /*!
-        * \brief Inicjuje interfejs biblioteki
+        * \brief Initialize library interface instance
         * 
-        *  Inicjuje interfejs biblioteki...
+        *  Initialize library interface instance
+        * \param[in] fileName - name of library file to be opened
+        * \retval true - initialized without problems
+        * \retval false - initialized with problems
         */
         bool init(std::string fileName);
 
-
+        /*!
+        * \brief Get name of library interface
+        * 
+        *  Get name of library interface
+        * 
+        */
         std::string GetName(){return cmdName;}
-        
+        /*!
+        * \brief Create command instance
+        * 
+        *  Create command instance
+        * 
+        */
         Interp4Command* CreateCmd(){ return createCmd(); }
 };
 

@@ -17,9 +17,9 @@ bool Scene::FindMobileObject (std::string name, std::shared_ptr<MobileObject> te
     return true;
 }
 
-void Scene::addMobileObject(std::shared_ptr<MobileObject> handler)
+void Scene::AddMobileObject(std::shared_ptr<MobileObject> handler)
 {
-    mapMobileObjects.insert(std::make_pair(handler->Name(), handler));
+    mapMobileObjects.insert(std::make_pair(handler->GetName(), handler));
 }
         
 

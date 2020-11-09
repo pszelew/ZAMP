@@ -1,4 +1,4 @@
 <map id="Cuboid" name="Cuboid">
-<area shape="rect" id="node2" href="$class_mobile_object.html" title="MobileObject" alt="" coords="5,95,104,121"/>
-<area shape="rect" id="node3" href="$class_vector3_d.html" title="Wektor z przestrzeni 3D. " alt="" coords="17,5,92,32"/>
+<area shape="rect" id="node2" href="$class_mobile_object.html" title="Class used to represent a mobile object. " alt="" coords="5,109,104,136"/>
+<area shape="rect" id="node3" href="$class_vector3_d.html" title="Class used to represent 3D Vector. " alt="" coords="17,5,92,32"/>
 </map>

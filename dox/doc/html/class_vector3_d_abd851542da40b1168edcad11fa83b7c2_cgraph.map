@@ -1,5 +1,5 @@
 <map id="Vector3D::Vector3D" name="Vector3D::Vector3D">
-<area shape="rect" id="node2" href="$class_vector3_d.html#ac86d9a556616f4c51fecbaf7d8658ce8" title="Udostępia do odczytu współrzędną x&#45;ową. " alt="" coords="188,5,275,32"/>
-<area shape="rect" id="node3" href="$class_vector3_d.html#a7146d35db2c1bf7606c8290282a423ec" title="Udostępia do odczytu współrzędną y&#45;ową. " alt="" coords="188,56,275,83"/>
-<area shape="rect" id="node4" href="$class_vector3_d.html#af4ae427e82a23af845f804106daed509" title="Udostępia do odczytu współrzędną z&#45;ową. " alt="" coords="188,107,275,133"/>
+<area shape="rect" id="node2" href="$class_vector3_d.html#ac86d9a556616f4c51fecbaf7d8658ce8" title="Gives us x coordinate (read&#45;only). " alt="" coords="188,5,275,32"/>
+<area shape="rect" id="node3" href="$class_vector3_d.html#a7146d35db2c1bf7606c8290282a423ec" title="Gives us y coordinate (read&#45;only). " alt="" coords="188,56,275,83"/>
+<area shape="rect" id="node4" href="$class_vector3_d.html#af4ae427e82a23af845f804106daed509" title="Gives us z coordinate (read&#45;only). " alt="" coords="188,107,275,133"/>
 </map>

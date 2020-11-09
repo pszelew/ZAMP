@@ -5,6 +5,19 @@ warning: Tag `XML_DTD' at line 1845 of file `Doxyfile' has become obsolete.
 warning: doxygen no longer ships with the FreeSans font.
 You may want to clear or change DOT_FONTNAME.
 Otherwise you run the risk that the wrong font is being used for dot generated graphs.
-warning: The selected output language "polish" has not been updated
-since release 1.8.2.  As a result some sentences may appear in English.
-
+/home/patryk/Studia/ZAMP/z1/zalazek/inc/Cuboid.hh:23: warning: argument 'in_rot' of command @param is not found in the argument list of Cuboid::Cuboid(std::string in_name, Vector3D in_rot_deg, Vector3D in_pos_m)
+/home/patryk/Studia/ZAMP/z1/zalazek/inc/Cuboid.hh:23: warning: argument 'in_pos' of command @param is not found in the argument list of Cuboid::Cuboid(std::string in_name, Vector3D in_rot_deg, Vector3D in_pos_m)
+/home/patryk/Studia/ZAMP/z1/zalazek/inc/Cuboid.hh:30: warning: The following parameters of Cuboid::Cuboid(std::string in_name, Vector3D in_rot_deg, Vector3D in_pos_m) are not documented:
+  parameter 'in_rot_deg'
+  parameter 'in_pos_m'
+/home/patryk/Studia/ZAMP/z1/zalazek/inc/MobileObject.hh:35: warning: argument 'in_rot' of command @param is not found in the argument list of MobileObject::MobileObject(std::string in_name, Vector3D in_rot_deg, Vector3D in_pos_m)
+/home/patryk/Studia/ZAMP/z1/zalazek/inc/MobileObject.hh:35: warning: argument 'in_pos' of command @param is not found in the argument list of MobileObject::MobileObject(std::string in_name, Vector3D in_rot_deg, Vector3D in_pos_m)
+/home/patryk/Studia/ZAMP/z1/zalazek/inc/MobileObject.hh:42: warning: The following parameters of MobileObject::MobileObject(std::string in_name, Vector3D in_rot_deg, Vector3D in_pos_m) are not documented:
+  parameter 'in_rot_deg'
+  parameter 'in_pos_m'
+/home/patryk/Studia/ZAMP/z1/zalazek/inc/MobileObject.hh:92: warning: argument 'Ang_Pitch_deg' of command @param is not found in the argument list of MobileObject::SetAng_Yaw_deg(double Ang_Yaw_deg)
+/home/patryk/Studia/ZAMP/z1/zalazek/inc/MobileObject.hh:97: warning: The following parameters of MobileObject::SetAng_Yaw_deg(double Ang_Yaw_deg) are not documented:
+  parameter 'Ang_Yaw_deg'
+/home/patryk/Studia/ZAMP/z1/zalazek/inc/Simulation.hh:70: warning: argument 'in_name' of command @param is not found in the argument list of Simulation::exec()
+/home/patryk/Studia/ZAMP/z1/zalazek/inc/Simulation.hh:70: warning: argument 'in_rot_deg' of command @param is not found in the argument list of Simulation::exec()
+/home/patryk/Studia/ZAMP/z1/zalazek/inc/Simulation.hh:70: warning: argument 'in_pos_m' of command @param is not found in the argument list of Simulation::exec()

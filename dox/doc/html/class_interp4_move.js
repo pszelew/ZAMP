@@ -8,7 +8,7 @@ var class_interp4_move =
     [ "PrintCmd", "class_interp4_move.html#a83a48fe1db612f65539ed888c434c2b5", null ],
     [ "PrintSyntax", "class_interp4_move.html#ac38ea9af99407e747b04fecfe4d2e873", null ],
     [ "ReadParams", "class_interp4_move.html#acf8c4ccafb9e257b3e75d8ef22407ef5", null ],
-    [ "dist", "class_interp4_move.html#a08f4d6853f1cee100ca0be22fa9b038a", null ],
+    [ "dist_m", "class_interp4_move.html#a6bf7d32a7fc0cf9ef9cdfdecede5d0ee", null ],
     [ "obj_name", "class_interp4_move.html#a79900dc9c1bf654416b714f5e002e98e", null ],
-    [ "vel", "class_interp4_move.html#a6c3551d5118f8e62007160fba12ca9af", null ]
+    [ "vel_ms", "class_interp4_move.html#a833e49f03f0993ffeea2970862aaccbe", null ]
 ];

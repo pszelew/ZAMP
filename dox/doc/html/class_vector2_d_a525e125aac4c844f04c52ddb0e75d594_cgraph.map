@@ -1,4 +1,4 @@
 <map id="Vector2D::Vector2D" name="Vector2D::Vector2D">
-<area shape="rect" id="node2" href="$class_vector2_d.html#a00b90f2937ea343d8cad1c3b4a340baf" title="Udostępia do odczytu współrzędną x&#45;ową. " alt="" coords="188,5,275,32"/>
-<area shape="rect" id="node3" href="$class_vector2_d.html#a4989f56e0e142a183ba3b9127f2fa794" title="Udostępia do odczytu współrzędną y&#45;ową. " alt="" coords="188,56,275,83"/>
+<area shape="rect" id="node2" href="$class_vector2_d.html#a00b90f2937ea343d8cad1c3b4a340baf" title="Gives us x coordinate (read&#45;only). " alt="" coords="188,5,275,32"/>
+<area shape="rect" id="node3" href="$class_vector2_d.html#a4989f56e0e142a183ba3b9127f2fa794" title="Gives us y coordinate (read&#45;only). " alt="" coords="188,56,275,83"/>
 </map>

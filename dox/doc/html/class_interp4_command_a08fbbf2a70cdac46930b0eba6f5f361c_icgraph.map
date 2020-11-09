@@ -1,4 +1,4 @@
 <map id="Interp4Command::PrintCmd" name="Interp4Command::PrintCmd">
-<area shape="rect" id="node2" href="$class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Destruktor wirtualny ze wzgledu na klasy pochodne. " alt="" coords="235,5,409,47"/>
-<area shape="rect" id="node3" href="$class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Metoda inicjuje instancje polecenia ze strumienia oraz wykonuje ja. " alt="" coords="251,71,393,98"/>
+<area shape="rect" id="node2" href="$class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Virtual destructor. " alt="" coords="235,5,409,47"/>
+<area shape="rect" id="node3" href="$class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Run given commansds. " alt="" coords="251,71,393,98"/>
 </map>

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Interp4Pause::Interp4Pause():  time(0)
+Interp4Pause::Interp4Pause():  time_s(0)
 {
 }
 
@@ -21,7 +21,7 @@ Interp4Command* Interp4Pause::CreateCmd()
 
 void Interp4Pause::PrintCmd() const
 {
-   cout << this->GetCmdName() << " " << time << endl;
+   cout << this->GetCmdName() << " " << time_s << endl;
 }
 
 
@@ -47,7 +47,7 @@ bool Interp4Pause::ExecCmd(std::shared_ptr<MobileObject>  wObMob,  int serverSoc
 
 bool Interp4Pause::ReadParams(std::istream& Strm_CmdsList)
 {
-    if(!(Strm_CmdsList >> time))
+    if(!(Strm_CmdsList >> time_s))
     {
         std::cout << "Nie wczytano poprawnie czasu"<< endl;
         return 1;
@@ -61,8 +61,19 @@ bool Interp4Pause::ReadParams(std::istream& Strm_CmdsList)
 
 extern "C"
 {
+    /*! 
+    * \brief Get command name
+    *
+    *  Get command name
+    * \return Name of object
+    */
     const char * GetCmdName(void);
-    
+    /*! 
+    * \brief Returns pointer to instance of command
+    *
+    *  Returns pointer to instance of command
+    * \return Pointer to instance of command
+    */
     Interp4Command* CreateCmd(void);
 }
 

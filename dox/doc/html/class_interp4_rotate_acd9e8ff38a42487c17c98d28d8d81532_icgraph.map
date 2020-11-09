@@ -1,4 +1,4 @@
 <map id="Interp4Rotate::CreateCmd" name="Interp4Rotate::CreateCmd">
-<area shape="rect" id="node2" href="$class_interp4_rotate.html#a7c3a8aa671e83ff1776ba868d8043009" title="Czyta wartości parametrów danego polecenia. " alt="" coords="224,5,404,32"/>
-<area shape="rect" id="node3" href="$_interp4_rotate_8cpp.html#a0ab483787498a2b002838d9426437be6" title="CreateCmd" alt="" coords="271,56,357,83"/>
+<area shape="rect" id="node2" href="$class_interp4_rotate.html#a7c3a8aa671e83ff1776ba868d8043009" title="Read parameters of command. " alt="" coords="224,5,404,32"/>
+<area shape="rect" id="node3" href="$_interp4_rotate_8cpp.html#a0ab483787498a2b002838d9426437be6" title="Returns pointer to instance of command. " alt="" coords="271,56,357,83"/>
 </map>

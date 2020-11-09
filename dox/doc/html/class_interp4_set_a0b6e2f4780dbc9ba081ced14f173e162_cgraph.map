@@ -1,5 +1,5 @@
 <map id="Interp4Set::ReadParams" name="Interp4Set::ReadParams">
-<area shape="rect" id="node2" href="$class_interp4_set.html#a7e61011caf16bc5bcdae597dc58db324" title="Wyświetla nazwę polecenia. " alt="" coords="216,5,387,32"/>
-<area shape="rect" id="node3" href="$class_interp4_set.html#a05535040832e686d3519cd6399f80933" title="Tworzy obiekt polecenia. " alt="" coords="225,56,378,83"/>
-<area shape="rect" id="node4" href="$class_interp4_set.html#a1b3de8fc06124f8a37d188e6486e45d3" title="Interp4Set::Interp4Set" alt="" coords="435,56,583,83"/>
+<area shape="rect" id="node2" href="$class_interp4_set.html#a7e61011caf16bc5bcdae597dc58db324" title="Return the name of command. " alt="" coords="216,5,387,32"/>
+<area shape="rect" id="node3" href="$class_interp4_set.html#a05535040832e686d3519cd6399f80933" title="Static funtion creating instance of command,. " alt="" coords="225,56,378,83"/>
+<area shape="rect" id="node4" href="$class_interp4_set.html#a1b3de8fc06124f8a37d188e6486e45d3" title="Constructor of move command class. " alt="" coords="435,56,583,83"/>
 </map>

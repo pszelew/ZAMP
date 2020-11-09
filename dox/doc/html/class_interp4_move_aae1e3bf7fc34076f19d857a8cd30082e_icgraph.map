@@ -1,4 +1,4 @@
 <map id="Interp4Move::GetCmdName" name="Interp4Move::GetCmdName">
-<area shape="rect" id="node2" href="$class_interp4_move.html#a83a48fe1db612f65539ed888c434c2b5" title="Wyświetla postać bieżącego polecenia (nazwę oraz wartości parametrów) " alt="" coords="245,5,398,32"/>
-<area shape="rect" id="node3" href="$class_interp4_move.html#acf8c4ccafb9e257b3e75d8ef22407ef5" title="Czyta wartości parametrów danego polecenia. " alt="" coords="235,56,408,83"/>
+<area shape="rect" id="node2" href="$class_interp4_move.html#a83a48fe1db612f65539ed888c434c2b5" title="Display name and parameters of command. " alt="" coords="245,5,398,32"/>
+<area shape="rect" id="node3" href="$class_interp4_move.html#acf8c4ccafb9e257b3e75d8ef22407ef5" title="Read parameters of command. " alt="" coords="235,56,408,83"/>
 </map>

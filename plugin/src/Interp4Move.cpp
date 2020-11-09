@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Interp4Move::Interp4Move():  obj_name(""), vel(0), dist(0)
+Interp4Move::Interp4Move():  obj_name(""), vel_ms(0), dist_m(0)
 {
 }
 
@@ -21,7 +21,7 @@ Interp4Command* Interp4Move::CreateCmd()
 
 void Interp4Move::PrintCmd() const
 {
-   cout << this->GetCmdName() << " " << obj_name << " " << vel << " " << dist << endl;
+   cout << this->GetCmdName() << " " << obj_name << " " << vel_ms << " " << dist_m << endl;
 }
 
 
@@ -53,13 +53,13 @@ bool Interp4Move::ReadParams(std::istream& Strm_CmdsList)
         return 1;
     }
 
-    if(!(Strm_CmdsList >> vel))
+    if(!(Strm_CmdsList >> vel_ms))
     {
         std::cout << "Nie wczytano poprawnie predkosci"<< endl;
         return 1;
     }
 
-    if(!(Strm_CmdsList >> dist))
+    if(!(Strm_CmdsList >> dist_m))
     {
         std::cout << "Nie wczytano poprawnie dystansu"<< endl;
         return 1;
@@ -72,10 +72,23 @@ bool Interp4Move::ReadParams(std::istream& Strm_CmdsList)
 
 ////////////////////////////////////////////wtyczka/////////////////////////////////////////////
 
+
 extern "C"
 {
+    /*! 
+    * \brief Get command name
+    *
+    *  Get command name
+    * \return Name of object
+    */
     const char * GetCmdName(void);
     
+    /*! 
+    * \brief Returns pointer to instance of command
+    *
+    *  Returns pointer to instance of command
+    * \return Pointer to instance of command
+    */
     Interp4Command* CreateCmd(void);
 }
 

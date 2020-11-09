@@ -6,78 +6,77 @@
 
 
 /*!
- * \brief Symbol definiuje wymiarowi przestrzeni 3D
- *
- * Symbol odpowiada wymiarowi przestrzeni 3D.
- * Celem wprowadzenia definicji jest posiadanie w kodzie 
- * wpisu, który ma czytelną interpretację.
+ * \brief Dims of vector
  */
-#define WYMIAR3D    3
+#define DIM3D 3
 
-/*!
- * \brief Wektor z przestrzeni 3D
- */
-class Vector3D {
-   double _Wsp[WYMIAR3D];
+   /*!
+    * \brief Class used to represent 3D Vector
+    *
+    *  Class used to represent a 3D Vector
+    */
+   class Vector3D {
+      private:
+         /*!
+         * \brief Table containing vector coordinates of size 3
+         *  Table containing vector coordinates of size 3
+         */
+         double _Wsp[DIM3D];
+      public:  
+            /*!
+            * \brief Initialize all coorinates to 0
+            */
+            Vector3D() { for (double &Wsp : _Wsp)  Wsp = 0; }
+            /*!
+            * \brief Initialize coordinates to given x, y, z
+            * \param[in] x - x-axis value
+            * \param[in] y - y-axis value
+            * \param[in] z - z-axis value
+            */
+            Vector3D(double x, double y, double z){_Wsp[0]=x; _Wsp[0]=y; _Wsp[0]=z;}
+            /*!
+            * \brief Gives us chosen coordinates (read-only)
+            *
+            * \param[in]  Idx - index of chosen axis.
+            *
+            * \pre 0 <= Idx && Idx < DIM2D
+            */
+            double operator [] (int Idx) const 
+            { assert(0 <= Idx && Idx < DIM3D); return _Wsp[Idx]; }
+            /*!
+            * \brief Gives us chosen coordinates (modify)
+            *
+            * \param[in]  Idx - index of chosen axis.
+            *
+            * \pre 0 =< Idx && Idx < DIM2D
+            */
+            double& operator [] (int Idx) { return _Wsp[Idx]; }
 
- public:  
-  /*!
-   * \brief Inicjalizuje współrzędne wektora wartościami 0.
-   */
-   Vector3D() { for (double &Wsp : _Wsp)  Wsp = 0; }
-   Vector3D(double x, double y, double z){_Wsp[0]=x; _Wsp[0]=y; _Wsp[0]=z;}
-  /*!
-   * \brief Udostępnia do odczytu współrzędną o podanym indeksie.
-   * 
-   * Udostępnia do odczytu współrzędną o podanym indeksie.
-   * Metoda nie ma kontroli wartości współrzędnej. Na potrzeby
-   * debugowania jest w kodzie tylko asercja.
-   *
-   * \param[in]  Idx - indeks wybranej współrzędnej.
-   *
-   * \pre 0 <= Idx && Idx < WYMIAR3D
-   */
-  double operator [] (int Idx) const 
-     { assert(0 <= Idx && Idx < WYMIAR3D); return _Wsp[Idx]; }
-  /*!
-   * \brief Udostępnia do modyfikacji współrzędną o podanym indeksie.
-   * 
-   * Udostępnia do modyfikacji współrzędną o podanym indeksie.
-   * Metoda nie ma kontroli wartości współrzędnej. Na potrzeby
-   * debugowania jest w kodzie tylko asercja.
-   *
-   * \param[in]  Idx - indeks wybranej współrzędnej.
-   *
-   * \pre 0 =< Idx && Idx < WYMIAR3D
-   */
-  double& operator [] (int Idx) { return _Wsp[Idx]; }
+            /*!
+            * \brief Gives us x coordinate (read-only).
+            */
+            double x() const { return _Wsp[0]; }
+            /*!
+            * \brief Gives us x coordinate (modify).
+            */
+            double& x() { return _Wsp[0]; }
+            /*!
+            * \brief Gives us y coordinate (read-only).
+            */
+            double y() const { return _Wsp[1]; }
+            /*!
+            * \brief Gives us y coordinate (modify).
+            */
+            double& y() { return _Wsp[1]; }
 
-  /*!
-   * \brief Udostępia do odczytu współrzędną x-ową.
-   */
-  double x() const { return _Wsp[0]; }
-  /*!
-   * \brief Udostępia do modyfikacji współrzędną x-ową
-   */
-  double& x() { return _Wsp[0]; }
-
-  /*!
-   * \brief Udostępia do odczytu współrzędną y-ową.
-   */
-  double y() const { return _Wsp[1]; }
-  /*!
-   * \brief Udostępia do modyfikacji współrzędną y-ową.
-   */
-  double& y() { return _Wsp[1]; }
-
-  /*!
-   * \brief Udostępia do odczytu współrzędną z-ową.
-   */
-  double z() const { return _Wsp[2]; }
-  /*!
-   * \brief Udostępia do modyfikacji współrzędną z-ową.
-   */
-  double& z() { return _Wsp[2]; }
+            /*!
+            * \brief Gives us z coordinate (read-only).
+            */
+            double z() const { return _Wsp[2]; }
+            /*!
+            * \brief Gives us z coordinate (modify).
+            */
+            double& z() { return _Wsp[2]; }
 };
 
 

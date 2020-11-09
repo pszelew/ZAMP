@@ -1,21 +1,21 @@
 var NAVTREE =
 [
   [ "Interpreter", "index.html", [
-    [ "Klasy", "annotated.html", [
-      [ "Lista klas", "annotated.html", "annotated_dup" ],
-      [ "Hierarchia klas", "hierarchy.html", "hierarchy" ],
-      [ "Składowe klas", "functions.html", [
-        [ "Wszystko", "functions.html", null ],
-        [ "Funkcje", "functions_func.html", null ],
-        [ "Zmienne", "functions_vars.html", null ]
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
-    [ "Pliki", null, [
-      [ "Lista plików", "files.html", "files" ],
-      [ "Składowe plików", "globals.html", [
-        [ "Wszystko", "globals.html", null ],
-        [ "Funkcje", "globals_func.html", null ],
-        [ "Definicje", "globals_defs.html", null ]
+    [ "Files", null, [
+      [ "File List", "files.html", "files" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]

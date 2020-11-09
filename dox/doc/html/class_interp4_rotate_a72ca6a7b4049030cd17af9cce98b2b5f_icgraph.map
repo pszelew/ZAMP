@@ -1,4 +1,4 @@
 <map id="Interp4Rotate::GetCmdName" name="Interp4Rotate::GetCmdName">
-<area shape="rect" id="node2" href="$class_interp4_rotate.html#afe8f0132a28f367334eb9460e3abdd11" title="Wyświetla postać bieżącego polecenia (nazwę oraz wartości parametrów) " alt="" coords="251,5,411,32"/>
-<area shape="rect" id="node3" href="$class_interp4_rotate.html#a7c3a8aa671e83ff1776ba868d8043009" title="Czyta wartości parametrów danego polecenia. " alt="" coords="241,56,421,83"/>
+<area shape="rect" id="node2" href="$class_interp4_rotate.html#afe8f0132a28f367334eb9460e3abdd11" title="Display name and parameters of command. " alt="" coords="251,5,411,32"/>
+<area shape="rect" id="node3" href="$class_interp4_rotate.html#a7c3a8aa671e83ff1776ba868d8043009" title="Read parameters of command. " alt="" coords="241,56,421,83"/>
 </map>

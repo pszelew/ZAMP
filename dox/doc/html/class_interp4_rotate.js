@@ -9,6 +9,6 @@ var class_interp4_rotate =
     [ "PrintSyntax", "class_interp4_rotate.html#a165224757702b655369c7a67df83de89", null ],
     [ "ReadParams", "class_interp4_rotate.html#a7c3a8aa671e83ff1776ba868d8043009", null ],
     [ "obj_name", "class_interp4_rotate.html#ac68776b3cc7cde84f8ab1fb36d031eb9", null ],
-    [ "rotateDegrees", "class_interp4_rotate.html#ae4847edb443c373fda9eacd520661766", null ],
-    [ "rotateSpeed", "class_interp4_rotate.html#a41b53718a567ab24711cce690d96ae6d", null ]
+    [ "rot_deg", "class_interp4_rotate.html#a9b9ce66418a63aece3aee22c14e399e1", null ],
+    [ "rot_speed_degs", "class_interp4_rotate.html#af1c4034905a8bb08c7d7744683c969bc", null ]
 ];

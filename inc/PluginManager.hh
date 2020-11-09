@@ -14,54 +14,54 @@
 #include "Scene.hh"
 
 
-
-
 /*!
  * \file
- * \brief Plik zawiera definicje klasy PluginManager
+ * \brief Definition of PluginManager
  *
- * Plik zawiera definicję klasy PluginManager
+ *  File contains definition of PluginManager
  */
 
 
 
 
-/*!
- * \brief Modeluje pojecia managera wtyczek
- *
- *  Klasa udostepnia intefejs dla zarzadzania zaladowanymi wtyczkami. Przechowuje mape wczsytkich wczytanych bibliotek. 
- *  Klasa umozliwia 
- */
-class PluginManager
-{
-    private:
-        /*!
-        * \brief Mapa wczytanych pluginow
-        *
-        *  Mapa wszystkich wczytanych pluginow
-        */
+    /*!
+    * \brief Class used to represent a manager for plugins
+    *
+    *  Class used to represent a manager for plugins. Contains all the instances and library interfaces 
+    */
+    class PluginManager
+    {
+        private:
+            /*!
+            * \brief Map of all loaded plugins
+            *
+            *  Map of all loaded plugins
+            * 
+            */
 
-        std::map<std::string, std::shared_ptr<LibraryInterface>> mapLibraries;
-        /*!
-        * \brief Wskaznik przechowujacy aktualna instancje komendy
-        *
-        *  Wskaznik przechowujacy aktualna instancje komendy
-        */
-        Interp4Command* cmdInstance;
-    public:
-        /*!
-        * \brief Inicjuje interfejs biblioteki
-        * 
-        *  Inicjuje interfejs biblioteki...
-        */
-        bool init(std::vector<std::string> pluginPaths);
-         /*!
-        * \brief Metoda inicjuje instancje polecenia ze strumienia oraz wykonuje ja
-        * 
-        *   
-        */
-       bool exec(std::istream & commandsStream, std::shared_ptr<Scene> scene ,  int serverSocket); 
-};
+            std::map<std::string, std::shared_ptr<LibraryInterface>> mapLibraries;
+            /*!
+            * \brief Pointer to current command instance
+            *
+            *  Pointer to current command instance
+            */
+            Interp4Command* cmdInstance;
+        public:
+            /*!
+            * \brief Initialize PluginManager instance
+            * 
+            *  Initialize PluginManager instance
+            * \param[in] pluginPaths - vector containings paths to plugins
+            */
+            bool init(std::vector<std::string> pluginPaths);
+            /*!
+            * \brief Run given commansds 
+            * \param[in, out] commandsStream - stream of commands 
+            * \param[in] scene - scene containing all objects
+            * \param[in] serverSocket - socket to server
+            */
+            bool exec(std::istream & commandsStream, std::shared_ptr<Scene> scene ,  int serverSocket); 
+    };
 
 
 #endif

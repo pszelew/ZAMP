@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Interp4Set::Interp4Set():  obj_name(""), pos_x(0), pos_y(0), kat_OZ(0)
+Interp4Set::Interp4Set():  obj_name(""), pos_x_m(0), pos_y_m(0), angle_z_deg(0)
 {
 }
 
@@ -21,14 +21,14 @@ Interp4Command* Interp4Set::CreateCmd()
 
 void Interp4Set::PrintCmd() const
 {
-   cout << this->GetCmdName() << " " << obj_name << " " << pos_x  << " " << pos_y << " " << kat_OZ << endl;
+   cout << this->GetCmdName() << " " << obj_name << " " << pos_x_m  << " " << pos_y_m << " " << angle_z_deg << endl;
 }
 
 
 void Interp4Set::PrintSyntax() const
 {
     /*Wyswietl skladnie polecenia*/
-    cout << "   Set obj_name pos_x[m]  pos_y[m] kat_OZ[deg]" << endl;
+    cout << "   Set obj_name pos_x[m]  pos_y[m] angle[deg]" << endl;
 }
 
 
@@ -53,19 +53,19 @@ bool Interp4Set::ReadParams(std::istream& Strm_CmdsList)
         return 1;
     }
 
-    if(!(Strm_CmdsList >> pos_x))
+    if(!(Strm_CmdsList >> pos_x_m))
     {
         std::cout << "Nie wczytano poprawnie pozycji x"<< endl;
         return 1;
     }
 
-    if(!(Strm_CmdsList >> pos_y))
+    if(!(Strm_CmdsList >> pos_y_m))
     {
         std::cout << "Nie wczytano poprawnie pozycji y"<< endl;
         return 1;
     }
 
-    if(!(Strm_CmdsList >> kat_OZ))
+    if(!(Strm_CmdsList >> angle_z_deg))
     {
         std::cout << "Nie wczytano poprawnie kata obrotu"<< endl;
         return 1;
@@ -80,8 +80,19 @@ bool Interp4Set::ReadParams(std::istream& Strm_CmdsList)
 
 extern "C"
 {
+    /*! 
+    * \brief Get command name
+    *
+    *  Get command name
+    * \return Name of object
+    */
     const char * GetCmdName(void);
-    
+    /*! 
+    * \brief Returns pointer to instance of command
+    *
+    *  Returns pointer to instance of command
+    * \return Pointer to instance of command
+    */
     Interp4Command* CreateCmd(void);
 }
 

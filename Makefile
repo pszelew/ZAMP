@@ -7,7 +7,7 @@ obj:
 __plugin__:
 	cd plugin; make
 
-CPPFLAGS=-Wall -g -pedantic -std=c++11 -Iinc 
+CPPFLAGS=-Wall -g -pedantic -std=c++17 -Iinc 
 LDFLAGS=-Wall
 
 interp: obj/main.o 						 obj/Parser.o obj/Cuboid.o obj/LibraryInterface.o  obj/PluginManager.o  obj/Scene.o obj/Simulation.o  
@@ -37,6 +37,8 @@ obj/Simulation.o: src/Simulation.cpp inc/Simulation.hh inc/Parser.hh inc/PluginM
 clean:
 	rm -f obj/* interp core*
 
+dox:
+	cd dox; make
 
 clean_plugin:
 	cd plugin; make clean

@@ -8,5 +8,5 @@ var class_vector2_d =
     [ "x", "class_vector2_d.html#a916e53decdcb2105e80588e201baeeb6", null ],
     [ "y", "class_vector2_d.html#a4989f56e0e142a183ba3b9127f2fa794", null ],
     [ "y", "class_vector2_d.html#af77514635d98065c3bdb54157508e029", null ],
-    [ "_Wsp", "class_vector2_d.html#a965b7aae1d33220309ee812425965fb5", null ]
+    [ "_Wsp", "class_vector2_d.html#ac2263e8da30512d8d5645500d170da21", null ]
 ];

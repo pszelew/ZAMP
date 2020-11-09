@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Interp4Rotate::Interp4Rotate():  obj_name(""), rotateSpeed(0), rotateDegrees(0)
+Interp4Rotate::Interp4Rotate():  obj_name(""), rot_speed_degs(0), rot_deg(0)
 {
 }
 
@@ -21,7 +21,7 @@ Interp4Command* Interp4Rotate::CreateCmd()
 
 void Interp4Rotate::PrintCmd() const
 {
-   cout << this->GetCmdName() << " " << obj_name << " " << rotateSpeed  << " " << rotateDegrees << endl;
+   cout << this->GetCmdName() << " " << obj_name << " " << rot_speed_degs  << " " << rot_deg << endl;
 }
 
 
@@ -53,13 +53,13 @@ bool Interp4Rotate::ReadParams(std::istream& Strm_CmdsList)
         return 1;
     }
 
-    if(!(Strm_CmdsList >> rotateSpeed))
+    if(!(Strm_CmdsList >> rot_speed_degs))
     {
         std::cout << "Nie wczytano poprawnie predkosci obrotowej"<< endl;
         return 1;
     }
 
-    if(!(Strm_CmdsList >> rotateDegrees))
+    if(!(Strm_CmdsList >> rot_deg))
     {
         std::cout << "Nie wczytano poprawnie kata obrotu"<< endl;
         return 1;
@@ -73,9 +73,19 @@ bool Interp4Rotate::ReadParams(std::istream& Strm_CmdsList)
 ////////////////////////////////////////////wtyczka/////////////////////////////////////////////
 
 extern "C"
-{
+{   /*! 
+    * \brief Get command name
+    *
+    *  Get command name
+    * \return Name of object
+    */
     const char * GetCmdName(void);
-    
+    /*! 
+    * \brief Returns pointer to instance of command
+    *
+    *  Returns pointer to instance of command
+    * \return Pointer to instance of command
+    */
     Interp4Command* CreateCmd(void);
 }
 
