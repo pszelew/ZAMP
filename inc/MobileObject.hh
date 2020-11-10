@@ -58,21 +58,21 @@
             * 
             * Gives us a value of \e roll angle in degrees
             */
-            double GetAng_Roll_deg() const { return rot_deg[0]; }
+            virtual double GetAng_Roll_deg() const { return rot_deg[0]; }
             /*!
             * \brief Gives us a value of \e pitch angle.
             *
             *
             * Gives us a value of \e pitch angle in degrees
             */
-            double GetAng_Pitch_deg() const { return rot_deg[1]; }
+            virtual double GetAng_Pitch_deg() const { return rot_deg[1]; }
             /*!
             * \brief Gives us a value of \e yaw angle.
             *
             *
             * Gives us a value of \e pitch yaw in degrees
             */
-            double GetAng_Yaw_deg() const { return rot_deg[2]; }
+            virtual double GetAng_Yaw_deg() const { return rot_deg[2]; }
 
             /*!
             * \brief Changes value of \e roll angle
@@ -80,21 +80,21 @@
             * Changes value of \e roll angle
             * \param[in] Ang_Roll_deg - new value of \e roll angle in degrees
             */
-            void SetAng_Roll_deg(double Ang_Roll_deg) { rot_deg[0] = Ang_Roll_deg; }
+            virtual void SetAng_Roll_deg(double Ang_Roll_deg) { rot_deg[0] = Ang_Roll_deg; }
             /*!
             * \brief Changes value of \e pitch angle
             *
             * Changes value of \e pitch angle
             * \param[in] Ang_Pitch_deg - new value of \e pitch angle in degrees
             */
-            void SetAng_Pitch_deg(double Ang_Pitch_deg) { rot_deg[1] = Ang_Pitch_deg; }
+            virtual void SetAng_Pitch_deg(double Ang_Pitch_deg) { rot_deg[1] = Ang_Pitch_deg; }
             /*!
             * \brief Changes value of \e yaw angle
             *
             * Changes value of \e yaw angle
             * \param[in] Ang_Yaw_deg - new value of \e yaw angle in degrees
             */
-            void SetAng_Yaw_deg(double Ang_Yaw_deg) { rot_deg[2] = Ang_Yaw_deg; }
+            virtual void SetAng_Yaw_deg(double Ang_Yaw_deg) { rot_deg[2] = Ang_Yaw_deg; }
 
             /*!
             * \brief Gives us position of mobile object (read-only).
@@ -103,7 +103,7 @@
             * Values of Vector3D in meters.
             * 
             */
-            const Vector3D & GetPosition_m() const { return pos_m; }
+            virtual const Vector3D & GetPosition_m() const { return pos_m; }
             /*!
             * \brief Gives us position of mobile object (modify).
             *
@@ -111,14 +111,14 @@
             * Values of Vector3D in meters.
             * 
             */
-            Vector3D & UsePosition_m() { return pos_m; }
+            virtual Vector3D & UsePosition_m() { return pos_m; }
             /*!
             * \brief Set position of object
             * Set position of object (center of object)
             * \param[in] rPos_m - coordinates of new position in meters
             *                   
             */
-            void SetPosition_m(const Vector3D &rPos_m) { pos_m = rPos_m; }
+            virtual void SetPosition_m(const Vector3D &rPos_m) { pos_m = rPos_m; }
 
 
             /*!
@@ -127,13 +127,13 @@
             *  Changes name of object
             *  \param[in] sName - new object name (const char*)
             */
-            void SetName(const char* sName) { name = sName; }
+            virtual void SetName(const char* sName) { name = sName; }
             /*!
             * \brief Gives us name of object (read-only)
             *
             * Gives us name of object (read-only)
             */
-            const std::string & GetName() const { return name; }
+            virtual const std::string & GetName() const { return name; }
 
     };
 
