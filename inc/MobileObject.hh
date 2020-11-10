@@ -36,8 +36,8 @@
             *
             * Mobile object contructor
             * \param[in] in_name - name of object as string
-            * \param[in] in_rot - rotation of object as Vector3D (roll, pitch, yaw). Values are in degrees
-            * \param[in] in_pos - position of object as Vector3D (x, y, z). Values are in meters
+            * \param[in] in_rot_deg - rotation of object as Vector3D (roll, pitch, yaw). Values are in degrees
+            * \param[in] in_pos_m - position of object as Vector3D (x, y, z). Values are in meters
             */
             MobileObject(std::string in_name, Vector3D in_rot_deg, Vector3D in_pos_m): name(in_name), rot_deg(in_rot_deg), pos_m(in_pos_m)  {};
             /*!
@@ -92,7 +92,7 @@
             * \brief Changes value of \e yaw angle
             *
             * Changes value of \e yaw angle
-            * \param[in] Ang_Pitch_deg - new value of \e yaw angle in degrees
+            * \param[in] Ang_Yaw_deg - new value of \e yaw angle in degrees
             */
             void SetAng_Yaw_deg(double Ang_Yaw_deg) { rot_deg[2] = Ang_Yaw_deg; }
 

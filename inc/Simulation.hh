@@ -67,12 +67,16 @@
 
 
             /*!
+            * \brief Method runs simulation
+            */
+            bool exec(); 
+
+            /*!
             * \brief Method template adding mobile object to scene
             * \param[in] in_name - name of mobile object to be added
             * \param[in] in_rot_deg - Vector of (roll, pitch, yaw) rotation. Values in degrees.
             * \param[in] in_pos_m - Vector of (x, y, z) position. Values in meters.
             */
-            bool exec(); 
             template <typename T>
             bool AddMobileObject(std::string in_name, Vector3D in_rot_deg, Vector3D in_pos_m)
             {

@@ -6,6 +6,14 @@
 
 
 /*!
+ * \file
+ * \brief Definition of Vector2D
+ *
+ *  Definition of Vector2D
+ */
+
+
+/*!
  * \brief Dims of vector
  */
 #define DIM2D 2

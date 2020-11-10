@@ -23,9 +23,9 @@
 	{
 		private:
 			/*! 
-            * \brief Name of object to be moved
+            * \brief Name of object to be positioned
             *
-            *  Name of object to be moved
+            *  Name of object to be positioned
             */
 			std::string obj_name;
 			/*! 

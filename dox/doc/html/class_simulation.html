@@ -79,10 +79,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2403cb6adccb69afb2471a03a130ab00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize <a class="el" href="class_simulation.html" title="Class used to represent a simulation. ">Simulation</a> instance.  <a href="#a2403cb6adccb69afb2471a03a130ab00">More...</a><br /></td></tr>
 <tr class="separator:a2403cb6adccb69afb2471a03a130ab00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbc304f6f56a751c78277fbb4efea74e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#afbc304f6f56a751c78277fbb4efea74e">exec</a> ()</td></tr>
-<tr class="memdesc:afbc304f6f56a751c78277fbb4efea74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method template adding mobile object to scene.  <a href="#afbc304f6f56a751c78277fbb4efea74e">More...</a><br /></td></tr>
+<tr class="memdesc:afbc304f6f56a751c78277fbb4efea74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method runs simulation.  <a href="#afbc304f6f56a751c78277fbb4efea74e">More...</a><br /></td></tr>
 <tr class="separator:afbc304f6f56a751c78277fbb4efea74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f1f938e15b0f06cd06e59aeff790e5d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5f1f938e15b0f06cd06e59aeff790e5d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_simulation.html#a5f1f938e15b0f06cd06e59aeff790e5d">AddMobileObject</a> (std::string in_name, <a class="el" href="class_vector3_d.html">Vector3D</a> in_rot_deg, <a class="el" href="class_vector3_d.html">Vector3D</a> in_pos_m)</td></tr>
+<tr class="memdesc:a5f1f938e15b0f06cd06e59aeff790e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method template adding mobile object to scene.  <a href="#a5f1f938e15b0f06cd06e59aeff790e5d">More...</a><br /></td></tr>
 <tr class="separator:a5f1f938e15b0f06cd06e59aeff790e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -149,8 +150,16 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_name</td><td>- name of mobile object to be added </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_rot_deg</td><td>- Vector of (roll, pitch, yaw) rotation. Values in degrees. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_pos_m</td><td>- Vector of (x, y, z) position. Values in meters. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00077">77</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00081">81</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -176,14 +185,6 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_name</td><td>- name of mobile object to be added </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_rot_deg</td><td>- Vector of (roll, pitch, yaw) rotation. Values in degrees. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_pos_m</td><td>- Vector of (x, y, z) position. Values in meters. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p class="definition">Definition at line <a class="el" href="_simulation_8cpp_source.html#l00030">30</a> of file <a class="el" href="_simulation_8cpp_source.html">Simulation.cpp</a>.</p>
 <div class="dynheader">
@@ -378,7 +379,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_simulation.html">Simulation</a></li>
-    <li class="footer">Generated on Mon Nov 9 2020 23:36:29 for Interpreter by
+    <li class="footer">Generated on Tue Nov 10 2020 11:03:16 for Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

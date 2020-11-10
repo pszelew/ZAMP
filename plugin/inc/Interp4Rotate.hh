@@ -9,9 +9,9 @@
 
 /*!
  * \file
- * \brief Definition of class Interp4Move
+ * \brief Definition of class Interp4Rotate
  *
- * File contains definition of class Interp4Move
+ * File contains definition of class Interp4Rotate
  */
 
     /*!

@@ -4,6 +4,13 @@
 
 #include <cassert>
 
+/*!
+ * \file
+ * \brief Definition of Vector3D
+ *
+ *  Definition of Vector3D
+ */
+
 
 /*!
  * \brief Dims of vector
