@@ -41,9 +41,9 @@
 
             std::map<std::string, std::shared_ptr<LibraryInterface>> mapLibraries;
             /*!
-            * \brief Pointer to current command instance
+            * \brief Pointer to the current command instance
             *
-            *  Pointer to current command instance
+            *  Pointer to the current command instance
             */
             Interp4Command* cmdInstance;
         public:

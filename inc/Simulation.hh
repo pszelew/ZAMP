@@ -5,6 +5,7 @@
 #include "PluginManager.hh"
 #include "Scene.hh"
 #include <sstream>
+#include "Cuboid.hh"
 
 /*!
  * \file
@@ -36,12 +37,6 @@
             */
             std::shared_ptr<PluginManager> plugManager;
             /*!
-            * \brief Vector of paths to plugins
-            *
-            *  Vector of paths to plugins
-            */
-            std::vector<std::string> plugPaths;
-            /*!
             * \brief Scene handler
             *
             *  Scene handler
@@ -70,6 +65,14 @@
             * \brief Method runs simulation
             */
             bool exec(); 
+
+            /*!
+            * \brief Method adds cubiods from configuration read by parser
+            * \retval True - operation successfull
+            * \retval False - otherwise
+            */
+            bool AddCuboids();
+
 
             /*!
             * \brief Method template adding mobile object to scene

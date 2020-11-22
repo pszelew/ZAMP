@@ -6,6 +6,8 @@
 #include <cassert>
 #include <cstdio>
 #include <iostream>
+#include "xmlinterp.hh"
+using namespace XERCES_CPP_NAMESPACE;
 #define LINESIZE 500
 
 /*!
@@ -28,6 +30,8 @@
             std::string cmdFile;
             /*! \brief Name of xml file to be read */
             std::string xmlFile;
+            /*! \brief Configuration read from a xml file */
+            Configuration conf;
         public:
             /*!
             * \brief Parser constructor
@@ -55,6 +59,14 @@
             * \retval false - File read wasn't successfull
             */
             bool ParseXML(std::istringstream & IStrm4Cmds);
+            /*!
+            * \brief Returns current configuration value (read-only)
+            *
+            * \param[in] cmd - name of cmd file
+            * \param[in] xml - name of xml file
+            * \return - 
+            */
+            Configuration  GetConf() const { return conf; }
 
     };
 

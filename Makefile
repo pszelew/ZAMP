@@ -1,5 +1,5 @@
 __start__: obj interp __plugin__
-	export LD_LIBRARY_PATH="./libs"; echo;./interp plik.txt plik2.txt
+	export LD_LIBRARY_PATH="./libs"; echo;./interp config/commands.cmd config/config.xml
 
 obj:
 	mkdir obj
@@ -10,10 +10,10 @@ __plugin__:
 CPPFLAGS=-Wall -g -pedantic -std=c++17 -Iinc 
 LDFLAGS=-Wall
 
-interp: obj/main.o 						 obj/Parser.o obj/Cuboid.o obj/LibraryInterface.o  obj/PluginManager.o  obj/Scene.o obj/Simulation.o  
-	g++ ${LDFLAGS} -o interp  obj/main.o obj/Parser.o obj/Cuboid.o obj/LibraryInterface.o  obj/PluginManager.o  obj/Scene.o obj/Simulation.o -ldl
+interp: obj/main.o 						 obj/Parser.o obj/Cuboid.o obj/LibraryInterface.o  obj/PluginManager.o  obj/Scene.o obj/Simulation.o  obj/xmlinterp.o
+	g++ ${LDFLAGS} -o interp  obj/main.o obj/Parser.o obj/Cuboid.o obj/LibraryInterface.o  obj/PluginManager.o  obj/Scene.o obj/Simulation.o  obj/xmlinterp.o -lxerces-c -ldl
 
-obj/main.o: src/main.cpp inc/Simulation.hh inc/Cuboid.hh
+obj/main.o: src/main.cpp inc/Simulation.hh inc/Cuboid.hh inc/xmlinterp.hh
 	g++ -c ${CPPFLAGS} -o obj/main.o src/main.cpp
 
 obj/Parser.o: src/Parser.cpp inc/Parser.hh
@@ -33,6 +33,10 @@ obj/PluginManager.o: src/PluginManager.cpp inc/PluginManager.hh inc/LibraryInter
 
 obj/Simulation.o: src/Simulation.cpp inc/Simulation.hh inc/Parser.hh inc/PluginManager.hh inc/Scene.hh
 	g++ -c ${CPPFLAGS} -o obj/Simulation.o src/Simulation.cpp
+
+obj/xmlinterp.o: src/xmlinterp.cpp inc/xmlinterp.hh inc/Configuration.hh
+	g++ -c ${CPPFLAGS} -o obj/xmlinterp.o src/xmlinterp.cpp
+
 
 clean:
 	rm -f obj/* interp core*
