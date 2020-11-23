@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Interp4Pause::Interp4Pause():  time_s(0)
+Interp4Pause::Interp4Pause():  time_ms(0)
 {
 }
 
@@ -21,7 +21,7 @@ Interp4Command* Interp4Pause::CreateCmd()
 
 void Interp4Pause::PrintCmd() const
 {
-   cout << this->GetCmdName() << " " << time_s << endl;
+   cout << this->GetCmdName() << " " << time_ms << endl;
 }
 
 
@@ -38,16 +38,19 @@ const char* Interp4Pause::GetCmdName() const
     return "Pause";
 }
 
-bool Interp4Pause::ExecCmd(std::shared_ptr<MobileObject>  wObMob,  int serverSocket) const
+bool Interp4Pause::ExecCmd(std::shared_ptr<MobileObject> & wObMob,  std::shared_ptr<Scene> & pAccCtrl) const
 {
-   /* Wykonuje polecenie oraz wizualizuje jego realizacje */
-   std::cout<< "Polecenie Pause wykonuje sie!!!"<< endl;
-   return true;
+
+    pAccCtrl->LockAccess(); // Lock access to the scene to modify something :)
+    usleep(time_ms*1000);
+    pAccCtrl->UnlockAccess();
+
+    return true;
 }
 
 bool Interp4Pause::ReadParams(std::istream& Strm_CmdsList)
 {
-    if(!(Strm_CmdsList >> time_s))
+    if(!(Strm_CmdsList >> time_ms))
     {
         std::cout << "Nie wczytano poprawnie czasu"<< endl;
         return 1;

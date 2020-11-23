@@ -28,18 +28,6 @@ int main(int argc, char** argv)
     return 1;
   }
   
-  if(!(sim.AddMobileObject<Cuboid>("Ob_A", Vector3D(0,0,0), Vector3D(0,0,0))))
-  {
-    cout << "Nie udalo sie dodac obiektu!!!"<<endl;
-    return 1;
-  }
-
-  if(!(sim.AddMobileObject<Cuboid>("Ob_B", Vector3D(0,0,0), Vector3D(0,0,0))))
-  {
-    cout << "Nie udalo sie dodac obiektu!!!"<<endl;
-    return 1;
-  }
-
   if(!sim.exec())
   {
     cout << "Blad podczas wykonywania symulacji!!!"<<endl;

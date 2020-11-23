@@ -25,7 +25,7 @@ obj/Cuboid.o: src/Cuboid.cpp inc/Cuboid.hh inc/MobileObject.hh inc/Vector3D.hh i
 obj/LibraryInterface.o: src/LibraryInterface.cpp inc/LibraryInterface.hh inc/Interp4Command.hh
 	g++ -c ${CPPFLAGS} -o obj/LibraryInterface.o src/LibraryInterface.cpp
 
-obj/Scene.o: src/Scene.cpp inc/Scene.hh inc/Scene.hh
+obj/Scene.o: src/Scene.cpp inc/Scene.hh inc/Scene.hh inc/AccessControl.hh
 	g++ -c ${CPPFLAGS} -o obj/Scene.o src/Scene.cpp
 
 obj/PluginManager.o: src/PluginManager.cpp inc/PluginManager.hh inc/LibraryInterface.hh inc/Scene.hh

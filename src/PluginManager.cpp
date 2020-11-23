@@ -18,7 +18,7 @@ bool PluginManager::init(std::vector<std::string> pluginPaths)
 
 }
 
-bool PluginManager::exec(std::istream & commandsStream, std::shared_ptr<Scene> scene,  int serverSocket)
+bool PluginManager::exec(std::istream & commandsStream, std::shared_ptr<Scene> & scene,  int serverSocket)
 {
     std::string keyWord;
     std::string robotName;
@@ -55,7 +55,11 @@ bool PluginManager::exec(std::istream & commandsStream, std::shared_ptr<Scene> s
                 return false;
             }
         }
-        cmdInstance->ExecCmd(tempMobileObject, serverSocket);
+
+        // MobileObject pies("pies", Vector3D(0,0,0), Vector3D(0,0,0));
+        // std::cout <<"Nazwa obiektu: " <<tempMobileObject->GetName()<< std::endl << std::endl;
+
+        cmdInstance->ExecCmd(tempMobileObject, scene);
 
         cmdInstance->PrintCmd();
     

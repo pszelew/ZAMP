@@ -38,11 +38,26 @@ const char* Interp4Rotate::GetCmdName() const
     return "Rotate";
 }
 
-bool Interp4Rotate::ExecCmd(std::shared_ptr<MobileObject>  wObMob,  int serverSocket) const
+bool Interp4Rotate::ExecCmd(std::shared_ptr<MobileObject> & wObMob,  std::shared_ptr<Scene> & pAccCtrl) const
 {
-   /* Wykonuje polecenie oraz wizualizuje jego realizacje */
-   std::cout<< "Polecenie Rotate wykonuje sie!!!"<< endl;
-   return true;
+    double startYaw = wObMob->GetAng_Yaw_deg();
+    double new_yaw_deg = 0;
+    int n = 4;
+    double dist_step_deg = (double)rot_deg/n;
+    double time_step_us = (((double)this->rot_deg/this->rot_speed_degs)*1000000)/n;
+
+    for(int i = 0; i<n; ++i)
+    {
+        pAccCtrl->LockAccess(); // Lock access to the scene to modify something :)
+        // Tak jest dobrze.
+        new_yaw_deg += dist_step_deg;
+        wObMob->SetAng_Yaw_deg(new_yaw_deg + startYaw);
+        pAccCtrl->MarkChange();
+        pAccCtrl->UnlockAccess();
+        usleep(time_step_us);
+    }
+
+    return true;
 }
 
 bool Interp4Rotate::ReadParams(std::istream& Strm_CmdsList)

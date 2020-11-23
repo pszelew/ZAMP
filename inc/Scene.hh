@@ -1,11 +1,14 @@
 #ifndef SCENE_HH
 #define SCENE_HH
-#include "MobileObject.hh"
+
 #include <map>
 #include <iostream>
 #include <iterator>
 #include <string>
 #include <memory>
+
+#include "MobileObject.hh"
+#include "AccessControl.hh"
 
 /*!
  * \file
@@ -16,9 +19,9 @@
     /*!
     * \brief Class used to represent a manager for plugins
     *
-    *  Class used to represent a manager for plugins. Contains all the instances and library interfaces 
+    *  Class used to represent a manager for plugins. Contains all the instances and library interfaces
     */
-    class Scene
+    class Scene: public AccessControl
     {
         private:
             /*!
@@ -35,7 +38,7 @@
             * \retval true - object has been found
             * \retval false - object has not been found
             */
-            bool FindMobileObject (std::string name, std::shared_ptr<MobileObject> tempMobileObject);
+            bool FindMobileObject (std::string name, std::shared_ptr<MobileObject> & tempMobileObject);
             /*!
             * \brief Add mobile object to the scene
             * \param[in] handler - pointer to mobile object to be added to scene

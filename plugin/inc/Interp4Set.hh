@@ -77,7 +77,7 @@
             * \retval true - executed without problems
             * \retval false - there was an error 
             */
-			bool ExecCmd(std::shared_ptr<MobileObject>  wObMob,  int serverSocket) const;
+			bool ExecCmd(std::shared_ptr<MobileObject> & wObMob,  std::shared_ptr<Scene> & pAccCtrl) const;
 			/*!
             * \brief Read parameters of command
             * \param[in, out] Strm_CmdsList - stream containing parameters to be read

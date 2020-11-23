@@ -1,7 +1,7 @@
 #include "Scene.hh"
 
 
-bool Scene::FindMobileObject (std::string name, std::shared_ptr<MobileObject> tempMobileObject)
+bool Scene::FindMobileObject (std::string name, std::shared_ptr<MobileObject> & tempMobileObject)
 {
     std::map<std::string, std::shared_ptr<MobileObject>>::iterator it;
     
@@ -14,6 +14,7 @@ bool Scene::FindMobileObject (std::string name, std::shared_ptr<MobileObject> te
     }
 
     tempMobileObject = it->second;
+    
     return true;
 }
 

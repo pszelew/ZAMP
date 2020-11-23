@@ -40,7 +40,7 @@
             * \param[in] y - y-axis value
             * \param[in] z - z-axis value
             */
-            Vector3D(double x, double y, double z){_Wsp[0]=x; _Wsp[0]=y; _Wsp[0]=z;}
+            Vector3D(double x, double y, double z){_Wsp[0]=x; _Wsp[1]=y; _Wsp[2]=z;}
             /*!
             * \brief Gives us chosen coordinates (read-only)
             *

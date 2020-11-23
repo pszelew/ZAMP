@@ -38,11 +38,22 @@ const char* Interp4Set::GetCmdName() const
     return "Set";
 }
 
-bool Interp4Set::ExecCmd(std::shared_ptr<MobileObject>  wObMob,  int serverSocket) const
+bool Interp4Set::ExecCmd(std::shared_ptr<MobileObject> & wObMob,  std::shared_ptr<Scene> & pAccCtrl) const
 {
-   /* Wykonuje polecenie oraz wizualizuje jego realizacje */
-   std::cout<< "Polecenie Set wykonuje sie!!!"<< endl;
-   return true;
+
+    Vector3D startPos = wObMob->GetPosition_m();
+    pAccCtrl->LockAccess(); // Lock access to the scene to modify something :)
+    
+    // Tak jest dobrze.
+    wObMob->SetPosition_m(Vector3D(pos_x_m, pos_y_m, startPos.z()));
+    wObMob->SetAng_Yaw_deg(angle_z_deg);
+    
+    pAccCtrl->MarkChange();
+    pAccCtrl->UnlockAccess();
+    
+    return true;
+
+    /* Wykonuje polecenie oraz wizualizuje jego realizacje */
 }
 
 bool Interp4Set::ReadParams(std::istream& Strm_CmdsList)
