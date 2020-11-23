@@ -143,10 +143,16 @@ class GeomObject {
    * \brief Zwiększa indeks stanu, o ile aktualny opis nie jest pusty.
    *
    *  Zwiększa indeks stanu, o ile aktualny opis nie jest pusty.
-   *  Ta metoda "udaje" metodę, która w oryginalnym rozwiązaniu
-   *  jest odpowiedzialna za zmianę stanu obiektu, tzn. zmianę jego
-   *  położenia lub orientacji.
-   */
+   *  Ta metoda "u * \brief Ta metoda jest de facto treścią wątku komunikacyjnego
+        *
+        * Przegląda scenę i tworzy odpowiednie polecenia, a następnie
+        * wysyła je do serwera.
+        * \param[in] Socket - deskryptor gniazda sieciowego, poprzez które
+        *                     wysyłane są polecenia.
+        * metodę, która w oryginalnym rozwiązaniu
+        *  jest odpowiedzialna za zmianę stanu obiektu, tzn. zmianę jego
+        *  położenia lub orientacji.
+  */
   bool IncStateIndex() {
     if (_StateIdx >= STATES_NUMBER-1) return false;
     ++_StateIdx;
@@ -199,7 +205,7 @@ class Sender {
    */
    int             _Socket = 0;
   /*!
-   * \brief Wskaźnik na scenę, które stan jest przesyłany w postaci
+   * \brief Wskaźnik na scenę, której stan jest przesyłany w postaci
    *        poleceń do serwera graficzneg.
    */
    Scene          *_pScn = nullptr;

@@ -67,6 +67,11 @@
             bool exec(); 
 
             /*!
+            * \brief Return the scene pointer
+            */
+            std::shared_ptr<Scene> & GetScene(){return scene;}
+
+            /*!
             * \brief Method adds cubiods from configuration read by parser
             * \retval True - operation successfull
             * \retval False - otherwise

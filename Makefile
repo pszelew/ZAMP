@@ -10,8 +10,8 @@ __plugin__:
 CPPFLAGS=-Wall -g -pedantic -std=c++17 -Iinc 
 LDFLAGS=-Wall
 
-interp: obj/main.o 						 obj/Parser.o obj/Cuboid.o obj/LibraryInterface.o  obj/PluginManager.o  obj/Scene.o obj/Simulation.o  obj/xmlinterp.o
-	g++ ${LDFLAGS} -o interp  obj/main.o obj/Parser.o obj/Cuboid.o obj/LibraryInterface.o  obj/PluginManager.o  obj/Scene.o obj/Simulation.o  obj/xmlinterp.o -lxerces-c -ldl
+interp: obj/main.o 						 obj/Parser.o obj/Cuboid.o obj/LibraryInterface.o  obj/PluginManager.o  obj/Scene.o obj/Simulation.o  obj/xmlinterp.o obj/ConnectionManager.o
+	g++ ${LDFLAGS} -o interp  obj/main.o obj/Parser.o obj/Cuboid.o obj/LibraryInterface.o  obj/PluginManager.o  obj/Scene.o obj/Simulation.o  obj/xmlinterp.o obj/ConnectionManager.o -lxerces-c -lpthread -ldl
 
 obj/main.o: src/main.cpp inc/Simulation.hh inc/Cuboid.hh inc/xmlinterp.hh
 	g++ -c ${CPPFLAGS} -o obj/main.o src/main.cpp
@@ -36,6 +36,9 @@ obj/Simulation.o: src/Simulation.cpp inc/Simulation.hh inc/Parser.hh inc/PluginM
 
 obj/xmlinterp.o: src/xmlinterp.cpp inc/xmlinterp.hh inc/Configuration.hh
 	g++ -c ${CPPFLAGS} -o obj/xmlinterp.o src/xmlinterp.cpp
+
+obj/ConnectionManager.o: src/ConnectionManager.cpp inc/ConnectionManager.hh
+	g++ -c ${CPPFLAGS} -o obj/ConnectionManager.o src/ConnectionManager.cpp
 
 
 clean:

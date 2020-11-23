@@ -45,6 +45,11 @@
             * 
             */
             void AddMobileObject(std::shared_ptr<MobileObject> handler);
+
+            std::map<std::string, std::shared_ptr<MobileObject>> & GetMapMobileObjects() {return mapMobileObjects;}
+
+
+
     };
 
 

@@ -63,7 +63,7 @@ bool Simulation::AddCuboids()
 
     for(unsigned int i = 0; i < names.size(); ++i)
     {
-        std::shared_ptr<Cuboid> objectToAdd = std::make_shared<Cuboid>(names[i], Vector3D(0,0,0), Vector3D(0,0,0), scales[i], colors[i]);
+        std::shared_ptr<Cuboid> objectToAdd = std::make_shared<Cuboid>(names[i], Vector3D(0,0,0), Vector3D(0,0,0), scales[i], colors[i].x(), colors[i].y(), colors[i].z());
         this->scene->AddMobileObject(objectToAdd);
         // std::cout << objectToAdd->GetName();
     }
