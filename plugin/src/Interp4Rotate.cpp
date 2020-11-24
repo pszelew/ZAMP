@@ -42,7 +42,7 @@ bool Interp4Rotate::ExecCmd(std::shared_ptr<MobileObject> & wObMob,  std::shared
 {
     double startYaw = wObMob->GetAng_Yaw_deg();
     double new_yaw_deg = 0;
-    int n = 4;
+    int n = 100;
     double dist_step_deg = (double)rot_deg/n;
     double time_step_us = (((double)this->rot_deg/this->rot_speed_degs)*1000000)/n;
 

@@ -46,7 +46,7 @@ bool Interp4Move::ExecCmd(std::shared_ptr<MobileObject> & wObMob,  std::shared_p
     double startYaw = wObMob->GetAng_Yaw_deg();
     double new_x_m, new_y_m, new_z_m;
     new_x_m = new_y_m = new_z_m = 0;
-    int n = 4;
+    int n = 100;
     double dist_step_m = (double)dist_m/n;
     double time_step_us = (((double)this->dist_m/this->vel_ms)*1000000)/n;
 

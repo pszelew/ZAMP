@@ -47,7 +47,7 @@
             * \retval true - executed without problems
             * \retval false - there was an error 
             */
-            virtual bool ExecCmd(  std::shared_ptr<MobileObject>  & wObMob,  std::shared_ptr<Scene>  & pAccCtrl  ) const = 0;
+            virtual bool ExecCmd(std::shared_ptr<MobileObject>  & wObMob,  std::shared_ptr<Scene>  & pAccCtrl) const = 0;
             /*!
             * \brief Read parameters of command
             * \param[in, out] Strm_CmdsList - stream containing parameters to be read
