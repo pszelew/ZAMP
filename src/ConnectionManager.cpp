@@ -68,7 +68,6 @@ void ConnectionManager::Watching_and_Sending()
             std::cout << "Wysylanie danych nie powiodlo sie!"; 
             CancelCountinueLooping();
             }
-            std::cout << "Clear\n";
 
             std::map<std::string, std::shared_ptr<MobileObject>>::iterator it;   
             for (it = myScene->GetMapMobileObjects().begin(); it != myScene->GetMapMobileObjects().end(); it++)    
@@ -88,7 +87,6 @@ void ConnectionManager::Watching_and_Sending()
                 std::cout << "Wysylanie danych nie powiodlo sie!";
                 CancelCountinueLooping(); 
             }
-            std::cout << "Display\n";
             
             myScene->CancelChange();
             myScene->UnlockAccess();

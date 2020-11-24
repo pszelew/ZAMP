@@ -21,14 +21,14 @@ Interp4Command* Interp4Move::CreateCmd()
 
 void Interp4Move::PrintCmd() const
 {
-   cout << this->GetCmdName() << " " << obj_name << " " << vel_ms << " " << dist_m << endl;
+   cout << "    " <<this->GetCmdName() << " " << obj_name << " " << vel_ms << " " << dist_m << endl;
 }
 
 
 void Interp4Move::PrintSyntax() const
 {
     /*Wyswietl skladnie polecenia*/
-    cout << "   Move nazwa_obiektu vel[m/s] dist[m]" << endl;
+    cout << "    Move nazwa_obiektu vel[m/s] dist[m]" << endl;
 }
 
 
@@ -65,9 +65,7 @@ bool Interp4Move::ExecCmd(std::shared_ptr<MobileObject> & wObMob,  std::shared_p
     }
     
     
-    std::cout<< "Polecenie Move wykonuje sie!!!"<< endl;
     
-    //std::cout<< "new x: " << wObMob->GetPosition_m().x() << ", new y: " << wObMob->GetPosition_m().y() << ", new z" << wObMob->GetPosition_m().z() <<  endl;
     
     return true;
 

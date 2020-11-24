@@ -21,14 +21,14 @@ Interp4Command* Interp4Pause::CreateCmd()
 
 void Interp4Pause::PrintCmd() const
 {
-   cout << this->GetCmdName() << " " << time_ms << endl;
+   cout <<"    " <<this->GetCmdName() << " " << time_ms << endl;
 }
 
 
 void Interp4Pause::PrintSyntax() const
 {
     /*Wyswietl skladnie polecenia*/
-    cout << "   Pause time[s]" << endl;
+    cout << "    Pause time[s]" << endl;
 }
 
 

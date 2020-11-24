@@ -21,14 +21,14 @@ Interp4Command* Interp4Set::CreateCmd()
 
 void Interp4Set::PrintCmd() const
 {
-   cout << this->GetCmdName() << " " << obj_name << " " << pos_x_m  << " " << pos_y_m << " " << angle_z_deg << endl;
+   cout << "    " <<this->GetCmdName() << " " << obj_name << " " << pos_x_m  << " " << pos_y_m << " " << angle_z_deg << endl;
 }
 
 
 void Interp4Set::PrintSyntax() const
 {
     /*Wyswietl skladnie polecenia*/
-    cout << "   Set obj_name pos_x[m]  pos_y[m] angle[deg]" << endl;
+    cout << "    Set obj_name pos_x[m]  pos_y[m] angle[deg]" << endl;
 }
 
 

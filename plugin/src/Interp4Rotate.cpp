@@ -21,14 +21,14 @@ Interp4Command* Interp4Rotate::CreateCmd()
 
 void Interp4Rotate::PrintCmd() const
 {
-   cout << this->GetCmdName() << " " << obj_name << " " << rot_speed_degs  << " " << rot_deg << endl;
+   cout << "    "<< this->GetCmdName() << " " << obj_name << " " << rot_speed_degs  << " " << rot_deg << endl;
 }
 
 
 void Interp4Rotate::PrintSyntax() const
 {
     /*Wyswietl skladnie polecenia*/
-    cout << "   Rotate obj_name rotate_speed[deg/s]  rotation[deg]" << endl;
+    cout << "    Rotate obj_name rotate_speed[deg/s]  rotation[deg]" << endl;
 }
 
 

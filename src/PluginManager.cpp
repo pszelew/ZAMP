@@ -34,7 +34,6 @@ bool PluginManager::exec(std::istream & commandsStream, std::shared_ptr<Scene> &
             std::cout << "Nie znaleziono wtyczki dla polecenia: " << keyWord << std::endl;
             return false;
         }
-        //std::cout << "Znaleziono wtyczke dla polecenia: " << KeyWord << std::endl;
 
 
         libraryHandler = it->second;
@@ -43,8 +42,8 @@ bool PluginManager::exec(std::istream & commandsStream, std::shared_ptr<Scene> &
 
         cmdInstance->ReadParams(commandsStream);   
 
-        std::cout<< cmdInstance->GetCmdName()<< std::endl;
-    
+        std::cout<< "Wykonuje polecenie: " <<cmdInstance->GetCmdName()<< std::endl;
+        std::cout<< "Skladnia polecenia: " << std::endl;
         cmdInstance->PrintSyntax();
 
         if(cmdInstance->GetObjName()!="")
@@ -56,8 +55,7 @@ bool PluginManager::exec(std::istream & commandsStream, std::shared_ptr<Scene> &
             }
         }
 
-        // MobileObject pies("pies", Vector3D(0,0,0), Vector3D(0,0,0));
-        // std::cout <<"Nazwa obiektu: " <<tempMobileObject->GetName()<< std::endl << std::endl;
+
 
         cmdInstance->ExecCmd(tempMobileObject, scene);
 
