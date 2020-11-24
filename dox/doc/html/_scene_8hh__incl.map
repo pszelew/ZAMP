@@ -1,5 +1,6 @@
 <map id="Scene.hh" name="Scene.hh">
-<area shape="rect" id="node2" href="$_mobile_object_8hh.html" title="File contains definition of class MobileObj. " alt="" coords="130,80,245,107"/>
-<area shape="rect" id="node3" href="$_vector3_d_8hh.html" title="Definition of Vector3D. " alt="" coords="5,155,97,181"/>
-<area shape="rect" id="node5" href="$_vector2_d_8hh.html" title="Definition of Vector2D. " alt="" coords="121,155,213,181"/>
+<area shape="rect" id="node7" href="$_mobile_object_8hh.html" title="File contains definition of class MobileObj. " alt="" coords="178,80,293,107"/>
+<area shape="rect" id="node11" href="$_access_control_8hh.html" title="Contains the definition of a class AccessControl. " alt="" coords="497,80,619,107"/>
+<area shape="rect" id="node8" href="$_vector3_d_8hh.html" title="Definition of Vector3D. " alt="" coords="209,155,301,181"/>
+<area shape="rect" id="node10" href="$_vector2_d_8hh.html" title="Definition of Vector2D. " alt="" coords="325,155,417,181"/>
 </map>

@@ -239,8 +239,7 @@ class Sender {
    *
    * Przegląda scenę i tworzy odpowiednie polecenia, a następnie
    * wysyła je do serwera.
-   * \param[in] Socket - deskryptor gniazda sieciowego, poprzez które
-   *                     wysyłane są polecenia.
+
    */
 
    void Watching_and_Sending() {
@@ -272,7 +271,7 @@ class Sender {
  * \brief Funkcja jest treścią wątku komunikacyjnego
  * 
  * Funkcja jest treścią wątku komunikacyjnego.
- * \param[in] rSender - odpowiada za śledenie zmian na scenie 
+ * \param[in] pSender - odpowiada za śledenie zmian na scenie 
  *                      i przesyłanie do serwera graficznego
  *                      aktualnego stanu sceny, gdy uległ on zmianie.
  */

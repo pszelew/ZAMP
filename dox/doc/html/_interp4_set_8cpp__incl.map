@@ -1,7 +1,9 @@
 <map id="Interp4Set.cpp" name="Interp4Set.cpp">
-<area shape="rect" id="node3" href="$_interp4_set_8hh.html" title="Definition of class Interp4Set. " alt="" coords="67,80,166,107"/>
-<area shape="rect" id="node4" href="$_interp4_command_8hh.html" title="Definition of class Interp4Command. " alt="" coords="77,155,215,181"/>
-<area shape="rect" id="node5" href="$_mobile_object_8hh.html" title="File contains definition of class MobileObj. " alt="" coords="109,229,223,256"/>
-<area shape="rect" id="node6" href="$_vector3_d_8hh.html" title="Definition of Vector3D. " alt="" coords="100,304,192,331"/>
-<area shape="rect" id="node8" href="$_vector2_d_8hh.html" title="Definition of Vector2D. " alt="" coords="216,304,308,331"/>
+<area shape="rect" id="node3" href="$_interp4_set_8hh.html" title="Definition of class Interp4Set. " alt="" coords="155,80,253,107"/>
+<area shape="rect" id="node4" href="$_interp4_command_8hh.html" title="Definition of class Interp4Command. " alt="" coords="305,155,444,181"/>
+<area shape="rect" id="node5" href="$_mobile_object_8hh.html" title="File contains definition of class MobileObj. " alt="" coords="155,304,269,331"/>
+<area shape="rect" id="node11" href="$_access_control_8hh.html" title="Contains the definition of a class AccessControl. " alt="" coords="595,304,717,331"/>
+<area shape="rect" id="node15" href="$_scene_8hh.html" title="Definition of PluginManager. " alt="" coords="299,229,375,256"/>
+<area shape="rect" id="node6" href="$_vector3_d_8hh.html" title="Definition of Vector3D. " alt="" coords="101,379,193,405"/>
+<area shape="rect" id="node8" href="$_vector2_d_8hh.html" title="Definition of Vector2D. " alt="" coords="217,379,309,405"/>
 </map>

@@ -1,3 +1,8 @@
 <map id="Vector3D::z" name="Vector3D::z">
-<area shape="rect" id="node2" href="$class_vector3_d.html#abd851542da40b1168edcad11fa83b7c2" title="Initialize coordinates to given x, y, z. " alt="" coords="140,5,275,32"/>
+<area shape="rect" id="node2" href="$class_connection_manager.html#a0882b7da1b7179dd33740f647a224398" title="Creates message about the state of a cuboid. " alt="" coords="146,35,289,76"/>
+<area shape="rect" id="node5" href="$class_interp4_move.html#a80dba614165dbe92ed38409e750cf441" title="Execute command. " alt="" coords="140,101,295,127"/>
+<area shape="rect" id="node6" href="$class_interp4_set.html#add4008b856b5e8af4c7ec3c310d391bb" title="Execute command. " alt="" coords="146,151,289,178"/>
+<area shape="rect" id="node7" href="$class_vector3_d.html#abd851542da40b1168edcad11fa83b7c2" title="Initialize coordinates to given x, y, z. " alt="" coords="150,202,285,229"/>
+<area shape="rect" id="node3" href="$class_connection_manager.html#ac58249c5e183bdfc9fe117b72f7cdff8" title="Just the sending thread. " alt="" coords="343,5,501,47"/>
+<area shape="rect" id="node4" href="$class_connection_manager.html#a64c9d8b1a4c10e283a465613d5c07774" title="Stop the loop in the thread. " alt="" coords="549,5,715,47"/>
 </map>

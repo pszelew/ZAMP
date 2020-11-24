@@ -5,8 +5,6 @@ bool Simulation::init(std::string cmdPath, std::string xmlPath)
     parser = std::make_shared<Parser>(cmdPath, xmlPath);
     plugManager = std::make_shared<PluginManager>();
     
-    serverSocket = 6217;
-
     scene = std::make_shared<Scene>();
     
     return true;
@@ -44,7 +42,7 @@ bool Simulation::exec()
         return false;
     }
 
-    if(!(plugManager->exec(streamCmd, scene, serverSocket)))
+    if(!(plugManager->exec(streamCmd, scene)))
     {
         std::cout << "Wystapil problem przy uruchamianiu symulacji!!!"<< std::endl;
         return false;

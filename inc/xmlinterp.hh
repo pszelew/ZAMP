@@ -16,10 +16,9 @@
 
 
 /*!
-* \brief Implementuje reakcje na napotkane elementu opisu akcji
+* \brief Implements reactions to certain events during XML reading
 *
-* Klasa zawiera zestaw metod, które wywoływane są w trakcie czytania i analizy
-* pliku XML.
+* Contains reactions to certain events during XML reading
 */
 class XMLInterp4Config : public xercesc::DefaultHandler 
 {
@@ -30,31 +29,39 @@ class XMLInterp4Config : public xercesc::DefaultHandler
         Configuration & conf;
     public:
         /*!
-        * \brief Inicjalizuje obiekt i kojarzy go z listą poleceń robota
+        * \brief Initialize the object with configuration file
+        * \param[in] rConfig - configuration file used to init interpreter
         */
         XMLInterp4Config(Configuration &rConfig) : conf(rConfig) {};
 
         /*!
-        * \brief Wywoływana jest na początku dokumentu
+        * \brief It will be executed in the begining of document
         */
         virtual void startDocument() override;
         /*!
-        * \brief Wywoływana jest na końcu dokumentu
+        * \brief t will be executed in the end of document
         */
         virtual void endDocument() override;
 
         /*!
-        * \brief Wywoływana jest po napotkaniu nowego elementu XML
+        * \brief When new element is found
+        * \param[in] pURI - pURI
+        * \param[in] pLocalName - pLocalName
+        * \param[in] pQNname -  pQNname
+        * \param[in] attrs -  set of attributes
         */
         virtual void startElement(
                         const XMLCh *const pURI, 
                         const XMLCh *const pLocalName, 
                         const XMLCh *const pQNname,
-                        const   xercesc::Attributes&     attrs
+                        const   xercesc::Attributes& attrs
                         ) override;
 
         /*!
-        * \brief Wywoływana jest po dojściu do końca elementu XML
+        * \brief When the element is ended
+        * \param[in] pURI - pURI
+        * \param[in] pLocalName - pLocalName
+        * \param[in] pQNname -  pQNname
         */
         virtual  void endElement(
                         const XMLCh *const pURI, 
@@ -62,33 +69,37 @@ class XMLInterp4Config : public xercesc::DefaultHandler
                         const XMLCh *const pQNname
                         ) override;
         /*!
-        * \brief Wywoływana jest gdy napotkany zostanie błąd fatalny
+        * \brief Reaction to a fatal error
         */
         void fatalError(const xercesc::SAXParseException&);
         /*!
-        * \brief Wywoływana jest gdy napotkany zostanie błąd
+        * \brief Reaction to an error
+        * \param[in, out] exc - just an exception
         */
         void error(const xercesc::SAXParseException &exc);
         /*!
-        * \brief Wywoływana jest gdy parser sygnalizuje ostrzeżenie
+        * \brief Reaction to a warning
+        * \param[in, out] exc - just an exception
         */
         void warning(const xercesc::SAXParseException &exc);
 
 
-        /*!
-            * \brief Wykonuje operacje związane z danym elementem XML
+            /*!
+            * \brief Do something with XML element
+            * \param[in] ElemName - name of an element
+            * \param[in] Attrs - set of attributes of an element
             */
-        void WhenStartElement( const std::string&             ElemName,
-                        const xercesc::Attributes&     Attrs
-                                );
+        void WhenStartElement( const std::string& ElemName, const xercesc::Attributes& Attrs);
         /*!
-            * \brief Analizuje atrybuty i  odpwiednio je interpretuje
-            */
-        void ProcessLibAttrs(const xercesc::Attributes&   Attrs);
+        * \brief Process library attributes
+        * \param[in] Attrs - set of attributes of an element
+        */
+        void ProcessLibAttrs(const xercesc::Attributes& Attrs);
         /*!
-            * \brief Analizuje atrybuty i odpwiednio je interpretuje
-            */
-        void ProcessCubeAttrs(const xercesc::Attributes&   Attrs); 
+        * \brief Process cube attributes
+        * \param[in] Attrs - set of attributes of an element
+        */
+        void ProcessCubeAttrs(const xercesc::Attributes& Attrs); 
 
 };
 

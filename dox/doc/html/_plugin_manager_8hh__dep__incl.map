@@ -1,6 +1,8 @@
 <map id="PluginManager.hh" name="PluginManager.hh">
-<area shape="rect" id="node2" href="$_simulation_8hh.html" title="Definition of Simulation. " alt="" coords="50,80,150,107"/>
-<area shape="rect" id="node5" href="$_plugin_manager_8cpp.html" title="PluginManager.cpp" alt="" coords="174,80,306,107"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="main.cpp" alt="" coords="5,155,80,181"/>
-<area shape="rect" id="node4" href="$_simulation_8cpp.html" title="Simulation.cpp" alt="" coords="104,155,211,181"/>
+<area shape="rect" id="node2" href="$_simulation_8hh.html" title="Definition of Simulation. " alt="" coords="179,80,279,107"/>
+<area shape="rect" id="node7" href="$_plugin_manager_8cpp.html" title="PluginManager.cpp" alt="" coords="303,80,435,107"/>
+<area shape="rect" id="node3" href="$_connection_manager_8hh.html" title="Contains the definition of a class ConnectionManager. " alt="" coords="37,155,191,181"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="main.cpp" alt="" coords="191,229,266,256"/>
+<area shape="rect" id="node6" href="$_simulation_8cpp.html" title="Simulation.cpp" alt="" coords="266,155,373,181"/>
+<area shape="rect" id="node4" href="$_connection_manager_8cpp.html" title="ConnectionManager.cpp" alt="" coords="5,229,167,256"/>
 </map>

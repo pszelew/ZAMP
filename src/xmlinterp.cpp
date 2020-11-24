@@ -146,17 +146,6 @@ void XMLInterp4Config::ProcessCubeAttrs(const xercesc::Attributes  &Attrs)
 
 
 
-
-
-/*!
- * Wykonuje operacje związane z wystąpieniem danego elementu XML.
- * W przypadku elementu \p "Action" będzie to utworzenie obiektu
- * reprezentującego odpowiednią działanie robota.
- * W przypadku elementu \p "Parameter" będzie to zapisanie parametrów
- * związanych z danym działaniem.
- * \param[in] ElemName -
- * \param[in] Attrs - (\b we,) atrybuty napotkanego elementu XML.
- */
 void XMLInterp4Config::WhenStartElement( const std::string       &ElemName,
 		                         const xercesc::Attributes   &Attrs
                                        )
@@ -177,25 +166,6 @@ void XMLInterp4Config::WhenStartElement( const std::string       &ElemName,
 }
 
 
-
-
-/*!
- * Metoda jest wywoływana po napotkaniu nowego elementu XML, np.
- * gdy zostanie napotkany element:
-   \verbatim
-     <Action Name="Rotate">
-   \endverbatim
- *  to poprzez parametr \e xscElemName jest dostęp do nazwy elementu
- *  tzn. \p Action, 
- *  \param[in] pLocalName -  umożliwia dostęp do nazwy elementu XML.
- *                 W podanym przykładzie nazwą elementu XML jest "Action".
- *  \param[in] Attrs -  lista atrybutów danego symbolu XML.
- *                 W przykładzie pokazanym powyżej listę atrybutów
- *                 będą stanowiły napisy:
- */
-/*
- * Te metode nalezy odpowiednio zdekomponowac!!!
- */
 void XMLInterp4Config::startElement(  const   XMLCh* const    pURI,
                                        const   XMLCh* const    pLocalName,
                                        const   XMLCh* const    pQNname,
@@ -213,23 +183,6 @@ void XMLInterp4Config::startElement(  const   XMLCh* const    pURI,
 
 
 
-/*!
- * Metoda zostaje wywołana w momencie zakończenia danego elementu
- * XML, np. jeżeli w pliku jest wpis:
-   \verbatim
-     <Lib Name="Rotate">
-     </Lib>
-   \endverbatim
- * to metoda ta zostanie wywołana po napotkaniu znacznika
- * \p </Lib>. Jeżeli element XML ma formę skróconą, tzn.
-   \verbatim
-     <Parametr Name="Rotate"/>
-   \endverbatim
- * to wówczas wywołana metoda wywołana zostanie w momencie
- * napotkania sekwencji "/>"
- *  \param[in] pLocalName -  umożliwia dostęp do nazwy elementu XML.
- *                 W podanym przykładzie nazwą elementu XML jest "Lib".
- */
 void XMLInterp4Config::endElement(  const   XMLCh* const    pURI,
                                      const   XMLCh* const    pLocalName,
                                      const   XMLCh* const    pQName
@@ -244,14 +197,6 @@ void XMLInterp4Config::endElement(  const   XMLCh* const    pURI,
 
 
 
-/*!
- * Metoda wywoływana jest, gdy napotkany zostanie błąd fatalny,
- * np.
-  \verbatim
-    <Action Name="Rotate">
-    </Parametr>
-  \endverbatim
- */
 void XMLInterp4Config::fatalError(const xercesc::SAXParseException&  Exception)
 {
    char* sMessage = xercesc::XMLString::transcode(Exception.getMessage());
@@ -268,14 +213,6 @@ void XMLInterp4Config::fatalError(const xercesc::SAXParseException&  Exception)
    xercesc::XMLString::release(&sSystemId);
 }
 
-/*!
- * Metoda jest wywoływana, gdy napotkany zostanie błąd, który nie
- * jest traktowany jako fatalny. W ten sposób traktowane są błędy
- * występujące w opisie gramatyki dokumentu.
- * \param[in] Except - zawiera informacje dotyczące błędu. Informacje
- *                     te to opis błędu oraz numer linii, w której
- *                     wystąpił błąd.
- */
 void XMLInterp4Config::error(const xercesc::SAXParseException&  Exception)
 {
     cerr << "Blad w linii: !" << Exception.getLineNumber() << endl;
@@ -284,9 +221,6 @@ void XMLInterp4Config::error(const xercesc::SAXParseException&  Exception)
 }
 
 
-/*!
- *
- */
 void XMLInterp4Config::warning(const xercesc::SAXParseException&  Exception)  
 {
     cerr << "Ostrzezenie w linii: !" << Exception.getLineNumber() << endl;

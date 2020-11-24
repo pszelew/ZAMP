@@ -37,7 +37,7 @@ obj/Simulation.o: src/Simulation.cpp inc/Simulation.hh inc/Parser.hh inc/PluginM
 obj/xmlinterp.o: src/xmlinterp.cpp inc/xmlinterp.hh inc/Configuration.hh
 	g++ -c ${CPPFLAGS} -o obj/xmlinterp.o src/xmlinterp.cpp
 
-obj/ConnectionManager.o: src/ConnectionManager.cpp inc/ConnectionManager.hh
+obj/ConnectionManager.o: src/ConnectionManager.cpp inc/ConnectionManager.hh inc/Simulation.hh
 	g++ -c ${CPPFLAGS} -o obj/ConnectionManager.o src/ConnectionManager.cpp
 
 

@@ -72,6 +72,14 @@ $(document).ready(function(){initNavTree('class_parser.html','');});
  <a href="class_parser.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_parser_8hh_source.html">Parser.hh</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Parser:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_parser__coll__graph.png" border="0" usemap="#_parser_coll__map" alt="Collaboration graph"/></div>
+<map name="_parser_coll__map" id="_parser_coll__map">
+<area shape="rect" id="node2" href="class_configuration.html" title="Configuration" alt="" coords="5,5,103,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -84,6 +92,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0dc573e2de7e55585cc1304d8f11f422"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html#a0dc573e2de7e55585cc1304d8f11f422">ParseXML</a> (std::istringstream &amp;IStrm4Cmds)</td></tr>
 <tr class="memdesc:a0dc573e2de7e55585cc1304d8f11f422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from cmd file.  <a href="#a0dc573e2de7e55585cc1304d8f11f422">More...</a><br /></td></tr>
 <tr class="separator:a0dc573e2de7e55585cc1304d8f11f422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23db9dbc0e960dcfa3df0ca08b64ae8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_configuration.html">Configuration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html#ae23db9dbc0e960dcfa3df0ca08b64ae8">GetConf</a> () const</td></tr>
+<tr class="memdesc:ae23db9dbc0e960dcfa3df0ca08b64ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns current configuration value (read-only)  <a href="#ae23db9dbc0e960dcfa3df0ca08b64ae8">More...</a><br /></td></tr>
+<tr class="separator:ae23db9dbc0e960dcfa3df0ca08b64ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -93,11 +104,14 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ad3a51214f98f7308a4ff77ee40985a90"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html#ad3a51214f98f7308a4ff77ee40985a90">xmlFile</a></td></tr>
 <tr class="memdesc:ad3a51214f98f7308a4ff77ee40985a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of xml file to be read.  <a href="#ad3a51214f98f7308a4ff77ee40985a90">More...</a><br /></td></tr>
 <tr class="separator:ad3a51214f98f7308a4ff77ee40985a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a017e5431418f984727d7c646a3740cb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_configuration.html">Configuration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html#a017e5431418f984727d7c646a3740cb5">conf</a></td></tr>
+<tr class="memdesc:a017e5431418f984727d7c646a3740cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_configuration.html">Configuration</a> read from a xml file.  <a href="#a017e5431418f984727d7c646a3740cb5">More...</a><br /></td></tr>
+<tr class="separator:a017e5431418f984727d7c646a3740cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_parser.html" title="Class used to represent parser of CMD and XML. ">Parser</a> of CMD and XML </p>
 
-<p class="definition">Definition at line <a class="el" href="_parser_8hh_source.html#l00024">24</a> of file <a class="el" href="_parser_8hh_source.html">Parser.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_parser_8hh_source.html#l00026">26</a> of file <a class="el" href="_parser_8hh_source.html">Parser.hh</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5a55812a581cb4bddaa0a0c42db0c824"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a55812a581cb4bddaa0a0c42db0c824">&#9670;&nbsp;</a></span>Parser()</h2>
@@ -140,20 +154,39 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_parser_8hh_source.html#l00039">39</a> of file <a class="el" href="_parser_8hh_source.html">Parser.hh</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_parser_a5a55812a581cb4bddaa0a0c42db0c824_cgraph.png" border="0" usemap="#class_parser_a5a55812a581cb4bddaa0a0c42db0c824_cgraph" alt=""/></div>
-<map name="class_parser_a5a55812a581cb4bddaa0a0c42db0c824_cgraph" id="class_parser_a5a55812a581cb4bddaa0a0c42db0c824_cgraph">
-<area shape="rect" id="node2" href="class_parser.html#a2685b83df0121db886c37c8fb84a452f" title="Read data from cmd file. " alt="" coords="156,5,281,32"/>
-<area shape="rect" id="node3" href="class_parser.html#a0dc573e2de7e55585cc1304d8f11f422" title="Read data from cmd file. " alt="" coords="156,56,281,83"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="_parser_8hh_source.html#l00043">43</a> of file <a class="el" href="_parser_8hh_source.html">Parser.hh</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae23db9dbc0e960dcfa3df0ca08b64ae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae23db9dbc0e960dcfa3df0ca08b64ae8">&#9670;&nbsp;</a></span>GetConf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_configuration.html">Configuration</a> Parser::GetConf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Returns current configuration value (read-only) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_parser_8hh_source.html#l00067">67</a> of file <a class="el" href="_parser_8hh_source.html">Parser.hh</a>.</p>
+
+</div>
+</div>
 <a id="a2685b83df0121db886c37c8fb84a452f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2685b83df0121db886c37c8fb84a452f">&#9670;&nbsp;</a></span>ParseCmd()</h2>
 
@@ -184,14 +217,6 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_parser_8cpp_source.html#l00004">4</a> of file <a class="el" href="_parser_8cpp_source.html">Parser.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_parser_a2685b83df0121db886c37c8fb84a452f_icgraph.png" border="0" usemap="#class_parser_a2685b83df0121db886c37c8fb84a452f_icgraph" alt=""/></div>
-<map name="class_parser_a2685b83df0121db886c37c8fb84a452f_icgraph" id="class_parser_a2685b83df0121db886c37c8fb84a452f_icgraph">
-<area shape="rect" id="node2" href="class_parser.html#a5a55812a581cb4bddaa0a0c42db0c824" title="Parser constructor. " alt="" coords="179,5,281,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -224,15 +249,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_parser_8cpp_source.html#l00022">22</a> of file <a class="el" href="_parser_8cpp_source.html">Parser.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_parser_a0dc573e2de7e55585cc1304d8f11f422_icgraph.png" border="0" usemap="#class_parser_a0dc573e2de7e55585cc1304d8f11f422_icgraph" alt=""/></div>
-<map name="class_parser_a0dc573e2de7e55585cc1304d8f11f422_icgraph" id="class_parser_a0dc573e2de7e55585cc1304d8f11f422_icgraph">
-<area shape="rect" id="node2" href="class_parser.html#a5a55812a581cb4bddaa0a0c42db0c824" title="Parser constructor. " alt="" coords="179,5,281,32"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="_parser_8cpp_source.html#l00023">23</a> of file <a class="el" href="_parser_8cpp_source.html">Parser.cpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +274,31 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_parser_8hh_source.html#l00028">28</a> of file <a class="el" href="_parser_8hh_source.html">Parser.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_parser_8hh_source.html#l00030">30</a> of file <a class="el" href="_parser_8hh_source.html">Parser.hh</a>.</p>
+
+</div>
+</div>
+<a id="a017e5431418f984727d7c646a3740cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a017e5431418f984727d7c646a3740cb5">&#9670;&nbsp;</a></span>conf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_configuration.html">Configuration</a> Parser::conf</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_parser_8hh_source.html#l00034">34</a> of file <a class="el" href="_parser_8hh_source.html">Parser.hh</a>.</p>
 
 </div>
 </div>
@@ -281,7 +322,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_parser_8hh_source.html#l00030">30</a> of file <a class="el" href="_parser_8hh_source.html">Parser.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_parser_8hh_source.html#l00032">32</a> of file <a class="el" href="_parser_8hh_source.html">Parser.hh</a>.</p>
 
 </div>
 </div>
@@ -295,7 +336,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_parser.html">Parser</a></li>
-    <li class="footer">Generated on Tue Nov 10 2020 11:03:16 for Interpreter by
+    <li class="footer">Generated on Tue Nov 24 2020 09:12:38 for Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

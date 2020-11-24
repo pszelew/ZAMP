@@ -72,9 +72,29 @@
             Cuboid(){};
 
             const Vector3D & GetScale(){return scale;}; 
-
+            /*!
+            * \brief Get red color of coboid 0-255 (read-only)
+            *
+            * Get red color of coboid 0-255 (read-only)
+            * \return Red color const reference
+            * 
+            */
             const int & GetColorR(){return colorR;}
+            /*!
+            * \brief Get green color of coboid 0-255 (read-only)
+            *
+            * Get green color of coboid 0-255 (read-only)
+            * \return Green color const reference
+            * 
+            */
             const int & GetColorG(){return colorG;}
+            /*!
+            * \brief Get blue color of coboid 0-255 (read-only)
+            *
+            * Get blue color of coboid 0-255 (read-only)
+            * \return Blue color const reference
+            * 
+            */
             const int & GetColorB(){return colorB;} 
     };
 

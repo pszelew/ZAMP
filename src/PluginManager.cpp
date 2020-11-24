@@ -18,7 +18,7 @@ bool PluginManager::init(std::vector<std::string> pluginPaths)
 
 }
 
-bool PluginManager::exec(std::istream & commandsStream, std::shared_ptr<Scene> & scene,  int serverSocket)
+bool PluginManager::exec(std::istream & commandsStream, std::shared_ptr<Scene> & scene)
 {
     std::string keyWord;
     std::string robotName;

@@ -1,0 +1,5 @@
+<map id="Configuration::GetMobileColor" name="Configuration::GetMobileColor">
+<area shape="rect" id="node2" href="$class_simulation.html#a59335cf2a156dff9c961cbf033d05671" title="Method adds cubiods from configuration read by parser. " alt="" coords="216,31,375,57"/>
+<area shape="rect" id="node3" href="$class_simulation.html#afbc304f6f56a751c78277fbb4efea74e" title="Method runs simulation. " alt="" coords="438,5,554,32"/>
+<area shape="rect" id="node4" href="$class_simulation.html#a5a8e86b8b63ab0983b1656a603afeb38" title="Return the scene pointer. " alt="" coords="423,56,569,83"/>
+</map>

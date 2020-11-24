@@ -97,9 +97,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9b1bff7ff363991b35965ae9dfeac648"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_command.html#a9b1bff7ff363991b35965ae9dfeac648">GetCmdName</a> () const =0</td></tr>
 <tr class="memdesc:a9b1bff7ff363991b35965ae9dfeac648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of command.  <a href="#a9b1bff7ff363991b35965ae9dfeac648">More...</a><br /></td></tr>
 <tr class="separator:a9b1bff7ff363991b35965ae9dfeac648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74bb8a659c5efeb7f207d5d58a50c5fe"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_command.html#a74bb8a659c5efeb7f207d5d58a50c5fe">ExecCmd</a> (std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt; wObMob, int serverSocket) const =0</td></tr>
-<tr class="memdesc:a74bb8a659c5efeb7f207d5d58a50c5fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute command.  <a href="#a74bb8a659c5efeb7f207d5d58a50c5fe">More...</a><br /></td></tr>
-<tr class="separator:a74bb8a659c5efeb7f207d5d58a50c5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b53f57e32fe716640aaaa52a47eb9c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_command.html#a76b53f57e32fe716640aaaa52a47eb9c">ExecCmd</a> (std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt; &amp;wObMob, std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;pAccCtrl) const =0</td></tr>
+<tr class="memdesc:a76b53f57e32fe716640aaaa52a47eb9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute command.  <a href="#a76b53f57e32fe716640aaaa52a47eb9c">More...</a><br /></td></tr>
+<tr class="separator:a76b53f57e32fe716640aaaa52a47eb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e15ef01af10fa8961926fd9b0274ab8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_command.html#a3e15ef01af10fa8961926fd9b0274ab8">ReadParams</a> (std::istream &amp;Strm_CmdsList)=0</td></tr>
 <tr class="memdesc:a3e15ef01af10fa8961926fd9b0274ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read parameters of command.  <a href="#a3e15ef01af10fa8961926fd9b0274ab8">More...</a><br /></td></tr>
 <tr class="separator:a3e15ef01af10fa8961926fd9b0274ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,7 +110,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class used to represent an abstract command for mobile object </p>
 
-<p class="definition">Definition at line <a class="el" href="_interp4_command_8hh_source.html#l00019">19</a> of file <a class="el" href="_interp4_command_8hh_source.html">Interp4Command.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interp4_command_8hh_source.html#l00023">23</a> of file <a class="el" href="_interp4_command_8hh_source.html">Interp4Command.hh</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a620ba28206850d0bce8dbb2364c73366"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a620ba28206850d0bce8dbb2364c73366">&#9670;&nbsp;</a></span>~Interp4Command()</h2>
@@ -135,7 +135,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interp4_command_8hh_source.html#l00026">26</a> of file <a class="el" href="_interp4_command_8hh_source.html">Interp4Command.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interp4_command_8hh_source.html#l00030">30</a> of file <a class="el" href="_interp4_command_8hh_source.html">Interp4Command.hh</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -144,7 +144,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="class_interp4_command.html#a08fbbf2a70cdac46930b0eba6f5f361c" title="Display name and parameters of command. " alt="" coords="242,5,423,32"/>
 <area shape="rect" id="node3" href="class_interp4_command.html#a693ca79d24ba27d11a19ed6fc90c37b9" title="Print syntax of command. " alt="" coords="236,56,429,83"/>
 <area shape="rect" id="node4" href="class_interp4_command.html#a9b1bff7ff363991b35965ae9dfeac648" title="Return the name of command. " alt="" coords="228,107,437,133"/>
-<area shape="rect" id="node5" href="class_interp4_command.html#a74bb8a659c5efeb7f207d5d58a50c5fe" title="Execute command. " alt="" coords="241,157,424,184"/>
+<area shape="rect" id="node5" href="class_interp4_command.html#a76b53f57e32fe716640aaaa52a47eb9c" title="Execute command. " alt="" coords="241,157,424,184"/>
 <area shape="rect" id="node6" href="class_interp4_command.html#a3e15ef01af10fa8961926fd9b0274ab8" title="Read parameters of command. " alt="" coords="232,208,433,235"/>
 <area shape="rect" id="node7" href="class_interp4_command.html#a953ac1b6590585a7161dcc2618f615a6" title="Get the name of object beeing moved. " alt="" coords="231,259,434,285"/>
 </map>
@@ -153,8 +153,8 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a74bb8a659c5efeb7f207d5d58a50c5fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74bb8a659c5efeb7f207d5d58a50c5fe">&#9670;&nbsp;</a></span>ExecCmd()</h2>
+<a id="a76b53f57e32fe716640aaaa52a47eb9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76b53f57e32fe716640aaaa52a47eb9c">&#9670;&nbsp;</a></span>ExecCmd()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,14 +165,14 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">virtual bool Interp4Command::ExecCmd </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>wObMob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>serverSocket</em>&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pAccCtrl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -186,6 +186,13 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">wObMob</td><td>- shared pointer reference to a mobile object </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pAccCtrl</td><td>- shared pointer reference to the scene </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">true</td><td>- executed without problems </td></tr>
@@ -194,14 +201,14 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_interp4_set.html#a747bbd6f0890900d20d6cc5e1192cf30">Interp4Set</a>, <a class="el" href="class_interp4_move.html#a7994119801db2ebe67351e8584c5d57d">Interp4Move</a>, <a class="el" href="class_interp4_rotate.html#a9126424e17eddb40371ae31a3a16c111">Interp4Rotate</a>, and <a class="el" href="class_interp4_pause.html#aac4947988b29e37eefe46c7aed699803">Interp4Pause</a>.</p>
+<p>Implemented in <a class="el" href="class_interp4_set.html#add4008b856b5e8af4c7ec3c310d391bb">Interp4Set</a>, <a class="el" href="class_interp4_move.html#a80dba614165dbe92ed38409e750cf441">Interp4Move</a>, <a class="el" href="class_interp4_rotate.html#a71a039d3f86c5a13b3fbe8ef6267b215">Interp4Rotate</a>, and <a class="el" href="class_interp4_pause.html#ae37344653d880f8ab712c6a0d245ef7e">Interp4Pause</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_interp4_command_a74bb8a659c5efeb7f207d5d58a50c5fe_icgraph.png" border="0" usemap="#class_interp4_command_a74bb8a659c5efeb7f207d5d58a50c5fe_icgraph" alt=""/></div>
-<map name="class_interp4_command_a74bb8a659c5efeb7f207d5d58a50c5fe_icgraph" id="class_interp4_command_a74bb8a659c5efeb7f207d5d58a50c5fe_icgraph">
+<div class="center"><img src="class_interp4_command_a76b53f57e32fe716640aaaa52a47eb9c_icgraph.png" border="0" usemap="#class_interp4_command_a76b53f57e32fe716640aaaa52a47eb9c_icgraph" alt=""/></div>
+<map name="class_interp4_command_a76b53f57e32fe716640aaaa52a47eb9c_icgraph" id="class_interp4_command_a76b53f57e32fe716640aaaa52a47eb9c_icgraph">
 <area shape="rect" id="node2" href="class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Virtual destructor. " alt="" coords="236,5,411,47"/>
-<area shape="rect" id="node3" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Run given commansds. " alt="" coords="253,71,394,98"/>
+<area shape="rect" id="node3" href="class_plugin_manager.html#ab916b743e43db5ebc97ad0279e5aa3a3" title="Run given commansds. " alt="" coords="253,71,394,98"/>
 </map>
 </div>
 
@@ -237,7 +244,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_interp4_command_a9b1bff7ff363991b35965ae9dfeac648_icgraph.png" border="0" usemap="#class_interp4_command_a9b1bff7ff363991b35965ae9dfeac648_icgraph" alt=""/></div>
 <map name="class_interp4_command_a9b1bff7ff363991b35965ae9dfeac648_icgraph" id="class_interp4_command_a9b1bff7ff363991b35965ae9dfeac648_icgraph">
 <area shape="rect" id="node2" href="class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Virtual destructor. " alt="" coords="263,5,437,47"/>
-<area shape="rect" id="node3" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Run given commansds. " alt="" coords="279,71,421,98"/>
+<area shape="rect" id="node3" href="class_plugin_manager.html#ab916b743e43db5ebc97ad0279e5aa3a3" title="Run given commansds. " alt="" coords="279,71,421,98"/>
 </map>
 </div>
 
@@ -274,7 +281,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_interp4_command_a953ac1b6590585a7161dcc2618f615a6_icgraph.png" border="0" usemap="#class_interp4_command_a953ac1b6590585a7161dcc2618f615a6_icgraph" alt=""/></div>
 <map name="class_interp4_command_a953ac1b6590585a7161dcc2618f615a6_icgraph" id="class_interp4_command_a953ac1b6590585a7161dcc2618f615a6_icgraph">
 <area shape="rect" id="node2" href="class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Virtual destructor. " alt="" coords="256,5,431,47"/>
-<area shape="rect" id="node3" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Run given commansds. " alt="" coords="273,71,414,98"/>
+<area shape="rect" id="node3" href="class_plugin_manager.html#ab916b743e43db5ebc97ad0279e5aa3a3" title="Run given commansds. " alt="" coords="273,71,414,98"/>
 </map>
 </div>
 
@@ -310,7 +317,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_interp4_command_a08fbbf2a70cdac46930b0eba6f5f361c_icgraph.png" border="0" usemap="#class_interp4_command_a08fbbf2a70cdac46930b0eba6f5f361c_icgraph" alt=""/></div>
 <map name="class_interp4_command_a08fbbf2a70cdac46930b0eba6f5f361c_icgraph" id="class_interp4_command_a08fbbf2a70cdac46930b0eba6f5f361c_icgraph">
 <area shape="rect" id="node2" href="class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Virtual destructor. " alt="" coords="235,5,409,47"/>
-<area shape="rect" id="node3" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Run given commansds. " alt="" coords="251,71,393,98"/>
+<area shape="rect" id="node3" href="class_plugin_manager.html#ab916b743e43db5ebc97ad0279e5aa3a3" title="Run given commansds. " alt="" coords="251,71,393,98"/>
 </map>
 </div>
 
@@ -346,7 +353,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_interp4_command_a693ca79d24ba27d11a19ed6fc90c37b9_icgraph.png" border="0" usemap="#class_interp4_command_a693ca79d24ba27d11a19ed6fc90c37b9_icgraph" alt=""/></div>
 <map name="class_interp4_command_a693ca79d24ba27d11a19ed6fc90c37b9_icgraph" id="class_interp4_command_a693ca79d24ba27d11a19ed6fc90c37b9_icgraph">
 <area shape="rect" id="node2" href="class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Virtual destructor. " alt="" coords="247,5,421,47"/>
-<area shape="rect" id="node3" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Run given commansds. " alt="" coords="263,71,405,98"/>
+<area shape="rect" id="node3" href="class_plugin_manager.html#ab916b743e43db5ebc97ad0279e5aa3a3" title="Run given commansds. " alt="" coords="263,71,405,98"/>
 </map>
 </div>
 
@@ -396,7 +403,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_interp4_command_a3e15ef01af10fa8961926fd9b0274ab8_icgraph.png" border="0" usemap="#class_interp4_command_a3e15ef01af10fa8961926fd9b0274ab8_icgraph" alt=""/></div>
 <map name="class_interp4_command_a3e15ef01af10fa8961926fd9b0274ab8_icgraph" id="class_interp4_command_a3e15ef01af10fa8961926fd9b0274ab8_icgraph">
 <area shape="rect" id="node2" href="class_interp4_command.html#a620ba28206850d0bce8dbb2364c73366" title="Virtual destructor. " alt="" coords="255,5,429,47"/>
-<area shape="rect" id="node3" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46" title="Run given commansds. " alt="" coords="271,71,413,98"/>
+<area shape="rect" id="node3" href="class_plugin_manager.html#ab916b743e43db5ebc97ad0279e5aa3a3" title="Run given commansds. " alt="" coords="271,71,413,98"/>
 </map>
 </div>
 
@@ -411,7 +418,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_interp4_command.html">Interp4Command</a></li>
-    <li class="footer">Generated on Tue Nov 10 2020 11:03:16 for Interpreter by
+    <li class="footer">Generated on Tue Nov 24 2020 09:12:38 for Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

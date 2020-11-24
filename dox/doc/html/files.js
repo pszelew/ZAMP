@@ -1,5 +1,15 @@
 var files =
 [
+    [ "AccessControl.hh", "_access_control_8hh.html", [
+      [ "AccessControl", "class_access_control.html", "class_access_control" ]
+    ] ],
+    [ "Configuration.hh", "_configuration_8hh.html", [
+      [ "Configuration", "class_configuration.html", "class_configuration" ]
+    ] ],
+    [ "ConnectionManager.cpp", "_connection_manager_8cpp.html", null ],
+    [ "ConnectionManager.hh", "_connection_manager_8hh.html", [
+      [ "ConnectionManager", "class_connection_manager.html", "class_connection_manager" ]
+    ] ],
     [ "Cuboid.cpp", "_cuboid_8cpp.html", null ],
     [ "Cuboid.hh", "_cuboid_8hh.html", [
       [ "Cuboid", "class_cuboid.html", "class_cuboid" ]
@@ -23,6 +33,7 @@ var files =
     [ "Interp4Set.hh", "_interp4_set_8hh.html", [
       [ "Interp4Set", "class_interp4_set.html", "class_interp4_set" ]
     ] ],
+    [ "klient.cpp", "klient_8cpp.html", "klient_8cpp" ],
     [ "LibraryInterface.cpp", "_library_interface_8cpp.html", null ],
     [ "LibraryInterface.hh", "_library_interface_8hh.html", [
       [ "LibraryInterface", "class_library_interface.html", "class_library_interface" ]
@@ -37,6 +48,7 @@ var files =
     [ "PluginManager.hh", "_plugin_manager_8hh.html", [
       [ "PluginManager", "class_plugin_manager.html", "class_plugin_manager" ]
     ] ],
+    [ "Port.hh", "_port_8hh.html", "_port_8hh" ],
     [ "Scene.cpp", "_scene_8cpp.html", null ],
     [ "Scene.hh", "_scene_8hh.html", [
       [ "Scene", "class_scene.html", "class_scene" ]
@@ -47,5 +59,9 @@ var files =
     ] ],
     [ "strony_dokumentacji.page", "strony__dokumentacji_8page.html", null ],
     [ "Vector2D.hh", "_vector2_d_8hh.html", "_vector2_d_8hh" ],
-    [ "Vector3D.hh", "_vector3_d_8hh.html", "_vector3_d_8hh" ]
+    [ "Vector3D.hh", "_vector3_d_8hh.html", "_vector3_d_8hh" ],
+    [ "xmlinterp.cpp", "xmlinterp_8cpp.html", null ],
+    [ "xmlinterp.hh", "xmlinterp_8hh.html", [
+      [ "XMLInterp4Config", "class_x_m_l_interp4_config.html", "class_x_m_l_interp4_config" ]
+    ] ]
 ];

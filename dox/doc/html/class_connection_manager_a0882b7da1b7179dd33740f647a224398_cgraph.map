@@ -1,0 +1,13 @@
+<map id="ConnectionManager::CreateMessage" name="ConnectionManager::CreateMessage">
+<area shape="rect" id="node2" href="$class_cuboid.html#a8e0d5a953587a8d7acf2d93e17489283" title="Cuboid::GetScale" alt="" coords="229,5,352,32"/>
+<area shape="rect" id="node3" href="$class_vector3_d.html#ac86d9a556616f4c51fecbaf7d8658ce8" title="Gives us x coordinate (read&#45;only). " alt="" coords="247,56,334,83"/>
+<area shape="rect" id="node4" href="$class_vector3_d.html#a7146d35db2c1bf7606c8290282a423ec" title="Gives us y coordinate (read&#45;only). " alt="" coords="247,107,334,133"/>
+<area shape="rect" id="node5" href="$class_vector3_d.html#af4ae427e82a23af845f804106daed509" title="Gives us z coordinate (read&#45;only). " alt="" coords="247,157,334,184"/>
+<area shape="rect" id="node6" href="$class_mobile_object.html#aa4b4fcf9af9f5102ffec3dc7c5589675" title="Gives us position of mobile object (read&#45;only). " alt="" coords="196,208,385,235"/>
+<area shape="rect" id="node7" href="$class_mobile_object.html#a0dbb981cf6514b8ae938e82e02b43719" title="Gives us a value of roll angle. " alt="" coords="217,259,365,301"/>
+<area shape="rect" id="node8" href="$class_mobile_object.html#a0fb31bdc6f93520ac7c566e1f56ac4e0" title="Gives us a value of pitch angle. " alt="" coords="217,325,365,366"/>
+<area shape="rect" id="node9" href="$class_mobile_object.html#a27937e5c64552958708cc7748efb9115" title="Gives us a value of yaw angle. " alt="" coords="217,390,365,431"/>
+<area shape="rect" id="node10" href="$class_cuboid.html#aab77716c7cc634aa3f2bbae04f7172ad" title="Get red color of coboid 0&#45;255 (read&#45;only) " alt="" coords="227,456,355,483"/>
+<area shape="rect" id="node11" href="$class_cuboid.html#a264816a81d931091302712e2606bb50f" title="Get green color of coboid 0&#45;255 (read&#45;only) " alt="" coords="226,507,355,533"/>
+<area shape="rect" id="node12" href="$class_cuboid.html#a94e57cfc076836847fafd27c0f199dc0" title="Get blue color of coboid 0&#45;255 (read&#45;only) " alt="" coords="227,557,355,584"/>
+</map>

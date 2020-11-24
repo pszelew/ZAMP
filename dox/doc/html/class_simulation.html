@@ -81,6 +81,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afbc304f6f56a751c78277fbb4efea74e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#afbc304f6f56a751c78277fbb4efea74e">exec</a> ()</td></tr>
 <tr class="memdesc:afbc304f6f56a751c78277fbb4efea74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method runs simulation.  <a href="#afbc304f6f56a751c78277fbb4efea74e">More...</a><br /></td></tr>
 <tr class="separator:afbc304f6f56a751c78277fbb4efea74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a8e86b8b63ab0983b1656a603afeb38"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a5a8e86b8b63ab0983b1656a603afeb38">GetScene</a> ()</td></tr>
+<tr class="memdesc:a5a8e86b8b63ab0983b1656a603afeb38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the scene pointer.  <a href="#a5a8e86b8b63ab0983b1656a603afeb38">More...</a><br /></td></tr>
+<tr class="separator:a5a8e86b8b63ab0983b1656a603afeb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59335cf2a156dff9c961cbf033d05671"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a59335cf2a156dff9c961cbf033d05671">AddCuboids</a> ()</td></tr>
+<tr class="memdesc:a59335cf2a156dff9c961cbf033d05671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method adds cubiods from configuration read by parser.  <a href="#a59335cf2a156dff9c961cbf033d05671">More...</a><br /></td></tr>
+<tr class="separator:a59335cf2a156dff9c961cbf033d05671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f1f938e15b0f06cd06e59aeff790e5d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5f1f938e15b0f06cd06e59aeff790e5d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_simulation.html#a5f1f938e15b0f06cd06e59aeff790e5d">AddMobileObject</a> (std::string in_name, <a class="el" href="class_vector3_d.html">Vector3D</a> in_rot_deg, <a class="el" href="class_vector3_d.html">Vector3D</a> in_pos_m)</td></tr>
 <tr class="memdesc:a5f1f938e15b0f06cd06e59aeff790e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method template adding mobile object to scene.  <a href="#a5f1f938e15b0f06cd06e59aeff790e5d">More...</a><br /></td></tr>
@@ -94,21 +100,61 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ad407e8ba8def4e262d0687a5e0a9e41f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_plugin_manager.html">PluginManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ad407e8ba8def4e262d0687a5e0a9e41f">plugManager</a></td></tr>
 <tr class="memdesc:ad407e8ba8def4e262d0687a5e0a9e41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plugin manager.  <a href="#ad407e8ba8def4e262d0687a5e0a9e41f">More...</a><br /></td></tr>
 <tr class="separator:ad407e8ba8def4e262d0687a5e0a9e41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a535cef24142b584301ace328f3123c7c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a535cef24142b584301ace328f3123c7c">plugPaths</a></td></tr>
-<tr class="memdesc:a535cef24142b584301ace328f3123c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of paths to plugins.  <a href="#a535cef24142b584301ace328f3123c7c">More...</a><br /></td></tr>
-<tr class="separator:a535cef24142b584301ace328f3123c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a444e8ad336a939776e76078259f63141"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a444e8ad336a939776e76078259f63141">scene</a></td></tr>
 <tr class="memdesc:a444e8ad336a939776e76078259f63141"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_scene.html" title="Class used to represent a manager for plugins. ">Scene</a> handler.  <a href="#a444e8ad336a939776e76078259f63141">More...</a><br /></td></tr>
 <tr class="separator:a444e8ad336a939776e76078259f63141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18b711a3f7fbe382e9849bd0c2bbfcce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a18b711a3f7fbe382e9849bd0c2bbfcce">serverSocket</a></td></tr>
-<tr class="memdesc:a18b711a3f7fbe382e9849bd0c2bbfcce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server socket number.  <a href="#a18b711a3f7fbe382e9849bd0c2bbfcce">More...</a><br /></td></tr>
-<tr class="separator:a18b711a3f7fbe382e9849bd0c2bbfcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class used to represent a simulation. Contains plugin manager, parser and scene </p>
 
-<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00023">23</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00024">24</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a59335cf2a156dff9c961cbf033d05671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59335cf2a156dff9c961cbf033d05671">&#9670;&nbsp;</a></span>AddCuboids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Simulation::AddCuboids </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">True</td><td>- operation successfull </td></tr>
+    <tr><td class="paramname">False</td><td>- otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_simulation_8cpp_source.html#l00054">54</a> of file <a class="el" href="_simulation_8cpp_source.html">Simulation.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_simulation_a59335cf2a156dff9c961cbf033d05671_cgraph.png" border="0" usemap="#class_simulation_a59335cf2a156dff9c961cbf033d05671_cgraph" alt=""/></div>
+<map name="class_simulation_a59335cf2a156dff9c961cbf033d05671_cgraph" id="class_simulation_a59335cf2a156dff9c961cbf033d05671_cgraph">
+<area shape="rect" id="node2" href="class_configuration.html#a56c8ec9d0e437246946ba29d5f371b09" title="Get the Vector of mobile objects names. " alt="" coords="212,5,408,32"/>
+<area shape="rect" id="node3" href="class_configuration.html#aed43ec8545bf596c6266fa4ee4a64b95" title="Get the Vector of mobile objects scales. " alt="" coords="229,57,391,98"/>
+<area shape="rect" id="node4" href="class_configuration.html#a90024398cc5ae270ae6d36ea6df9edc0" title="Get the Vector of mobile objects colors. " alt="" coords="229,122,391,163"/>
+<area shape="rect" id="node5" href="class_vector3_d.html#ac86d9a556616f4c51fecbaf7d8658ce8" title="Gives us x coordinate (read&#45;only). " alt="" coords="267,188,353,215"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_simulation_a59335cf2a156dff9c961cbf033d05671_icgraph.png" border="0" usemap="#class_simulation_a59335cf2a156dff9c961cbf033d05671_icgraph" alt=""/></div>
+<map name="class_simulation_a59335cf2a156dff9c961cbf033d05671_icgraph" id="class_simulation_a59335cf2a156dff9c961cbf033d05671_icgraph">
+<area shape="rect" id="node2" href="class_simulation.html#afbc304f6f56a751c78277fbb4efea74e" title="Method runs simulation. " alt="" coords="227,5,343,32"/>
+<area shape="rect" id="node3" href="class_simulation.html#a5a8e86b8b63ab0983b1656a603afeb38" title="Return the scene pointer. " alt="" coords="212,56,359,83"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a5f1f938e15b0f06cd06e59aeff790e5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f1f938e15b0f06cd06e59aeff790e5d">&#9670;&nbsp;</a></span>AddMobileObject()</h2>
 
@@ -159,15 +205,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00081">81</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_simulation_a5f1f938e15b0f06cd06e59aeff790e5d_icgraph.png" border="0" usemap="#class_simulation_a5f1f938e15b0f06cd06e59aeff790e5d_icgraph" alt=""/></div>
-<map name="class_simulation_a5f1f938e15b0f06cd06e59aeff790e5d_icgraph" id="class_simulation_a5f1f938e15b0f06cd06e59aeff790e5d_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="241,5,292,32"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00083">83</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
 
 </div>
 </div>
@@ -186,13 +224,57 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_simulation_8cpp_source.html#l00030">30</a> of file <a class="el" href="_simulation_8cpp_source.html">Simulation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_simulation_8cpp_source.html#l00013">13</a> of file <a class="el" href="_simulation_8cpp_source.html">Simulation.cpp</a>.</p>
 <div class="dynheader">
-Here is the caller graph for this function:</div>
+Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_simulation_afbc304f6f56a751c78277fbb4efea74e_icgraph.png" border="0" usemap="#class_simulation_afbc304f6f56a751c78277fbb4efea74e_icgraph" alt=""/></div>
-<map name="class_simulation_afbc304f6f56a751c78277fbb4efea74e_icgraph" id="class_simulation_afbc304f6f56a751c78277fbb4efea74e_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="169,5,220,32"/>
+<div class="center"><img src="class_simulation_afbc304f6f56a751c78277fbb4efea74e_cgraph.png" border="0" usemap="#class_simulation_afbc304f6f56a751c78277fbb4efea74e_cgraph" alt=""/></div>
+<map name="class_simulation_afbc304f6f56a751c78277fbb4efea74e_cgraph" id="class_simulation_afbc304f6f56a751c78277fbb4efea74e_cgraph">
+<area shape="rect" id="node2" href="class_configuration.html#abf1673438eba60e2344ad57841757d09" title="Get a Vector of the paths to plugins (read&#45;only) " alt="" coords="169,31,329,73"/>
+<area shape="rect" id="node3" href="class_simulation.html#a59335cf2a156dff9c961cbf033d05671" title="Method adds cubiods from configuration read by parser. " alt="" coords="170,97,329,124"/>
+<area shape="rect" id="node4" href="class_configuration.html#a56c8ec9d0e437246946ba29d5f371b09" title="Get the Vector of mobile objects names. " alt="" coords="377,5,573,32"/>
+<area shape="rect" id="node5" href="class_configuration.html#aed43ec8545bf596c6266fa4ee4a64b95" title="Get the Vector of mobile objects scales. " alt="" coords="394,57,557,98"/>
+<area shape="rect" id="node6" href="class_configuration.html#a90024398cc5ae270ae6d36ea6df9edc0" title="Get the Vector of mobile objects colors. " alt="" coords="394,122,557,163"/>
+<area shape="rect" id="node7" href="class_vector3_d.html#ac86d9a556616f4c51fecbaf7d8658ce8" title="Gives us x coordinate (read&#45;only). " alt="" coords="432,188,519,215"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5a8e86b8b63ab0983b1656a603afeb38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a8e86b8b63ab0983b1656a603afeb38">&#9670;&nbsp;</a></span>GetScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_scene.html">Scene</a>&gt;&amp; Simulation::GetScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00066">66</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_simulation_a5a8e86b8b63ab0983b1656a603afeb38_cgraph.png" border="0" usemap="#class_simulation_a5a8e86b8b63ab0983b1656a603afeb38_cgraph" alt=""/></div>
+<map name="class_simulation_a5a8e86b8b63ab0983b1656a603afeb38_cgraph" id="class_simulation_a5a8e86b8b63ab0983b1656a603afeb38_cgraph">
+<area shape="rect" id="node2" href="class_simulation.html#a59335cf2a156dff9c961cbf033d05671" title="Method adds cubiods from configuration read by parser. " alt="" coords="200,97,359,124"/>
+<area shape="rect" id="node3" href="class_configuration.html#a56c8ec9d0e437246946ba29d5f371b09" title="Get the Vector of mobile objects names. " alt="" coords="407,5,603,32"/>
+<area shape="rect" id="node4" href="class_configuration.html#aed43ec8545bf596c6266fa4ee4a64b95" title="Get the Vector of mobile objects scales. " alt="" coords="423,57,586,98"/>
+<area shape="rect" id="node5" href="class_configuration.html#a90024398cc5ae270ae6d36ea6df9edc0" title="Get the Vector of mobile objects colors. " alt="" coords="423,122,586,163"/>
+<area shape="rect" id="node6" href="class_vector3_d.html#ac86d9a556616f4c51fecbaf7d8658ce8" title="Gives us x coordinate (read&#45;only). " alt="" coords="461,188,548,215"/>
 </map>
 </div>
 
@@ -232,14 +314,6 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_simulation_8cpp_source.html#l00003">3</a> of file <a class="el" href="_simulation_8cpp_source.html">Simulation.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_simulation_a2403cb6adccb69afb2471a03a130ab00_icgraph.png" border="0" usemap="#class_simulation_a2403cb6adccb69afb2471a03a130ab00_icgraph" alt=""/></div>
-<map name="class_simulation_a2403cb6adccb69afb2471a03a130ab00_icgraph" id="class_simulation_a2403cb6adccb69afb2471a03a130ab00_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="160,5,211,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -265,7 +339,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p><a class="el" href="class_parser.html" title="Class used to represent parser of CMD and XML. ">Parser</a> of cmd and xml files handler </p>
 
-<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00031">31</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00032">32</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
 
 </div>
 </div>
@@ -290,32 +364,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Plugin manager handler </p>
 
-<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00037">37</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
-
-</div>
-</div>
-<a id="a535cef24142b584301ace328f3123c7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a535cef24142b584301ace328f3123c7c">&#9670;&nbsp;</a></span>plugPaths</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::string&gt; Simulation::plugPaths</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Vector of paths to plugins </p>
-
-<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00043">43</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00038">38</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
 
 </div>
 </div>
@@ -340,32 +389,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p><a class="el" href="class_scene.html" title="Class used to represent a manager for plugins. ">Scene</a> handler </p>
 
-<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00049">49</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
-
-</div>
-</div>
-<a id="a18b711a3f7fbe382e9849bd0c2bbfcce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18b711a3f7fbe382e9849bd0c2bbfcce">&#9670;&nbsp;</a></span>serverSocket</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Simulation::serverSocket</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Server socket number </p>
-
-<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00055">55</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_simulation_8hh_source.html#l00044">44</a> of file <a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>.</p>
 
 </div>
 </div>
@@ -379,7 +403,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_simulation.html">Simulation</a></li>
-    <li class="footer">Generated on Tue Nov 10 2020 11:03:16 for Interpreter by
+    <li class="footer">Generated on Tue Nov 24 2020 09:12:38 for Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

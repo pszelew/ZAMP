@@ -86,9 +86,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af3ea312e4db364882ba963ac73b64ba5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugin_manager.html#af3ea312e4db364882ba963ac73b64ba5">init</a> (std::vector&lt; std::string &gt; pluginPaths)</td></tr>
 <tr class="memdesc:af3ea312e4db364882ba963ac73b64ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize <a class="el" href="class_plugin_manager.html" title="Class used to represent a manager for plugins. ">PluginManager</a> instance.  <a href="#af3ea312e4db364882ba963ac73b64ba5">More...</a><br /></td></tr>
 <tr class="separator:af3ea312e4db364882ba963ac73b64ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a030742f9a2e79f83886b4c63de322f46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugin_manager.html#a030742f9a2e79f83886b4c63de322f46">exec</a> (std::istream &amp;commandsStream, std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; scene, int serverSocket)</td></tr>
-<tr class="memdesc:a030742f9a2e79f83886b4c63de322f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run given commansds.  <a href="#a030742f9a2e79f83886b4c63de322f46">More...</a><br /></td></tr>
-<tr class="separator:a030742f9a2e79f83886b4c63de322f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab916b743e43db5ebc97ad0279e5aa3a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugin_manager.html#ab916b743e43db5ebc97ad0279e5aa3a3">exec</a> (std::istream &amp;commandsStream, std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;scene)</td></tr>
+<tr class="memdesc:ab916b743e43db5ebc97ad0279e5aa3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run given commansds.  <a href="#ab916b743e43db5ebc97ad0279e5aa3a3">More...</a><br /></td></tr>
+<tr class="separator:ab916b743e43db5ebc97ad0279e5aa3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -96,7 +96,7 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:af5cea57f197d862491a3e8f66471a3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of all loaded plugins.  <a href="#af5cea57f197d862491a3e8f66471a3d3">More...</a><br /></td></tr>
 <tr class="separator:af5cea57f197d862491a3e8f66471a3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86c12c33d62699bb59ffa9a781df4981"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_interp4_command.html">Interp4Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugin_manager.html#a86c12c33d62699bb59ffa9a781df4981">cmdInstance</a></td></tr>
-<tr class="memdesc:a86c12c33d62699bb59ffa9a781df4981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to current command instance.  <a href="#a86c12c33d62699bb59ffa9a781df4981">More...</a><br /></td></tr>
+<tr class="memdesc:a86c12c33d62699bb59ffa9a781df4981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the current command instance.  <a href="#a86c12c33d62699bb59ffa9a781df4981">More...</a><br /></td></tr>
 <tr class="separator:a86c12c33d62699bb59ffa9a781df4981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -104,8 +104,8 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_plugin_manager_8hh_source.html#l00032">32</a> of file <a class="el" href="_plugin_manager_8hh_source.html">PluginManager.hh</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a030742f9a2e79f83886b4c63de322f46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a030742f9a2e79f83886b4c63de322f46">&#9670;&nbsp;</a></span>exec()</h2>
+<a id="ab916b743e43db5ebc97ad0279e5aa3a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab916b743e43db5ebc97ad0279e5aa3a3">&#9670;&nbsp;</a></span>exec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -119,14 +119,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt;&#160;</td>
-          <td class="paramname"><em>scene</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>serverSocket</em>&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>scene</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -139,7 +133,6 @@ Private Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">commandsStream</td><td>- stream of commands </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>- scene containing all objects </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">serverSocket</td><td>- socket to server </td></tr>
   </table>
   </dd>
 </dl>
@@ -148,13 +141,13 @@ Private Attributes</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_plugin_manager_a030742f9a2e79f83886b4c63de322f46_cgraph.png" border="0" usemap="#class_plugin_manager_a030742f9a2e79f83886b4c63de322f46_cgraph" alt=""/></div>
-<map name="class_plugin_manager_a030742f9a2e79f83886b4c63de322f46_cgraph" id="class_plugin_manager_a030742f9a2e79f83886b4c63de322f46_cgraph">
+<div class="center"><img src="class_plugin_manager_ab916b743e43db5ebc97ad0279e5aa3a3_cgraph.png" border="0" usemap="#class_plugin_manager_ab916b743e43db5ebc97ad0279e5aa3a3_cgraph" alt=""/></div>
+<map name="class_plugin_manager_ab916b743e43db5ebc97ad0279e5aa3a3_cgraph" id="class_plugin_manager_ab916b743e43db5ebc97ad0279e5aa3a3_cgraph">
 <area shape="rect" id="node2" href="class_interp4_command.html#a3e15ef01af10fa8961926fd9b0274ab8" title="Read parameters of command. " alt="" coords="199,5,400,32"/>
 <area shape="rect" id="node3" href="class_interp4_command.html#a9b1bff7ff363991b35965ae9dfeac648" title="Return the name of command. " alt="" coords="195,56,404,83"/>
 <area shape="rect" id="node4" href="class_interp4_command.html#a693ca79d24ba27d11a19ed6fc90c37b9" title="Print syntax of command. " alt="" coords="203,107,396,133"/>
 <area shape="rect" id="node5" href="class_interp4_command.html#a953ac1b6590585a7161dcc2618f615a6" title="Get the name of object beeing moved. " alt="" coords="198,157,401,184"/>
-<area shape="rect" id="node6" href="class_interp4_command.html#a74bb8a659c5efeb7f207d5d58a50c5fe" title="Execute command. " alt="" coords="208,208,391,235"/>
+<area shape="rect" id="node6" href="class_interp4_command.html#a76b53f57e32fe716640aaaa52a47eb9c" title="Execute command. " alt="" coords="208,208,391,235"/>
 <area shape="rect" id="node7" href="class_interp4_command.html#a08fbbf2a70cdac46930b0eba6f5f361c" title="Display name and parameters of command. " alt="" coords="209,259,390,285"/>
 </map>
 </div>
@@ -207,7 +200,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Pointer to current command instance </p>
+<p>Pointer to the current command instance </p>
 
 <p class="definition">Definition at line <a class="el" href="_plugin_manager_8hh_source.html#l00048">48</a> of file <a class="el" href="_plugin_manager_8hh_source.html">PluginManager.hh</a>.</p>
 
@@ -248,7 +241,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_plugin_manager.html">PluginManager</a></li>
-    <li class="footer">Generated on Tue Nov 10 2020 11:03:16 for Interpreter by
+    <li class="footer">Generated on Tue Nov 24 2020 09:12:38 for Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

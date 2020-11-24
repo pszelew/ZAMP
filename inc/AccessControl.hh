@@ -5,55 +5,53 @@
 
 /*!
  * \file
- * \brief Zawiera definicję klasy AccessControl
+ * \brief Contains the definition of a class AccessControl
  */
 
 
 /*!
- * \brief Przechowuje informacje o zmianie
+ * \brief Containst info about changes
  *
- *  Przechowuje informacje o zmianie z zabezpieczeniem
- *  wielowątkowej modyfikacji.
  */
 class AccessControl {
    /*!
-    * \brief Zapewnia wyłączny dostęp do obiektu w trakcie modyfikacji.
+    * \brief Mutex to lock access to the object
     */
     std::mutex   _InternalGuard;
    /*!
-    * \brief Przechowuje informacje o zmianie.
+    * \brief A flag to signalize changes
     *
-    * Przechowuje informacje o tym czy zmiana nastąpiła (\p true) czy też
-    * nie (\p false).
+    * \retval true - there was a change in the scene
+    * \retval false - otherwise
     */ 
     bool         _Changed = false;
    /*!
-    * \brief Wykorzystywany do blokowania całej sceny.
+    * \brief Mutex to lock all the scene
     */
     std::mutex  _ExternalGuard;
  public:
   /*!
-   * \brief Dostęp do informacji o zmianie.
+   * \brief Check if there was a change in the scene
    *
    * Dostęp do informacji o zmianie.
-   * \retval true - gdy zmiana nastąpiła.
-   * \retval false - w przypadku przeciwnym.
+   * \retval true - there was a change in the scene
+   * \retval false - otherwise
    */
    bool IsChanged() const { return _Changed; }
   /*!
-   * \brief Zaznaczenie, że zmiana nastąpiła.
+   * \brief Mark change in the scene
    */
    void MarkChange() { _InternalGuard.lock();  _Changed = true;  _InternalGuard.unlock(); }
   /*!
-   * \brief Skasowanie informacji, że zmiana nastąpiła.
+   * \brief Mark removing change in the scene
    */
    void CancelChange() { _InternalGuard.lock();  _Changed = false;  _InternalGuard.unlock(); }
   /*!
-   * \brief Zamyka dostęp całej sceny.
+   * \brief Lock access to the scene
    */
    void LockAccess() { _ExternalGuard.lock(); }
   /*!
-   * \brief Otwiera dostęp do całej sceny.
+   * \brief Unlock access to the scene
    */
    void UnlockAccess() { _ExternalGuard.unlock(); } 
 };

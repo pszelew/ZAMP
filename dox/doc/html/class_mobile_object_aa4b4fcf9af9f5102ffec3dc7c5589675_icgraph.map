@@ -1,0 +1,5 @@
+<map id="MobileObject::GetPosition_m" name="MobileObject::GetPosition_m">
+<area shape="rect" id="node2" href="$class_connection_manager.html#a0882b7da1b7179dd33740f647a224398" title="Creates message about the state of a cuboid. " alt="" coords="243,35,385,76"/>
+<area shape="rect" id="node3" href="$class_connection_manager.html#ac58249c5e183bdfc9fe117b72f7cdff8" title="Just the sending thread. " alt="" coords="433,5,592,47"/>
+<area shape="rect" id="node4" href="$class_connection_manager.html#a64c9d8b1a4c10e283a465613d5c07774" title="Stop the loop in the thread. " alt="" coords="640,5,805,47"/>
+</map>

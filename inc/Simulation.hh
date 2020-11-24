@@ -42,12 +42,6 @@
             *  Scene handler
             */
             std::shared_ptr<Scene> scene;
-            /*!
-            * \brief Server socket number
-            *   
-            *  Server socket number
-            */   
-            int serverSocket;
 
             
         public:

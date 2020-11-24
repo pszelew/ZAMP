@@ -1,10 +1,14 @@
 <map id="Simulation.hh" name="Simulation.hh">
-<area shape="rect" id="node2" href="$_parser_8hh.html" title="Definition of LibraryInterface. " alt="" coords="42,155,118,181"/>
-<area shape="rect" id="node8" href="$_plugin_manager_8hh.html" title="Definition of PluginManager. " alt="" coords="628,80,753,107"/>
-<area shape="rect" id="node18" href="$_scene_8hh.html" title="Definition of PluginManager. " alt="" coords="783,229,859,256"/>
-<area shape="rect" id="node13" href="$_library_interface_8hh.html" title="Definition of LibraryInterface. " alt="" coords="388,155,516,181"/>
-<area shape="rect" id="node14" href="$_interp4_command_8hh.html" title="Definition of class Interp4Command. " alt="" coords="383,229,521,256"/>
-<area shape="rect" id="node15" href="$_mobile_object_8hh.html" title="File contains definition of class MobileObj. " alt="" coords="395,304,509,331"/>
-<area shape="rect" id="node16" href="$_vector3_d_8hh.html" title="Definition of Vector3D. " alt="" coords="338,379,430,405"/>
-<area shape="rect" id="node17" href="$_vector2_d_8hh.html" title="Definition of Vector2D. " alt="" coords="454,379,546,405"/>
+<area shape="rect" id="node2" href="$_parser_8hh.html" title="Definition of LibraryInterface. " alt="" coords="1404,155,1480,181"/>
+<area shape="rect" id="node20" href="$_plugin_manager_8hh.html" title="Definition of PluginManager. " alt="" coords="1870,80,1995,107"/>
+<area shape="rect" id="node30" href="$_scene_8hh.html" title="Definition of PluginManager. " alt="" coords="2403,304,2479,331"/>
+<area shape="rect" id="node32" href="$_cuboid_8hh.html" title="File contains definition of class Cubiod. " alt="" coords="1488,80,1567,107"/>
+<area shape="rect" id="node8" href="$xmlinterp_8hh.html" title="xmlinterp.hh" alt="" coords="798,229,889,256"/>
+<area shape="rect" id="node15" href="$_configuration_8hh.html" title="Configuration.hh" alt="" coords="1450,304,1565,331"/>
+<area shape="rect" id="node17" href="$_mobile_object_8hh.html" title="File contains definition of class MobileObj. " alt="" coords="1685,379,1799,405"/>
+<area shape="rect" id="node18" href="$_vector3_d_8hh.html" title="Definition of Vector3D. " alt="" coords="1513,453,1605,480"/>
+<area shape="rect" id="node19" href="$_vector2_d_8hh.html" title="Definition of Vector2D. " alt="" coords="1645,453,1737,480"/>
+<area shape="rect" id="node24" href="$_library_interface_8hh.html" title="Definition of LibraryInterface. " alt="" coords="1926,155,2054,181"/>
+<area shape="rect" id="node25" href="$_interp4_command_8hh.html" title="Definition of class Interp4Command. " alt="" coords="2078,229,2217,256"/>
+<area shape="rect" id="node26" href="$_access_control_8hh.html" title="Contains the definition of a class AccessControl. " alt="" coords="2407,379,2530,405"/>
 </map>

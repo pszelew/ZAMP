@@ -1,0 +1,17 @@
+<map id="ConnectionManager::Watching_and_Sending" name="ConnectionManager::Watching_and_Sending">
+<area shape="rect" id="node2" href="$class_connection_manager.html#a21a397c2fd3deb9ee736705b708e31db" title="Checks if czy the loop in the thread should be continued. " alt="" coords="212,113,377,154"/>
+<area shape="rect" id="node3" href="$class_connection_manager.html#a7a9132f53311ac235846765389440c1d" title="Sends a text message to the server. " alt="" coords="425,193,599,220"/>
+<area shape="rect" id="node4" href="$class_connection_manager.html#a64c9d8b1a4c10e283a465613d5c07774" title="Stop the loop in the thread. " alt="" coords="212,230,377,271"/>
+<area shape="rect" id="node5" href="$class_connection_manager.html#a0882b7da1b7179dd33740f647a224398" title="Creates message about the state of a cuboid. " alt="" coords="441,259,583,301"/>
+<area shape="rect" id="node6" href="$class_cuboid.html#a8e0d5a953587a8d7acf2d93e17489283" title="Cuboid::GetScale" alt="" coords="680,5,803,32"/>
+<area shape="rect" id="node7" href="$class_vector3_d.html#ac86d9a556616f4c51fecbaf7d8658ce8" title="Gives us x coordinate (read&#45;only). " alt="" coords="698,56,785,83"/>
+<area shape="rect" id="node8" href="$class_vector3_d.html#a7146d35db2c1bf7606c8290282a423ec" title="Gives us y coordinate (read&#45;only). " alt="" coords="698,107,785,133"/>
+<area shape="rect" id="node9" href="$class_vector3_d.html#af4ae427e82a23af845f804106daed509" title="Gives us z coordinate (read&#45;only). " alt="" coords="698,157,785,184"/>
+<area shape="rect" id="node10" href="$class_mobile_object.html#aa4b4fcf9af9f5102ffec3dc7c5589675" title="Gives us position of mobile object (read&#45;only). " alt="" coords="647,208,836,235"/>
+<area shape="rect" id="node11" href="$class_mobile_object.html#a0dbb981cf6514b8ae938e82e02b43719" title="Gives us a value of roll angle. " alt="" coords="667,259,815,301"/>
+<area shape="rect" id="node12" href="$class_mobile_object.html#a0fb31bdc6f93520ac7c566e1f56ac4e0" title="Gives us a value of pitch angle. " alt="" coords="667,325,815,366"/>
+<area shape="rect" id="node13" href="$class_mobile_object.html#a27937e5c64552958708cc7748efb9115" title="Gives us a value of yaw angle. " alt="" coords="667,390,815,431"/>
+<area shape="rect" id="node14" href="$class_cuboid.html#aab77716c7cc634aa3f2bbae04f7172ad" title="Get red color of coboid 0&#45;255 (read&#45;only) " alt="" coords="677,456,805,483"/>
+<area shape="rect" id="node15" href="$class_cuboid.html#a264816a81d931091302712e2606bb50f" title="Get green color of coboid 0&#45;255 (read&#45;only) " alt="" coords="677,507,806,533"/>
+<area shape="rect" id="node16" href="$class_cuboid.html#a94e57cfc076836847fafd27c0f199dc0" title="Get blue color of coboid 0&#45;255 (read&#45;only) " alt="" coords="677,557,805,584"/>
+</map>

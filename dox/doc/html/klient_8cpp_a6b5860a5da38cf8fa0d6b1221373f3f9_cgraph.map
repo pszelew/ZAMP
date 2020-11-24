@@ -1,0 +1,9 @@
+<map id="Fun_CommunicationThread" name="Fun_CommunicationThread">
+<area shape="rect" id="node2" href="$class_sender.html#a100a3e1f1a1ab4c388391e5b5a6de9f8" title="Ta metoda jest de facto treścią wątku komunikacyjnego. " alt="" coords="235,125,385,166"/>
+<area shape="rect" id="node3" href="$class_access_control.html#a687d41c24cb496f070915eb7c813f08f" title="Check if there was a change in the scene. " alt="" coords="445,5,617,32"/>
+<area shape="rect" id="node4" href="$class_access_control.html#abd4921dc14c3568563c2ae35f4b43c29" title="Lock access to the scene. " alt="" coords="440,56,621,83"/>
+<area shape="rect" id="node5" href="$klient_8cpp.html#ad7d409ff5eb0e067f283005e8998d4c0" title="Wysyła napis do poprzez gniazdo sieciowe. " alt="" coords="505,107,557,133"/>
+<area shape="rect" id="node6" href="$class_geom_object.html#a26699f0b8ff8eabb21418ae1baff4c48" title="Udostępnia kolejny zestaw poleceń umożliwiających zespołu obiektu. " alt="" coords="439,157,622,184"/>
+<area shape="rect" id="node7" href="$class_access_control.html#ac05a143ff477cee359603872b7642943" title="Mark removing change in the scene. " alt="" coords="433,208,628,235"/>
+<area shape="rect" id="node8" href="$class_access_control.html#aff3de9ca43882da925567c0057618cc5" title="Unlock access to the scene. " alt="" coords="434,259,627,285"/>
+</map>

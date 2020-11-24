@@ -1,6 +1,10 @@
 var annotated_dup =
 [
+    [ "AccessControl", "class_access_control.html", "class_access_control" ],
+    [ "Configuration", "class_configuration.html", "class_configuration" ],
+    [ "ConnectionManager", "class_connection_manager.html", "class_connection_manager" ],
     [ "Cuboid", "class_cuboid.html", "class_cuboid" ],
+    [ "GeomObject", "class_geom_object.html", "class_geom_object" ],
     [ "Interp4Command", "class_interp4_command.html", "class_interp4_command" ],
     [ "Interp4Move", "class_interp4_move.html", "class_interp4_move" ],
     [ "Interp4Pause", "class_interp4_pause.html", "class_interp4_pause" ],
@@ -11,7 +15,9 @@ var annotated_dup =
     [ "Parser", "class_parser.html", "class_parser" ],
     [ "PluginManager", "class_plugin_manager.html", "class_plugin_manager" ],
     [ "Scene", "class_scene.html", "class_scene" ],
+    [ "Sender", "class_sender.html", "class_sender" ],
     [ "Simulation", "class_simulation.html", "class_simulation" ],
     [ "Vector2D", "class_vector2_d.html", "class_vector2_d" ],
-    [ "Vector3D", "class_vector3_d.html", "class_vector3_d" ]
+    [ "Vector3D", "class_vector3_d.html", "class_vector3_d" ],
+    [ "XMLInterp4Config", "class_x_m_l_interp4_config.html", "class_x_m_l_interp4_config" ]
 ];

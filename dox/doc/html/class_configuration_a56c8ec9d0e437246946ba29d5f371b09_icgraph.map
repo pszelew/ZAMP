@@ -1,0 +1,5 @@
+<map id="Configuration::GetMobileName" name="Configuration::GetMobileName">
+<area shape="rect" id="node2" href="$class_simulation.html#a59335cf2a156dff9c961cbf033d05671" title="Method adds cubiods from configuration read by parser. " alt="" coords="249,31,408,57"/>
+<area shape="rect" id="node3" href="$class_simulation.html#afbc304f6f56a751c78277fbb4efea74e" title="Method runs simulation. " alt="" coords="471,5,587,32"/>
+<area shape="rect" id="node4" href="$class_simulation.html#a5a8e86b8b63ab0983b1656a603afeb38" title="Return the scene pointer. " alt="" coords="456,56,603,83"/>
+</map>

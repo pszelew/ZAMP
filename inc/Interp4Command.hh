@@ -42,6 +42,8 @@
             virtual const char* GetCmdName() const = 0;
             /*!
             * \brief Execute command
+            * \param[in, out] wObMob - shared pointer reference to a mobile object
+            * \param[in, out] pAccCtrl - shared pointer reference to the scene
             * \retval true - executed without problems
             * \retval false - there was an error 
             */

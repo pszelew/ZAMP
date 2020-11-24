@@ -107,9 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae1e3bf7fc34076f19d857a8cd30082e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_move.html#aae1e3bf7fc34076f19d857a8cd30082e">GetCmdName</a> () const</td></tr>
 <tr class="memdesc:aae1e3bf7fc34076f19d857a8cd30082e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of command.  <a href="#aae1e3bf7fc34076f19d857a8cd30082e">More...</a><br /></td></tr>
 <tr class="separator:aae1e3bf7fc34076f19d857a8cd30082e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7994119801db2ebe67351e8584c5d57d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_move.html#a7994119801db2ebe67351e8584c5d57d">ExecCmd</a> (std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt; wObMob, int serverSocket) const</td></tr>
-<tr class="memdesc:a7994119801db2ebe67351e8584c5d57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute command.  <a href="#a7994119801db2ebe67351e8584c5d57d">More...</a><br /></td></tr>
-<tr class="separator:a7994119801db2ebe67351e8584c5d57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80dba614165dbe92ed38409e750cf441"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_move.html#a80dba614165dbe92ed38409e750cf441">ExecCmd</a> (std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt; &amp;wObMob, std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;pAccCtrl) const</td></tr>
+<tr class="memdesc:a80dba614165dbe92ed38409e750cf441"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute command.  <a href="#a80dba614165dbe92ed38409e750cf441">More...</a><br /></td></tr>
+<tr class="separator:a80dba614165dbe92ed38409e750cf441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf8c4ccafb9e257b3e75d8ef22407ef5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_move.html#acf8c4ccafb9e257b3e75d8ef22407ef5">ReadParams</a> (std::istream &amp;Strm_CmdsList)</td></tr>
 <tr class="memdesc:acf8c4ccafb9e257b3e75d8ef22407ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read parameters of command.  <a href="#acf8c4ccafb9e257b3e75d8ef22407ef5">More...</a><br /></td></tr>
 <tr class="separator:acf8c4ccafb9e257b3e75d8ef22407ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,8 +240,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a7994119801db2ebe67351e8584c5d57d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7994119801db2ebe67351e8584c5d57d">&#9670;&nbsp;</a></span>ExecCmd()</h2>
+<a id="a80dba614165dbe92ed38409e750cf441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80dba614165dbe92ed38409e750cf441">&#9670;&nbsp;</a></span>ExecCmd()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,14 +252,14 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool Interp4Move::ExecCmd </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>wObMob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>serverSocket</em>&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pAccCtrl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -281,9 +281,19 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_interp4_command.html#a74bb8a659c5efeb7f207d5d58a50c5fe">Interp4Command</a>.</p>
+<p>Implements <a class="el" href="class_interp4_command.html#a76b53f57e32fe716640aaaa52a47eb9c">Interp4Command</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_interp4_move_8cpp_source.html#l00041">41</a> of file <a class="el" href="_interp4_move_8cpp_source.html">Interp4Move.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_interp4_move_a80dba614165dbe92ed38409e750cf441_cgraph.png" border="0" usemap="#class_interp4_move_a80dba614165dbe92ed38409e750cf441_cgraph" alt=""/></div>
+<map name="class_interp4_move_a80dba614165dbe92ed38409e750cf441_cgraph" id="class_interp4_move_a80dba614165dbe92ed38409e750cf441_cgraph">
+<area shape="rect" id="node2" href="class_vector3_d.html#ac86d9a556616f4c51fecbaf7d8658ce8" title="Gives us x coordinate (read&#45;only). " alt="" coords="208,5,295,32"/>
+<area shape="rect" id="node3" href="class_vector3_d.html#a7146d35db2c1bf7606c8290282a423ec" title="Gives us y coordinate (read&#45;only). " alt="" coords="208,56,295,83"/>
+<area shape="rect" id="node4" href="class_vector3_d.html#af4ae427e82a23af845f804106daed509" title="Gives us z coordinate (read&#45;only). " alt="" coords="208,107,295,133"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -462,7 +472,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_interp4_command.html#a3e15ef01af10fa8961926fd9b0274ab8">Interp4Command</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_interp4_move_8cpp_source.html#l00048">48</a> of file <a class="el" href="_interp4_move_8cpp_source.html">Interp4Move.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interp4_move_8cpp_source.html#l00078">78</a> of file <a class="el" href="_interp4_move_8cpp_source.html">Interp4Move.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -562,7 +572,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_interp4_move.html">Interp4Move</a></li>
-    <li class="footer">Generated on Tue Nov 10 2020 11:03:16 for Interpreter by
+    <li class="footer">Generated on Tue Nov 24 2020 09:12:38 for Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

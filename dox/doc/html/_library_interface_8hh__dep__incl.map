@@ -1,8 +1,10 @@
 <map id="LibraryInterface.hh" name="LibraryInterface.hh">
-<area shape="rect" id="node2" href="$_plugin_manager_8hh.html" title="Definition of PluginManager. " alt="" coords="107,80,232,107"/>
-<area shape="rect" id="node7" href="$_library_interface_8cpp.html" title="LibraryInterface.cpp" alt="" coords="257,80,391,107"/>
-<area shape="rect" id="node3" href="$_simulation_8hh.html" title="Definition of Simulation. " alt="" coords="50,155,150,181"/>
-<area shape="rect" id="node6" href="$_plugin_manager_8cpp.html" title="PluginManager.cpp" alt="" coords="174,155,306,181"/>
-<area shape="rect" id="node4" href="$main_8cpp.html" title="main.cpp" alt="" coords="5,229,80,256"/>
-<area shape="rect" id="node5" href="$_simulation_8cpp.html" title="Simulation.cpp" alt="" coords="104,229,211,256"/>
+<area shape="rect" id="node2" href="$_plugin_manager_8hh.html" title="Definition of PluginManager. " alt="" coords="235,80,361,107"/>
+<area shape="rect" id="node9" href="$_library_interface_8cpp.html" title="LibraryInterface.cpp" alt="" coords="385,80,520,107"/>
+<area shape="rect" id="node3" href="$_simulation_8hh.html" title="Definition of Simulation. " alt="" coords="179,155,279,181"/>
+<area shape="rect" id="node8" href="$_plugin_manager_8cpp.html" title="PluginManager.cpp" alt="" coords="303,155,435,181"/>
+<area shape="rect" id="node4" href="$_connection_manager_8hh.html" title="Contains the definition of a class ConnectionManager. " alt="" coords="37,229,191,256"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title="main.cpp" alt="" coords="191,304,266,331"/>
+<area shape="rect" id="node7" href="$_simulation_8cpp.html" title="Simulation.cpp" alt="" coords="266,229,373,256"/>
+<area shape="rect" id="node5" href="$_connection_manager_8cpp.html" title="ConnectionManager.cpp" alt="" coords="5,304,167,331"/>
 </map>

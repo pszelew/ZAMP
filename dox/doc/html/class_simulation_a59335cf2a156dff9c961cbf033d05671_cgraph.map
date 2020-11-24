@@ -1,0 +1,6 @@
+<map id="Simulation::AddCuboids" name="Simulation::AddCuboids">
+<area shape="rect" id="node2" href="$class_configuration.html#a56c8ec9d0e437246946ba29d5f371b09" title="Get the Vector of mobile objects names. " alt="" coords="212,5,408,32"/>
+<area shape="rect" id="node3" href="$class_configuration.html#aed43ec8545bf596c6266fa4ee4a64b95" title="Get the Vector of mobile objects scales. " alt="" coords="229,57,391,98"/>
+<area shape="rect" id="node4" href="$class_configuration.html#a90024398cc5ae270ae6d36ea6df9edc0" title="Get the Vector of mobile objects colors. " alt="" coords="229,122,391,163"/>
+<area shape="rect" id="node5" href="$class_vector3_d.html#ac86d9a556616f4c51fecbaf7d8658ce8" title="Gives us x coordinate (read&#45;only). " alt="" coords="267,188,353,215"/>
+</map>

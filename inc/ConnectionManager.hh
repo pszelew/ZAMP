@@ -14,74 +14,101 @@
 #include <mutex>
 #include <vector>
 
+
+/*!
+ * \file
+ * \brief Contains the definition of a class ConnectionManager
+ */
+
+
+/*!
+ * \brief Containst info about connection between a simulation and a server
+ *
+ */
 class ConnectionManager 
 {
     private:
         /*!
-        * \brief Deskryptor gniazda sieciowego, poprzez które wysyłane są polecenia.
+        * \brief Secket descriptor, to send data
         */
         int socket_manager = 0;
         /*!
-        * \brief Wartość tego pola decyduje o kontynuacji wykonywania wątku.
+        * \brief Bool value that decides whether continue sending thread
         * 
-        * Wartość tego pola decyduje o kontynuacji wykonywania wątku.
-        * W przypadku wartości \p true, pętla wątku będzie wykonywana.
-        * Natomiast wartość \p false powoduje przerwanie pętli.
+        * If \p true then loop in a sending thread in continued. If \p false it stops.
         */
         volatile bool _ContinueLooping = true;
         /*!
-        * \brief Wskaźnik na symulacje, której stan jest przesyłany w postaci
-        *        poleceń do serwera graficzneg.
+        * \brief Pointer to the simulation manager is connecting to
+        *
+        * 
         */
         std::shared_ptr<Simulation> mySim;
     public:
+        /*!
+        * \brief Non-parametrized constructor of our class
+        *
+        *
+        */
         ConnectionManager(){}
+        /*!
+        * \brief Destructor of our class
+        *
+        * Destructor that closes connection to the server
+        *
+        */
         ~ConnectionManager(){Send("Close\n"); close(socket_manager);}
+        /*!
+        * \brief Initiazlizes connection manager
+        * 
+        * 
+        */
         bool init(std::shared_ptr<Simulation> sim);
           /*!
-        * \brief Sprawdza, czy pętla wątku może być wykonywana.
+        * \brief Checks if czy the loop in the thread should be continued
         * 
-        * Sprawdza, czy pętla wątku może być wykonywana.
-        * \retval true - pętla wątku może być nadal wykonywana.
-        * \retval false - w przypadku przeciwnym.
+        * Checks if czy the loop in the thread should be continued.
+        * \retval true - the loop should be continued
+        * \retval false - otherwise
         */
         bool ShouldCountinueLooping() const { return _ContinueLooping; }
         /*!
-        * \brief Powoduje przerwanie działania pętli wątku.
+        * \brief Stop the loop in the thread
         *
-        * Powoduje przerwanie działania pętli wątku.
-        * \warning Reakcja na tę operację nie będize natychmiastowa.
+        * Stop the loop in the thread
+        * \warning Reaction is not immediate
         */
         void CancelCountinueLooping() { _ContinueLooping = false; }
 
         /*!
-        * \brief Ta metoda jest de facto treścią wątku komunikacyjnego
+        * \brief Just the sending thread
         *
-        * Przegląda scenę i tworzy odpowiednie polecenia, a następnie
-        * wysyła je do serwera.
-        * \param[in] Socket - deskryptor gniazda sieciowego, poprzez które
-        *                     wysyłane są polecenia.
+        * If something was changed in the scene it sends all the data to the server.
+        *   
         */
 
         void Watching_and_Sending();
 
         /*!
-        * \brief TODO
+        * \brief Creates message about the state of a cuboid
         *   
-        * \param[in] mob - TODO
+        * Creates message about the state of a cuboid
         * 
+        * \param[in] mob - the message will describe this object
+        * \return Created message as string
         */
         std::string CreateMessage(Cuboid mob);
 
         /*!
-        * \brief Wysyła napis do poprzez gniazdo sieciowe.
+        * \brief Sends a text message to the server
         *
-        * Wysyła napis do poprzez gniazdo sieciowe.
+        * Sends a text message to the server
         * 
-        * \param[in] sMesg - zawiera napis, który ma zostać wysłany poprzez
-        *                    gniazdo sieciowe.
+        * \param[in] sMesg - text message to be send
+        * \retval true - Sending successful
+        * \retval false - Otherwise
         */
-        int Send(const char *sMesg);
+        bool Send(const char *sMesg);
 
 };
 

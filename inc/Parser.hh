@@ -62,9 +62,7 @@ using namespace XERCES_CPP_NAMESPACE;
             /*!
             * \brief Returns current configuration value (read-only)
             *
-            * \param[in] cmd - name of cmd file
-            * \param[in] xml - name of xml file
-            * \return - 
+            * \return Returns current configuration value (read-only)
             */
             Configuration  GetConf() const { return conf; }
 

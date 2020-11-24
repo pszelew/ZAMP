@@ -61,6 +61,7 @@ $(document).ready(function(){initNavTree('class_cuboid.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_cuboid-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Cuboid Class Reference</div>  </div>
@@ -84,8 +85,8 @@ Collaboration diagram for Cuboid:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_cuboid__coll__graph.png" border="0" usemap="#_cuboid_coll__map" alt="Collaboration graph"/></div>
 <map name="_cuboid_coll__map" id="_cuboid_coll__map">
-<area shape="rect" id="node2" href="class_mobile_object.html" title="Class used to represent a mobile object. " alt="" coords="5,109,104,136"/>
-<area shape="rect" id="node3" href="class_vector3_d.html" title="Class used to represent 3D Vector. " alt="" coords="17,5,92,32"/>
+<area shape="rect" id="node2" href="class_mobile_object.html" title="Class used to represent a mobile object. " alt="" coords="79,109,177,136"/>
+<area shape="rect" id="node3" href="class_vector3_d.html" title="Class used to represent 3D Vector. " alt="" coords="5,5,80,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -94,9 +95,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a359a803f0d7e3552f39efc8c42f8c650"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#a359a803f0d7e3552f39efc8c42f8c650">Cuboid</a> (std::string in_name, <a class="el" href="class_vector3_d.html">Vector3D</a> in_rot_deg, <a class="el" href="class_vector3_d.html">Vector3D</a> in_pos_m)</td></tr>
 <tr class="memdesc:a359a803f0d7e3552f39efc8c42f8c650"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_cuboid.html" title="Class used to represent a cuboid mobile object. ">Cuboid</a> constructor.  <a href="#a359a803f0d7e3552f39efc8c42f8c650">More...</a><br /></td></tr>
 <tr class="separator:a359a803f0d7e3552f39efc8c42f8c650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3243de1fae0f7f34d45eea42fe4e412"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#ab3243de1fae0f7f34d45eea42fe4e412">Cuboid</a> (std::string in_name, <a class="el" href="class_vector3_d.html">Vector3D</a> in_rot_deg, <a class="el" href="class_vector3_d.html">Vector3D</a> in_pos_m, <a class="el" href="class_vector3_d.html">Vector3D</a> in_scale, int in_colorR, int in_colorG, int in_colorB)</td></tr>
+<tr class="memdesc:ab3243de1fae0f7f34d45eea42fe4e412"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_cuboid.html" title="Class used to represent a cuboid mobile object. ">Cuboid</a> constructor.  <a href="#ab3243de1fae0f7f34d45eea42fe4e412">More...</a><br /></td></tr>
+<tr class="separator:ab3243de1fae0f7f34d45eea42fe4e412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1abf60e93d024b7a01ee5b1a48f1f08a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#a1abf60e93d024b7a01ee5b1a48f1f08a">Cuboid</a> ()</td></tr>
 <tr class="memdesc:a1abf60e93d024b7a01ee5b1a48f1f08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mobile object contructor.  <a href="#a1abf60e93d024b7a01ee5b1a48f1f08a">More...</a><br /></td></tr>
 <tr class="separator:a1abf60e93d024b7a01ee5b1a48f1f08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0d5a953587a8d7acf2d93e17489283"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vector3_d.html">Vector3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#a8e0d5a953587a8d7acf2d93e17489283">GetScale</a> ()</td></tr>
+<tr class="separator:a8e0d5a953587a8d7acf2d93e17489283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab77716c7cc634aa3f2bbae04f7172ad"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#aab77716c7cc634aa3f2bbae04f7172ad">GetColorR</a> ()</td></tr>
+<tr class="memdesc:aab77716c7cc634aa3f2bbae04f7172ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get red color of coboid 0-255 (read-only)  <a href="#aab77716c7cc634aa3f2bbae04f7172ad">More...</a><br /></td></tr>
+<tr class="separator:aab77716c7cc634aa3f2bbae04f7172ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a264816a81d931091302712e2606bb50f"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#a264816a81d931091302712e2606bb50f">GetColorG</a> ()</td></tr>
+<tr class="memdesc:a264816a81d931091302712e2606bb50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get green color of coboid 0-255 (read-only)  <a href="#a264816a81d931091302712e2606bb50f">More...</a><br /></td></tr>
+<tr class="separator:a264816a81d931091302712e2606bb50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e57cfc076836847fafd27c0f199dc0"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#a94e57cfc076836847fafd27c0f199dc0">GetColorB</a> ()</td></tr>
+<tr class="memdesc:a94e57cfc076836847fafd27c0f199dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get blue color of coboid 0-255 (read-only)  <a href="#a94e57cfc076836847fafd27c0f199dc0">More...</a><br /></td></tr>
+<tr class="separator:a94e57cfc076836847fafd27c0f199dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_mobile_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mobile_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_mobile_object.html">MobileObject</a></td></tr>
 <tr class="memitem:aa9cf946855ffd0dac0233bfc0c4ffb58 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#aa9cf946855ffd0dac0233bfc0c4ffb58">MobileObject</a> (std::string in_name, <a class="el" href="class_vector3_d.html">Vector3D</a> in_rot_deg, <a class="el" href="class_vector3_d.html">Vector3D</a> in_pos_m)</td></tr>
 <tr class="memdesc:aa9cf946855ffd0dac0233bfc0c4ffb58 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mobile object contructor.  <a href="class_mobile_object.html#aa9cf946855ffd0dac0233bfc0c4ffb58">More...</a><br /></td></tr>
@@ -107,39 +122,54 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a23541ff4fe64757dae94a911bf1726f1 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a23541ff4fe64757dae94a911bf1726f1">~MobileObject</a> ()</td></tr>
 <tr class="memdesc:a23541ff4fe64757dae94a911bf1726f1 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="class_mobile_object.html#a23541ff4fe64757dae94a911bf1726f1">More...</a><br /></td></tr>
 <tr class="separator:a23541ff4fe64757dae94a911bf1726f1 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c0912aa3c87c59eae41b0dc906b1f82 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a6c0912aa3c87c59eae41b0dc906b1f82">GetAng_Roll_deg</a> () const</td></tr>
-<tr class="memdesc:a6c0912aa3c87c59eae41b0dc906b1f82 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives us a value of <em>roll</em> angle.  <a href="class_mobile_object.html#a6c0912aa3c87c59eae41b0dc906b1f82">More...</a><br /></td></tr>
-<tr class="separator:a6c0912aa3c87c59eae41b0dc906b1f82 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42d60ab2da38e362d095b989d84596dd inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a42d60ab2da38e362d095b989d84596dd">GetAng_Pitch_deg</a> () const</td></tr>
-<tr class="memdesc:a42d60ab2da38e362d095b989d84596dd inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives us a value of <em>pitch</em> angle.  <a href="class_mobile_object.html#a42d60ab2da38e362d095b989d84596dd">More...</a><br /></td></tr>
-<tr class="separator:a42d60ab2da38e362d095b989d84596dd inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51625427c29c4747c499177e48eb73d inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#ac51625427c29c4747c499177e48eb73d">GetAng_Yaw_deg</a> () const</td></tr>
-<tr class="memdesc:ac51625427c29c4747c499177e48eb73d inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives us a value of <em>yaw</em> angle.  <a href="class_mobile_object.html#ac51625427c29c4747c499177e48eb73d">More...</a><br /></td></tr>
-<tr class="separator:ac51625427c29c4747c499177e48eb73d inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a61d095c9d92f50d70c10c799e9946 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#ae3a61d095c9d92f50d70c10c799e9946">SetAng_Roll_deg</a> (double Ang_Roll_deg)</td></tr>
-<tr class="memdesc:ae3a61d095c9d92f50d70c10c799e9946 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes value of <em>roll</em> angle.  <a href="class_mobile_object.html#ae3a61d095c9d92f50d70c10c799e9946">More...</a><br /></td></tr>
-<tr class="separator:ae3a61d095c9d92f50d70c10c799e9946 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f70c91cef06a51f0a7255a4f3e0aa61 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a9f70c91cef06a51f0a7255a4f3e0aa61">SetAng_Pitch_deg</a> (double Ang_Pitch_deg)</td></tr>
-<tr class="memdesc:a9f70c91cef06a51f0a7255a4f3e0aa61 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes value of <em>pitch</em> angle.  <a href="class_mobile_object.html#a9f70c91cef06a51f0a7255a4f3e0aa61">More...</a><br /></td></tr>
-<tr class="separator:a9f70c91cef06a51f0a7255a4f3e0aa61 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e0d871efd5d9a8f6e3c1a96146172bf inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a3e0d871efd5d9a8f6e3c1a96146172bf">SetAng_Yaw_deg</a> (double Ang_Yaw_deg)</td></tr>
-<tr class="memdesc:a3e0d871efd5d9a8f6e3c1a96146172bf inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes value of <em>yaw</em> angle.  <a href="class_mobile_object.html#a3e0d871efd5d9a8f6e3c1a96146172bf">More...</a><br /></td></tr>
-<tr class="separator:a3e0d871efd5d9a8f6e3c1a96146172bf inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf021ef7da5a5147a3fd86bf0eb2c974 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vector3_d.html">Vector3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#acf021ef7da5a5147a3fd86bf0eb2c974">GetPosition_m</a> () const</td></tr>
-<tr class="memdesc:acf021ef7da5a5147a3fd86bf0eb2c974 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives us position of mobile object (read-only).  <a href="class_mobile_object.html#acf021ef7da5a5147a3fd86bf0eb2c974">More...</a><br /></td></tr>
-<tr class="separator:acf021ef7da5a5147a3fd86bf0eb2c974 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37cbcc4a984dd5b225b246cbb8c9a0ad inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a37cbcc4a984dd5b225b246cbb8c9a0ad">UsePosition_m</a> ()</td></tr>
-<tr class="memdesc:a37cbcc4a984dd5b225b246cbb8c9a0ad inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives us position of mobile object (modify).  <a href="class_mobile_object.html#a37cbcc4a984dd5b225b246cbb8c9a0ad">More...</a><br /></td></tr>
-<tr class="separator:a37cbcc4a984dd5b225b246cbb8c9a0ad inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2afba188e782e63b35ee698b6fce423 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#ae2afba188e782e63b35ee698b6fce423">SetPosition_m</a> (const <a class="el" href="class_vector3_d.html">Vector3D</a> &amp;rPos_m)</td></tr>
-<tr class="memdesc:ae2afba188e782e63b35ee698b6fce423 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position of object Set position of object (center of object)  <a href="class_mobile_object.html#ae2afba188e782e63b35ee698b6fce423">More...</a><br /></td></tr>
-<tr class="separator:ae2afba188e782e63b35ee698b6fce423 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b91818473a08efd0e9f446c715b7424 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a2b91818473a08efd0e9f446c715b7424">SetName</a> (const char *sName)</td></tr>
-<tr class="memdesc:a2b91818473a08efd0e9f446c715b7424 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes name of object.  <a href="class_mobile_object.html#a2b91818473a08efd0e9f446c715b7424">More...</a><br /></td></tr>
-<tr class="separator:a2b91818473a08efd0e9f446c715b7424 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b2cd795f5db9649ab67c46c151fd87d inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a7b2cd795f5db9649ab67c46c151fd87d">GetName</a> () const</td></tr>
-<tr class="memdesc:a7b2cd795f5db9649ab67c46c151fd87d inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives us name of object (read-only)  <a href="class_mobile_object.html#a7b2cd795f5db9649ab67c46c151fd87d">More...</a><br /></td></tr>
-<tr class="separator:a7b2cd795f5db9649ab67c46c151fd87d inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dbb981cf6514b8ae938e82e02b43719 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a0dbb981cf6514b8ae938e82e02b43719">GetAng_Roll_deg</a> () const</td></tr>
+<tr class="memdesc:a0dbb981cf6514b8ae938e82e02b43719 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives us a value of <em>roll</em> angle.  <a href="class_mobile_object.html#a0dbb981cf6514b8ae938e82e02b43719">More...</a><br /></td></tr>
+<tr class="separator:a0dbb981cf6514b8ae938e82e02b43719 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb31bdc6f93520ac7c566e1f56ac4e0 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a0fb31bdc6f93520ac7c566e1f56ac4e0">GetAng_Pitch_deg</a> () const</td></tr>
+<tr class="memdesc:a0fb31bdc6f93520ac7c566e1f56ac4e0 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives us a value of <em>pitch</em> angle.  <a href="class_mobile_object.html#a0fb31bdc6f93520ac7c566e1f56ac4e0">More...</a><br /></td></tr>
+<tr class="separator:a0fb31bdc6f93520ac7c566e1f56ac4e0 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27937e5c64552958708cc7748efb9115 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a27937e5c64552958708cc7748efb9115">GetAng_Yaw_deg</a> () const</td></tr>
+<tr class="memdesc:a27937e5c64552958708cc7748efb9115 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives us a value of <em>yaw</em> angle.  <a href="class_mobile_object.html#a27937e5c64552958708cc7748efb9115">More...</a><br /></td></tr>
+<tr class="separator:a27937e5c64552958708cc7748efb9115 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae353e73a3b9f066c2afbba5bcffab385 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#ae353e73a3b9f066c2afbba5bcffab385">SetAng_Roll_deg</a> (double Ang_Roll_deg)</td></tr>
+<tr class="memdesc:ae353e73a3b9f066c2afbba5bcffab385 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes value of <em>roll</em> angle.  <a href="class_mobile_object.html#ae353e73a3b9f066c2afbba5bcffab385">More...</a><br /></td></tr>
+<tr class="separator:ae353e73a3b9f066c2afbba5bcffab385 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c6593975e63f4d5c635587287b9b7b inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a79c6593975e63f4d5c635587287b9b7b">SetAng_Pitch_deg</a> (double Ang_Pitch_deg)</td></tr>
+<tr class="memdesc:a79c6593975e63f4d5c635587287b9b7b inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes value of <em>pitch</em> angle.  <a href="class_mobile_object.html#a79c6593975e63f4d5c635587287b9b7b">More...</a><br /></td></tr>
+<tr class="separator:a79c6593975e63f4d5c635587287b9b7b inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49813180b2c7b35e2442298f37afae50 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a49813180b2c7b35e2442298f37afae50">SetAng_Yaw_deg</a> (double Ang_Yaw_deg)</td></tr>
+<tr class="memdesc:a49813180b2c7b35e2442298f37afae50 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes value of <em>yaw</em> angle.  <a href="class_mobile_object.html#a49813180b2c7b35e2442298f37afae50">More...</a><br /></td></tr>
+<tr class="separator:a49813180b2c7b35e2442298f37afae50 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b4fcf9af9f5102ffec3dc7c5589675 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_vector3_d.html">Vector3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#aa4b4fcf9af9f5102ffec3dc7c5589675">GetPosition_m</a> () const</td></tr>
+<tr class="memdesc:aa4b4fcf9af9f5102ffec3dc7c5589675 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives us position of mobile object (read-only).  <a href="class_mobile_object.html#aa4b4fcf9af9f5102ffec3dc7c5589675">More...</a><br /></td></tr>
+<tr class="separator:aa4b4fcf9af9f5102ffec3dc7c5589675 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314258b46806a66c45c298c329b1262f inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_vector3_d.html">Vector3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a314258b46806a66c45c298c329b1262f">UsePosition_m</a> ()</td></tr>
+<tr class="memdesc:a314258b46806a66c45c298c329b1262f inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives us position of mobile object (modify).  <a href="class_mobile_object.html#a314258b46806a66c45c298c329b1262f">More...</a><br /></td></tr>
+<tr class="separator:a314258b46806a66c45c298c329b1262f inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd5c62ce5c71095fe2656ffdaba82530 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#abd5c62ce5c71095fe2656ffdaba82530">SetPosition_m</a> (const <a class="el" href="class_vector3_d.html">Vector3D</a> &amp;rPos_m)</td></tr>
+<tr class="memdesc:abd5c62ce5c71095fe2656ffdaba82530 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position of object Set position of object (center of object)  <a href="class_mobile_object.html#abd5c62ce5c71095fe2656ffdaba82530">More...</a><br /></td></tr>
+<tr class="separator:abd5c62ce5c71095fe2656ffdaba82530 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfe72eee9a95d669b55a1419aa29d11 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#abdfe72eee9a95d669b55a1419aa29d11">SetName</a> (const char *sName)</td></tr>
+<tr class="memdesc:abdfe72eee9a95d669b55a1419aa29d11 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes name of object.  <a href="class_mobile_object.html#abdfe72eee9a95d669b55a1419aa29d11">More...</a><br /></td></tr>
+<tr class="separator:abdfe72eee9a95d669b55a1419aa29d11 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f437758ba935f84b28c8a44b0adc710 inherit pub_methods_class_mobile_object"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mobile_object.html#a6f437758ba935f84b28c8a44b0adc710">GetName</a> () const</td></tr>
+<tr class="memdesc:a6f437758ba935f84b28c8a44b0adc710 inherit pub_methods_class_mobile_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives us name of object (read-only)  <a href="class_mobile_object.html#a6f437758ba935f84b28c8a44b0adc710">More...</a><br /></td></tr>
+<tr class="separator:a6f437758ba935f84b28c8a44b0adc710 inherit pub_methods_class_mobile_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7b0372889ff915bade2738798973af11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#a7b0372889ff915bade2738798973af11">scale</a></td></tr>
+<tr class="memdesc:a7b0372889ff915bade2738798973af11"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D vector of scale of cuboid  <a href="#a7b0372889ff915bade2738798973af11">More...</a><br /></td></tr>
+<tr class="separator:a7b0372889ff915bade2738798973af11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa381a9aeefab1f071f473c446e736a6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#aa381a9aeefab1f071f473c446e736a6d">colorR</a></td></tr>
+<tr class="memdesc:aa381a9aeefab1f071f473c446e736a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">R color of cuboid.  <a href="#aa381a9aeefab1f071f473c446e736a6d">More...</a><br /></td></tr>
+<tr class="separator:aa381a9aeefab1f071f473c446e736a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee3a4e67810105a84a2117a55152a92"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#a5ee3a4e67810105a84a2117a55152a92">colorG</a></td></tr>
+<tr class="memdesc:a5ee3a4e67810105a84a2117a55152a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">G color of cuboid.  <a href="#a5ee3a4e67810105a84a2117a55152a92">More...</a><br /></td></tr>
+<tr class="separator:a5ee3a4e67810105a84a2117a55152a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031d3c77718114246a8a2bdab273708f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#a031d3c77718114246a8a2bdab273708f">colorB</a></td></tr>
+<tr class="memdesc:a031d3c77718114246a8a2bdab273708f"><td class="mdescLeft">&#160;</td><td class="mdescRight">B color of cuboid.  <a href="#a031d3c77718114246a8a2bdab273708f">More...</a><br /></td></tr>
+<tr class="separator:a031d3c77718114246a8a2bdab273708f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -160,7 +190,7 @@ Additional Inherited Members</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00019">19</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a359a803f0d7e3552f39efc8c42f8c650"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a359a803f0d7e3552f39efc8c42f8c650">&#9670;&nbsp;</a></span>Cuboid() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a359a803f0d7e3552f39efc8c42f8c650">&#9670;&nbsp;</a></span>Cuboid() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,12 +237,92 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00030">30</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00050">50</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
+
+</div>
+</div>
+<a id="ab3243de1fae0f7f34d45eea42fe4e412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3243de1fae0f7f34d45eea42fe4e412">&#9670;&nbsp;</a></span>Cuboid() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cuboid::Cuboid </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>in_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td>
+          <td class="paramname"><em>in_rot_deg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td>
+          <td class="paramname"><em>in_pos_m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td>
+          <td class="paramname"><em>in_scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>in_colorR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>in_colorG</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>in_colorB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Mobile object constructor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_name</td><td>- name of object as string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_rot_deg</td><td>- rotation of object as <a class="el" href="class_vector3_d.html" title="Class used to represent 3D Vector. ">Vector3D</a> (roll, pitch, yaw). Values are in degrees </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_pos_m</td><td>- position of object as <a class="el" href="class_vector3_d.html" title="Class used to represent 3D Vector. ">Vector3D</a> (x, y, z). Values are in meters </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_scale</td><td>- scale of object as <a class="el" href="class_vector3_d.html" title="Class used to represent 3D Vector. ">Vector3D</a> (x, y, z). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_colorR</td><td>- color red [0, 255] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_colorG</td><td>- color green [0, 255] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_colorB</td><td>- color blue [0, 255] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00064">64</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
 
 </div>
 </div>
 <a id="a1abf60e93d024b7a01ee5b1a48f1f08a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1abf60e93d024b7a01ee5b1a48f1f08a">&#9670;&nbsp;</a></span>Cuboid() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1abf60e93d024b7a01ee5b1a48f1f08a">&#9670;&nbsp;</a></span>Cuboid() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +345,256 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Mobile object contructor </p>
 
-<p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00036">36</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00072">72</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a94e57cfc076836847fafd27c0f199dc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e57cfc076836847fafd27c0f199dc0">&#9670;&nbsp;</a></span>GetColorB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int&amp; Cuboid::GetColorB </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get blue color of coboid 0-255 (read-only) </p><dl class="section return"><dt>Returns</dt><dd>Blue color const reference </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00098">98</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cuboid_a94e57cfc076836847fafd27c0f199dc0_icgraph.png" border="0" usemap="#class_cuboid_a94e57cfc076836847fafd27c0f199dc0_icgraph" alt=""/></div>
+<map name="class_cuboid_a94e57cfc076836847fafd27c0f199dc0_icgraph" id="class_cuboid_a94e57cfc076836847fafd27c0f199dc0_icgraph">
+<area shape="rect" id="node2" href="class_connection_manager.html#a0882b7da1b7179dd33740f647a224398" title="Creates message about the state of a cuboid. " alt="" coords="181,35,324,76"/>
+<area shape="rect" id="node3" href="class_connection_manager.html#ac58249c5e183bdfc9fe117b72f7cdff8" title="Just the sending thread. " alt="" coords="372,5,531,47"/>
+<area shape="rect" id="node4" href="class_connection_manager.html#a64c9d8b1a4c10e283a465613d5c07774" title="Stop the loop in the thread. " alt="" coords="579,5,744,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a264816a81d931091302712e2606bb50f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a264816a81d931091302712e2606bb50f">&#9670;&nbsp;</a></span>GetColorG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int&amp; Cuboid::GetColorG </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get green color of coboid 0-255 (read-only) </p><dl class="section return"><dt>Returns</dt><dd>Green color const reference </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00090">90</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cuboid_a264816a81d931091302712e2606bb50f_icgraph.png" border="0" usemap="#class_cuboid_a264816a81d931091302712e2606bb50f_icgraph" alt=""/></div>
+<map name="class_cuboid_a264816a81d931091302712e2606bb50f_icgraph" id="class_cuboid_a264816a81d931091302712e2606bb50f_icgraph">
+<area shape="rect" id="node2" href="class_connection_manager.html#a0882b7da1b7179dd33740f647a224398" title="Creates message about the state of a cuboid. " alt="" coords="183,35,325,76"/>
+<area shape="rect" id="node3" href="class_connection_manager.html#ac58249c5e183bdfc9fe117b72f7cdff8" title="Just the sending thread. " alt="" coords="373,5,532,47"/>
+<area shape="rect" id="node4" href="class_connection_manager.html#a64c9d8b1a4c10e283a465613d5c07774" title="Stop the loop in the thread. " alt="" coords="580,5,745,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aab77716c7cc634aa3f2bbae04f7172ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab77716c7cc634aa3f2bbae04f7172ad">&#9670;&nbsp;</a></span>GetColorR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int&amp; Cuboid::GetColorR </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get red color of coboid 0-255 (read-only) </p><dl class="section return"><dt>Returns</dt><dd>Red color const reference </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00082">82</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cuboid_aab77716c7cc634aa3f2bbae04f7172ad_icgraph.png" border="0" usemap="#class_cuboid_aab77716c7cc634aa3f2bbae04f7172ad_icgraph" alt=""/></div>
+<map name="class_cuboid_aab77716c7cc634aa3f2bbae04f7172ad_icgraph" id="class_cuboid_aab77716c7cc634aa3f2bbae04f7172ad_icgraph">
+<area shape="rect" id="node2" href="class_connection_manager.html#a0882b7da1b7179dd33740f647a224398" title="Creates message about the state of a cuboid. " alt="" coords="181,35,324,76"/>
+<area shape="rect" id="node3" href="class_connection_manager.html#ac58249c5e183bdfc9fe117b72f7cdff8" title="Just the sending thread. " alt="" coords="372,5,531,47"/>
+<area shape="rect" id="node4" href="class_connection_manager.html#a64c9d8b1a4c10e283a465613d5c07774" title="Stop the loop in the thread. " alt="" coords="579,5,744,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8e0d5a953587a8d7acf2d93e17489283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0d5a953587a8d7acf2d93e17489283">&#9670;&nbsp;</a></span>GetScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vector3_d.html">Vector3D</a>&amp; Cuboid::GetScale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00074">74</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cuboid_a8e0d5a953587a8d7acf2d93e17489283_icgraph.png" border="0" usemap="#class_cuboid_a8e0d5a953587a8d7acf2d93e17489283_icgraph" alt=""/></div>
+<map name="class_cuboid_a8e0d5a953587a8d7acf2d93e17489283_icgraph" id="class_cuboid_a8e0d5a953587a8d7acf2d93e17489283_icgraph">
+<area shape="rect" id="node2" href="class_connection_manager.html#a0882b7da1b7179dd33740f647a224398" title="Creates message about the state of a cuboid. " alt="" coords="176,35,319,76"/>
+<area shape="rect" id="node3" href="class_connection_manager.html#ac58249c5e183bdfc9fe117b72f7cdff8" title="Just the sending thread. " alt="" coords="367,5,525,47"/>
+<area shape="rect" id="node4" href="class_connection_manager.html#a64c9d8b1a4c10e283a465613d5c07774" title="Stop the loop in the thread. " alt="" coords="573,5,739,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a031d3c77718114246a8a2bdab273708f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a031d3c77718114246a8a2bdab273708f">&#9670;&nbsp;</a></span>colorB</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cuboid::colorB</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00037">37</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
+
+</div>
+</div>
+<a id="a5ee3a4e67810105a84a2117a55152a92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ee3a4e67810105a84a2117a55152a92">&#9670;&nbsp;</a></span>colorG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cuboid::colorG</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00033">33</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
+
+</div>
+</div>
+<a id="aa381a9aeefab1f071f473c446e736a6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa381a9aeefab1f071f473c446e736a6d">&#9670;&nbsp;</a></span>colorR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cuboid::colorR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00029">29</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
+
+</div>
+</div>
+<a id="a7b0372889ff915bade2738798973af11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b0372889ff915bade2738798973af11">&#9670;&nbsp;</a></span>scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a> Cuboid::scale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cuboid_8hh_source.html#l00025">25</a> of file <a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>.</p>
 
 </div>
 </div>
@@ -248,7 +607,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_cuboid.html">Cuboid</a></li>
-    <li class="footer">Generated on Tue Nov 10 2020 11:03:16 for Interpreter by
+    <li class="footer">Generated on Tue Nov 24 2020 09:12:38 for Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

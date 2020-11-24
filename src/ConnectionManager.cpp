@@ -55,39 +55,50 @@ void ConnectionManager::Watching_and_Sending()
         std::shared_ptr<Scene> & myScene = mySim->GetScene();
         while (ShouldCountinueLooping()) 
         {
-        if (!myScene->IsChanged())  
-        { 
+            if (!myScene->IsChanged())  
+            { 
             usleep(10000); continue; 
-        }
-        myScene->LockAccess();
+            }
+            myScene->LockAccess();
        
-        //------- Przeglądanie tej kolekcji to uproszczony przykład
+            //------- Przeglądanie tej kolekcji to uproszczony przykład
        
-        this->Send("Clear\n"); // To jest konieczne, aby usunąć wcześniejsze obiekty.
-        std::cout << "Clear\n";
+            if(!(this->Send("Clear\n"))) // To jest konieczne, aby usunąć wcześniejsze obiekty.
+            {
+            std::cout << "Wysylanie danych nie powiodlo sie!"; 
+            CancelCountinueLooping();
+            }
+            std::cout << "Clear\n";
 
-        std::map<std::string, std::shared_ptr<MobileObject>>::iterator it;   
-        for (it = myScene->GetMapMobileObjects().begin(); it != myScene->GetMapMobileObjects().end(); it++)    
-        {
-            std::shared_ptr<Cuboid> myCub = std::dynamic_pointer_cast<Cuboid>(it->second);
-            this->Send(CreateMessage(*myCub).c_str()); // Tu musi zostać wywołanie odpowiedniej
-                                            // metody/funkcji gerującej polecenia dla serwera.
+            std::map<std::string, std::shared_ptr<MobileObject>>::iterator it;   
+            for (it = myScene->GetMapMobileObjects().begin(); it != myScene->GetMapMobileObjects().end(); it++)    
+            {
+                std::shared_ptr<Cuboid> myCub = std::dynamic_pointer_cast<Cuboid>(it->second);
+                if(!(this->Send(CreateMessage(*myCub).c_str())))
+                {
+                    std::cout << "Wysylanie danych nie powiodlo sie!";
+                    CancelCountinueLooping();    
+                } 
 
-        }
+            }
 
-        //
-        this->Send("Display\n"); // To jest konieczne, aby zobaczyć zmiany
-        std::cout << "Display\n";
-        
-        myScene->CancelChange();
-        myScene->UnlockAccess();
+            //
+            if(!(this->Send("Display\n")))  // To jest konieczne, aby zobaczyć zmiany
+            {
+                std::cout << "Wysylanie danych nie powiodlo sie!";
+                CancelCountinueLooping(); 
+            }
+            std::cout << "Display\n";
+            
+            myScene->CancelChange();
+            myScene->UnlockAccess();
         }
     }
 
 
 
 
-int ConnectionManager::Send(const char *sMesg)
+bool ConnectionManager::Send(const char *sMesg)
 {
     ssize_t  IlWyslanych;
     ssize_t  IlDoWyslania = (ssize_t) strlen(sMesg);
@@ -100,6 +111,7 @@ int ConnectionManager::Send(const char *sMesg)
     if (IlWyslanych < 0) 
     {
         std::cerr << "*** Blad przeslania napisu." << std::endl;
+        return false;
     }
-    return 0;
+    return true;
 }

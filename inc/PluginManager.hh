@@ -58,9 +58,8 @@
             * \brief Run given commansds 
             * \param[in, out] commandsStream - stream of commands 
             * \param[in] scene - scene containing all objects
-            * \param[in] serverSocket - socket to server
             */
-            bool exec(std::istream & commandsStream, std::shared_ptr<Scene> & scene ,  int serverSocket); 
+            bool exec(std::istream & commandsStream, std::shared_ptr<Scene> & scene); 
     };
 
 

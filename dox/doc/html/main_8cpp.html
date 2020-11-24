@@ -67,21 +67,27 @@ $(document).ready(function(){initNavTree('main_8cpp.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_simulation_8hh_source.html">Simulation.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_connection_manager_8hh_source.html">ConnectionManager.hh</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#main_8cpp" alt=""/></div>
 <map name="main_8cpp" id="main_8cpp">
-<area shape="rect" id="node2" href="_simulation_8hh.html" title="Definition of Simulation. " alt="" coords="386,80,486,107"/>
-<area shape="rect" id="node21" href="_cuboid_8hh.html" title="File contains definition of class Cubiod. " alt="" coords="22,155,101,181"/>
-<area shape="rect" id="node3" href="_parser_8hh.html" title="Definition of LibraryInterface. " alt="" coords="1055,229,1131,256"/>
-<area shape="rect" id="node9" href="_plugin_manager_8hh.html" title="Definition of PluginManager. " alt="" coords="373,155,499,181"/>
-<area shape="rect" id="node19" href="_scene_8hh.html" title="Definition of PluginManager. " alt="" coords="119,304,195,331"/>
-<area shape="rect" id="node14" href="_library_interface_8hh.html" title="Definition of LibraryInterface. " alt="" coords="569,229,697,256"/>
-<area shape="rect" id="node15" href="_interp4_command_8hh.html" title="Definition of class Interp4Command. " alt="" coords="407,304,545,331"/>
-<area shape="rect" id="node16" href="_mobile_object_8hh.html" title="File contains definition of class MobileObj. " alt="" coords="40,379,155,405"/>
-<area shape="rect" id="node17" href="_vector3_d_8hh.html" title="Definition of Vector3D. " alt="" coords="81,453,173,480"/>
-<area shape="rect" id="node18" href="_vector2_d_8hh.html" title="Definition of Vector2D. " alt="" coords="253,453,345,480"/>
+<area shape="rect" id="node2" href="_simulation_8hh.html" title="Definition of Simulation. " alt="" coords="1769,155,1869,181"/>
+<area shape="rect" id="node33" href="_cuboid_8hh.html" title="File contains definition of class Cubiod. " alt="" coords="2241,229,2319,256"/>
+<area shape="rect" id="node34" href="_connection_manager_8hh.html" title="Contains the definition of a class ConnectionManager. " alt="" coords="2436,80,2591,107"/>
+<area shape="rect" id="node3" href="_parser_8hh.html" title="Definition of LibraryInterface. " alt="" coords="753,304,829,331"/>
+<area shape="rect" id="node21" href="_plugin_manager_8hh.html" title="Definition of PluginManager. " alt="" coords="1756,229,1881,256"/>
+<area shape="rect" id="node31" href="_scene_8hh.html" title="Definition of PluginManager. " alt="" coords="1590,453,1666,480"/>
+<area shape="rect" id="node9" href="xmlinterp_8hh.html" title="xmlinterp.hh" alt="" coords="745,379,836,405"/>
+<area shape="rect" id="node16" href="_configuration_8hh.html" title="Configuration.hh" alt="" coords="1893,453,2008,480"/>
+<area shape="rect" id="node18" href="_mobile_object_8hh.html" title="File contains definition of class MobileObj. " alt="" coords="1925,528,2040,555"/>
+<area shape="rect" id="node19" href="_vector3_d_8hh.html" title="Definition of Vector3D. " alt="" coords="1826,603,1918,629"/>
+<area shape="rect" id="node20" href="_vector2_d_8hh.html" title="Definition of Vector2D. " alt="" coords="1942,603,2034,629"/>
+<area shape="rect" id="node25" href="_library_interface_8hh.html" title="Definition of LibraryInterface. " alt="" coords="1755,304,1883,331"/>
+<area shape="rect" id="node26" href="_interp4_command_8hh.html" title="Definition of class Interp4Command. " alt="" coords="1917,379,2056,405"/>
+<area shape="rect" id="node27" href="_access_control_8hh.html" title="Contains the definition of a class AccessControl. " alt="" coords="2069,528,2192,555"/>
+<area shape="rect" id="node35" href="_port_8hh.html" title="Port.hh" alt="" coords="2814,155,2877,181"/>
 </map>
 </div>
 </div>
@@ -89,10 +95,40 @@ Include dependency graph for main.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aabd94bba915994a4715e9ad5a7148b58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aabd94bba915994a4715e9ad5a7148b58">Fun_CommunicationThread</a> (shared_ptr&lt; <a class="el" href="class_connection_manager.html">ConnectionManager</a> &gt; con)</td></tr>
+<tr class="separator:aabd94bba915994a4715e9ad5a7148b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aabd94bba915994a4715e9ad5a7148b58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabd94bba915994a4715e9ad5a7148b58">&#9670;&nbsp;</a></span>Fun_CommunicationThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Fun_CommunicationThread </td>
+          <td>(</td>
+          <td class="paramtype">shared_ptr&lt; <a class="el" href="class_connection_manager.html">ConnectionManager</a> &gt;&#160;</td>
+          <td class="paramname"><em>con</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00008">8</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_aabd94bba915994a4715e9ad5a7148b58_icgraph.png" border="0" usemap="#main_8cpp_aabd94bba915994a4715e9ad5a7148b58_icgraph" alt=""/></div>
+<map name="main_8cpp_aabd94bba915994a4715e9ad5a7148b58_icgraph" id="main_8cpp_aabd94bba915994a4715e9ad5a7148b58_icgraph">
+<area shape="rect" id="node2" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="235,5,285,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -119,15 +155,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00006">6</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00014">14</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.png" border="0" usemap="#main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" alt=""/></div>
 <map name="main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" id="main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph">
-<area shape="rect" id="node2" href="class_simulation.html#a2403cb6adccb69afb2471a03a130ab00" title="Initialize Simulation instance. " alt="" coords="145,5,251,32"/>
-<area shape="rect" id="node3" href="class_simulation.html#a5f1f938e15b0f06cd06e59aeff790e5d" title="Method template adding mobile object to scene. " alt="" coords="104,56,292,83"/>
-<area shape="rect" id="node4" href="class_simulation.html#afbc304f6f56a751c78277fbb4efea74e" title="Method runs simulation. " alt="" coords="140,107,256,133"/>
+<area shape="rect" id="node2" href="main_8cpp.html#aabd94bba915994a4715e9ad5a7148b58" title="Fun_CommunicationThread" alt="" coords="104,5,285,32"/>
 </map>
 </div>
 
@@ -139,7 +173,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
-    <li class="footer">Generated on Tue Nov 10 2020 11:03:16 for Interpreter by
+    <li class="footer">Generated on Tue Nov 24 2020 09:12:38 for Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

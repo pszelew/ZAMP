@@ -1,0 +1,8 @@
+<map id="Sender::Watching_and_Sending" name="Sender::Watching_and_Sending">
+<area shape="rect" id="node2" href="$class_access_control.html#a687d41c24cb496f070915eb7c813f08f" title="Check if there was a change in the scene. " alt="" coords="215,5,387,32"/>
+<area shape="rect" id="node3" href="$class_access_control.html#abd4921dc14c3568563c2ae35f4b43c29" title="Lock access to the scene. " alt="" coords="211,56,392,83"/>
+<area shape="rect" id="node4" href="$klient_8cpp.html#ad7d409ff5eb0e067f283005e8998d4c0" title="Wysyła napis do poprzez gniazdo sieciowe. " alt="" coords="275,107,327,133"/>
+<area shape="rect" id="node5" href="$class_geom_object.html#a26699f0b8ff8eabb21418ae1baff4c48" title="Udostępnia kolejny zestaw poleceń umożliwiających zespołu obiektu. " alt="" coords="210,157,393,184"/>
+<area shape="rect" id="node6" href="$class_access_control.html#ac05a143ff477cee359603872b7642943" title="Mark removing change in the scene. " alt="" coords="204,208,399,235"/>
+<area shape="rect" id="node7" href="$class_access_control.html#aff3de9ca43882da925567c0057618cc5" title="Unlock access to the scene. " alt="" coords="205,259,398,285"/>
+</map>

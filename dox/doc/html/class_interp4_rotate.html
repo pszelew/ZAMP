@@ -107,9 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a72ca6a7b4049030cd17af9cce98b2b5f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_rotate.html#a72ca6a7b4049030cd17af9cce98b2b5f">GetCmdName</a> () const</td></tr>
 <tr class="memdesc:a72ca6a7b4049030cd17af9cce98b2b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of command.  <a href="#a72ca6a7b4049030cd17af9cce98b2b5f">More...</a><br /></td></tr>
 <tr class="separator:a72ca6a7b4049030cd17af9cce98b2b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9126424e17eddb40371ae31a3a16c111"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_rotate.html#a9126424e17eddb40371ae31a3a16c111">ExecCmd</a> (std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt; wObMob, int serverSocket) const</td></tr>
-<tr class="memdesc:a9126424e17eddb40371ae31a3a16c111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute command.  <a href="#a9126424e17eddb40371ae31a3a16c111">More...</a><br /></td></tr>
-<tr class="separator:a9126424e17eddb40371ae31a3a16c111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a039d3f86c5a13b3fbe8ef6267b215"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_rotate.html#a71a039d3f86c5a13b3fbe8ef6267b215">ExecCmd</a> (std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt; &amp;wObMob, std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;pAccCtrl) const</td></tr>
+<tr class="memdesc:a71a039d3f86c5a13b3fbe8ef6267b215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute command.  <a href="#a71a039d3f86c5a13b3fbe8ef6267b215">More...</a><br /></td></tr>
+<tr class="separator:a71a039d3f86c5a13b3fbe8ef6267b215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3a8aa671e83ff1776ba868d8043009"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interp4_rotate.html#a7c3a8aa671e83ff1776ba868d8043009">ReadParams</a> (std::istream &amp;Strm_CmdsList)</td></tr>
 <tr class="memdesc:a7c3a8aa671e83ff1776ba868d8043009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read parameters of command.  <a href="#a7c3a8aa671e83ff1776ba868d8043009">More...</a><br /></td></tr>
 <tr class="separator:a7c3a8aa671e83ff1776ba868d8043009"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,8 +240,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a9126424e17eddb40371ae31a3a16c111"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9126424e17eddb40371ae31a3a16c111">&#9670;&nbsp;</a></span>ExecCmd()</h2>
+<a id="a71a039d3f86c5a13b3fbe8ef6267b215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71a039d3f86c5a13b3fbe8ef6267b215">&#9670;&nbsp;</a></span>ExecCmd()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,14 +252,14 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool Interp4Rotate::ExecCmd </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_mobile_object.html">MobileObject</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>wObMob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>serverSocket</em>&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pAccCtrl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -281,7 +281,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_interp4_command.html#a74bb8a659c5efeb7f207d5d58a50c5fe">Interp4Command</a>.</p>
+<p>Implements <a class="el" href="class_interp4_command.html#a76b53f57e32fe716640aaaa52a47eb9c">Interp4Command</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_interp4_rotate_8cpp_source.html#l00041">41</a> of file <a class="el" href="_interp4_rotate_8cpp_source.html">Interp4Rotate.cpp</a>.</p>
 
@@ -462,7 +462,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_interp4_command.html#a3e15ef01af10fa8961926fd9b0274ab8">Interp4Command</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_interp4_rotate_8cpp_source.html#l00048">48</a> of file <a class="el" href="_interp4_rotate_8cpp_source.html">Interp4Rotate.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interp4_rotate_8cpp_source.html#l00063">63</a> of file <a class="el" href="_interp4_rotate_8cpp_source.html">Interp4Rotate.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -562,7 +562,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_interp4_rotate.html">Interp4Rotate</a></li>
-    <li class="footer">Generated on Tue Nov 10 2020 11:03:16 for Interpreter by
+    <li class="footer">Generated on Tue Nov 24 2020 09:12:38 for Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -1,0 +1,6 @@
+<map id="ExecCmd" name="ExecCmd">
+<area shape="rect" id="node2" href="$class_access_control.html#abd4921dc14c3568563c2ae35f4b43c29" title="Lock access to the scene. " alt="" coords="137,5,318,32"/>
+<area shape="rect" id="node3" href="$class_geom_object.html#aa50e5f662f2504fd4c3dc3297794a671" title="Zwiększa indeks stanu, o ile aktualny opis nie jest pusty. " alt="" coords="137,56,318,83"/>
+<area shape="rect" id="node4" href="$class_access_control.html#aff3de9ca43882da925567c0057618cc5" title="Unlock access to the scene. " alt="" coords="131,107,324,133"/>
+<area shape="rect" id="node5" href="$class_access_control.html#a69f4526ff524e6b37b530f97d0419706" title="Mark change in the scene. " alt="" coords="135,157,319,184"/>
+</map>

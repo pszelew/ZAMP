@@ -1,6 +1,8 @@
 <map id="Interp4Pause.hh" name="Interp4Pause.hh">
-<area shape="rect" id="node2" href="$_interp4_command_8hh.html" title="Definition of class Interp4Command. " alt="" coords="77,80,215,107"/>
-<area shape="rect" id="node4" href="$_mobile_object_8hh.html" title="File contains definition of class MobileObj. " alt="" coords="89,155,203,181"/>
-<area shape="rect" id="node5" href="$_vector3_d_8hh.html" title="Definition of Vector3D. " alt="" coords="100,229,192,256"/>
-<area shape="rect" id="node7" href="$_vector2_d_8hh.html" title="Definition of Vector2D. " alt="" coords="216,229,308,256"/>
+<area shape="rect" id="node2" href="$_interp4_command_8hh.html" title="Definition of class Interp4Command. " alt="" coords="349,80,487,107"/>
+<area shape="rect" id="node4" href="$_mobile_object_8hh.html" title="File contains definition of class MobileObj. " alt="" coords="129,229,243,256"/>
+<area shape="rect" id="node10" href="$_access_control_8hh.html" title="Contains the definition of a class AccessControl. " alt="" coords="569,229,691,256"/>
+<area shape="rect" id="node14" href="$_scene_8hh.html" title="Definition of PluginManager. " alt="" coords="304,155,380,181"/>
+<area shape="rect" id="node5" href="$_vector3_d_8hh.html" title="Definition of Vector3D. " alt="" coords="100,304,192,331"/>
+<area shape="rect" id="node7" href="$_vector2_d_8hh.html" title="Definition of Vector2D. " alt="" coords="216,304,308,331"/>
 </map>

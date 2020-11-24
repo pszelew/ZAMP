@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_plugin_manager.html" title="Class used to represent a manager for plugins. " alt="" coords="5,5,113,32"/>
+<area shape="rect" id="node1" href="$class_interp4_command.html" title="Class used to represent an abstract command for mobile object. " alt="" coords="5,81,127,108"/>
+<area shape="rect" id="node2" href="$class_interp4_move.html" title="Class used to represent move command. " alt="" coords="178,5,271,32"/>
+<area shape="rect" id="node3" href="$class_interp4_pause.html" title="Class used to represent pause command. " alt="" coords="175,56,274,83"/>
+<area shape="rect" id="node4" href="$class_interp4_rotate.html" title="Class used to represent rotate command. " alt="" coords="175,107,275,133"/>
+<area shape="rect" id="node5" href="$class_interp4_set.html" title="Class used to represent set command. " alt="" coords="183,157,266,184"/>
 </map>

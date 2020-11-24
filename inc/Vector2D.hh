@@ -40,7 +40,7 @@
          * \param[in] x - x-axis value
          * \param[in] y - y-axis value
          */
-         Vector2D(double x, double y){_Wsp[0]=x; _Wsp[0]=y;}
+         Vector2D(double x, double y){_Wsp[0]=x; _Wsp[1]=y;}
 
          /*!
          * \brief Gives us chosen coordinates (read-only)
