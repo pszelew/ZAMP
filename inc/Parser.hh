@@ -54,17 +54,16 @@ using namespace XERCES_CPP_NAMESPACE;
             * \brief Read data from cmd file
             *
             * Read data from xml file
-            * \param[out] IStrm4Cmds - output stream 
             * \retval true - File read was successfull
             * \retval false - File read wasn't successfull
             */
-            bool ParseXML(std::istringstream & IStrm4Cmds);
+            bool ParseXML();
             /*!
             * \brief Returns current configuration value (read-only)
             *
             * \return Returns current configuration value (read-only)
             */
-            Configuration  GetConf() const { return conf; }
+            const Configuration & GetConf() const { return conf; }
 
     };
 

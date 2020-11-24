@@ -1,6 +1,6 @@
 #ifndef  COMMAND4MOVE_HH
 #define  COMMAND4MOVE_HH
-
+#define N 100
 #ifndef __GNUG__
 # pragma interface
 # pragma implementation

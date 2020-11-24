@@ -41,17 +41,15 @@ const char* Interp4Rotate::GetCmdName() const
 bool Interp4Rotate::ExecCmd(std::shared_ptr<MobileObject> & wObMob,  std::shared_ptr<Scene> & pAccCtrl) const
 {
     double startYaw = wObMob->GetAng_Yaw_deg();
-    double new_yaw_deg = 0;
-    int n = 100;
-    double dist_step_deg = (double)rot_deg/n;
-    double time_step_us = (((double)this->rot_deg/this->rot_speed_degs)*1000000)/n;
+    double delta_yaw_deg = 0;
+    double dist_step_deg = (double)rot_deg/N;
+    double time_step_us = (((double)this->rot_deg/this->rot_speed_degs)*1000000)/N;
 
-    for(int i = 0; i<n; ++i)
+    for(int i = 0; i<N; ++i)
     {
         pAccCtrl->LockAccess(); // Lock access to the scene to modify something :)
-        // Tak jest dobrze.
-        new_yaw_deg += dist_step_deg;
-        wObMob->SetAng_Yaw_deg(new_yaw_deg + startYaw);
+        delta_yaw_deg += dist_step_deg;
+        wObMob->SetAng_Yaw_deg(delta_yaw_deg + startYaw);
         pAccCtrl->MarkChange();
         pAccCtrl->UnlockAccess();
         usleep(time_step_us);

@@ -20,7 +20,7 @@ bool Parser::ParseCmd(std::istringstream & IStrm4Cmds)
     return pclose(pProc) == 0;
 }
 
-bool Parser::ParseXML(std::istringstream & IStrm4Cmds)
+bool Parser::ParseXML()
 {
     const char * sFileName = this->xmlFile.c_str();
     try {

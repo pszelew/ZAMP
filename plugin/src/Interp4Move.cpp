@@ -44,20 +44,19 @@ bool Interp4Move::ExecCmd(std::shared_ptr<MobileObject> & wObMob,  std::shared_p
     double startRoll = wObMob->GetAng_Roll_deg();
     double startPitch = wObMob->GetAng_Pitch_deg();
     double startYaw = wObMob->GetAng_Yaw_deg();
-    double new_x_m, new_y_m, new_z_m;
-    new_x_m = new_y_m = new_z_m = 0;
-    int n = 100;
-    double dist_step_m = (double)dist_m/n;
-    double time_step_us = (((double)this->dist_m/this->vel_ms)*1000000)/n;
+    double delta_x_m, delta_y_m, delta_z_m;
+    delta_x_m = delta_y_m = delta_z_m = 0;
+    double dist_step_m = (double)dist_m/N;
+    double time_step_us = (((double)this->dist_m/this->vel_ms)*1000000)/N;
 
-    for(int i = 0; i<n; ++i)
+    for(int i = 0; i<N; ++i)
     {
-        pAccCtrl->LockAccess(); // Lock access to the scene to modify something :)
-        // Tak jest dobrze.
-        new_x_m += dist_step_m*cos(startPitch*M_PI/180)*cos(startYaw*M_PI/180);
-        new_y_m += dist_step_m*(cos(startRoll*M_PI/180)*sin(startYaw*M_PI/180) + cos(startYaw*M_PI/180)*sin(startPitch*M_PI/180)*sin(startRoll*M_PI/180));
-        new_z_m += dist_step_m*(sin(startRoll*M_PI/180)*sin(startYaw*M_PI/180) - cos(startRoll*M_PI/180)*cos(startYaw*M_PI/180)*sin(startPitch*M_PI/180));
-        wObMob->SetPosition_m(Vector3D(new_x_m+startPos.x(), new_y_m+startPos.y(), new_z_m+startPos.z()));
+        pAccCtrl->LockAccess(); // Lock access
+  
+        delta_x_m += dist_step_m*cos(startPitch*M_PI/180)*cos(startYaw*M_PI/180);
+        delta_y_m += dist_step_m*(cos(startRoll*M_PI/180)*sin(startYaw*M_PI/180) + cos(startYaw*M_PI/180)*sin(startPitch*M_PI/180)*sin(startRoll*M_PI/180));
+        delta_z_m += dist_step_m*(sin(startRoll*M_PI/180)*sin(startYaw*M_PI/180) - cos(startRoll*M_PI/180)*cos(startYaw*M_PI/180)*sin(startPitch*M_PI/180));
+        wObMob->SetPosition_m(Vector3D(delta_x_m+startPos.x(), delta_y_m+startPos.y(), delta_z_m+startPos.z()));
 
         pAccCtrl->MarkChange();
         pAccCtrl->UnlockAccess();

@@ -13,14 +13,13 @@ bool Simulation::init(std::string cmdPath, std::string xmlPath)
 bool Simulation::exec()
 {
     std::istringstream streamCmd;
-    std::istringstream streamXml;
 
     if(!parser->ParseCmd(streamCmd))
     {
         std::cout << "Wystapil problem przy ladowaniu pliku cmd!!!"<< std::endl;
         return false; 
     }
-    if(!parser->ParseXML(streamXml))
+    if(!parser->ParseXML())
     {
         std::cout << "Wystapil problem przy ladowaniu pliku XML!!!"<< std::endl;
         return false; 
