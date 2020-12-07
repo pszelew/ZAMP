@@ -41,7 +41,10 @@
             */
             virtual const char* GetCmdName() const = 0;
             /*!
-            * \brief Execute command
+            * \brief Execute a command
+            * 
+            * Execute a command
+            * 
             * \param[in, out] wObMob - shared pointer reference to a mobile object
             * \param[in, out] pAccCtrl - shared pointer reference to the scene
             * \retval true - executed without problems
@@ -50,6 +53,7 @@
             virtual bool ExecCmd(std::shared_ptr<MobileObject>  & wObMob,  std::shared_ptr<Scene>  & pAccCtrl) const = 0;
             /*!
             * \brief Read parameters of command
+            * Read parameters of command
             * \param[in, out] Strm_CmdsList - stream containing parameters to be read
             * \retval true - read was successfull
             * \retval false - read was not successfull
@@ -57,6 +61,7 @@
             virtual bool ReadParams(std::istream& Strm_CmdsList) = 0;
             /*!
             * \brief Get the name of object beeing moved
+            * Get the name of object beeing moved
             * \return Name of object
             */
             virtual std::string GetObjName() = 0;
