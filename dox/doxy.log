@@ -5,3 +5,7 @@ warning: Tag `XML_DTD' at line 1845 of file `Doxyfile' has become obsolete.
 warning: doxygen no longer ships with the FreeSans font.
 You may want to clear or change DOT_FONTNAME.
 Otherwise you run the risk that the wrong font is being used for dot generated graphs.
+warning: tag INPUT: input source `../plugin/inc' does not exist
+warning: tag INPUT: input source `../plugin/src' does not exist
+warning: source ../plugin/inc is not a readable file or directory... skipping.
+warning: source ../plugin/src is not a readable file or directory... skipping.

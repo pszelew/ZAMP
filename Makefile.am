@@ -1,0 +1,4 @@
+SUBDIRS = src inc src-lib dox
+ACLOCAL_AMFLAGS = -I m4
+EXTRA_DIST = README LICENSE INSTALL
+dist_doc_DATA = README

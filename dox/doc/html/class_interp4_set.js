@@ -3,7 +3,7 @@ var class_interp4_set =
     [ "Interp4Set", "class_interp4_set.html#a1b3de8fc06124f8a37d188e6486e45d3", null ],
     [ "~Interp4Set", "class_interp4_set.html#a679527daa2fc2863838307ed8b10f347", null ],
     [ "ExecCmd", "class_interp4_set.html#add4008b856b5e8af4c7ec3c310d391bb", null ],
-    [ "GetCmdName", "class_interp4_set.html#a7e61011caf16bc5bcdae597dc58db324", null ],
+    [ "GetCmdName", "class_interp4_set.html#a140ab3e4f13dfbc8512149a4ce3f0074", null ],
     [ "GetObjName", "class_interp4_set.html#aacd8061fcd036cb8e0c99f34975dbe02", null ],
     [ "PrintCmd", "class_interp4_set.html#a71cdc0ef89ff18a6f2044536a8d7fead", null ],
     [ "PrintSyntax", "class_interp4_set.html#ad321f7b601c444c92a8db50785c6faf2", null ],
